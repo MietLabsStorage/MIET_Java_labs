@@ -7,7 +7,7 @@ import com.company.View.Tag;
 import java.security.spec.ECField;
 
 public class Out {
-    public static void Show(Tag tag, String message){
+    public static void Show(Tag tag, String message) throws Exception {
         switch (tag){
             case LoadWMLinen:
                 break;

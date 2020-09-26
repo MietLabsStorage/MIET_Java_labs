@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 /**
  * @ author mJaJksJ
- * @ version 12.09.2020 20:16
+ * @ version 26.09.2020
  */
 public class Main {
 
     static Properties properties;
-    static Scanner scanner;
 
-    static void model() throws InterruptedException {
+    //model
+    static void model() {
         String num = properties.getProperty("num");
         boolean isArithmeticProgression = true;
         for(int i = 1; i < num.length() - 1; i++){
@@ -25,7 +25,9 @@ public class Main {
         view("ans");
     }
 
-    static void controller() throws InterruptedException {
+    //controller
+    static void controller() {
+        Scanner scanner = new Scanner(System.in);
         view("invitation");
         String value = scanner.next();
         try {
@@ -33,8 +35,6 @@ public class Main {
             properties.setProperty("num", value);
         }
         catch (Exception e){
-            System.err.println(e.toString());
-            Thread.sleep(100);
             controller();
         }
         finally {
@@ -42,7 +42,8 @@ public class Main {
         }
     }
 
-    static void view(String mesChooser) throws InterruptedException {
+    //view
+    static void view(String mesChooser) {
         switch (mesChooser){
             case "task":
                 System.out.println(
@@ -61,13 +62,16 @@ public class Main {
                 break;
             case "invitation":
                 System.out.print("Write num for checking:: ");
-                break;
+
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    /**
+     *
+     * @param args do nothing
+     */
+    public static void main(String[] args) {
         properties = new Properties();
-        scanner = new Scanner(System.in);
         view("task");
         controller();
     }

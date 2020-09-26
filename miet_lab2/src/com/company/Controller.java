@@ -1,12 +1,14 @@
 package com.company;
 
+import com.company.Model.clothes.Color;
 import com.company.View.*;
 
 import java.util.Scanner;
 
 public class Controller {
+
     private static Scanner scanner = new Scanner(System.in);
-    public static int getInt(){
+    public static int getInt() throws Exception {
         String value = scanner.next();
         try {
             return Integer.parseInt(value);
@@ -21,4 +23,20 @@ public class Controller {
     public static String getString() {
         return scanner.next();
     }
+
+    public static Color getColor() {
+        String value = scanner.next();
+        if(value == Color.light.toString()){
+            return  Color.light;
+        }
+        if(value == Color.dark.toString()){
+            return  Color.dark;
+        }
+        if(value == Color.multycolor.toString()){
+            return  Color.multycolor;
+        }
+        com.company.View.Console.Err.PrintErr("No this color");
+        return getColor();
+    }
+
 }
