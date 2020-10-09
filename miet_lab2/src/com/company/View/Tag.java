@@ -5,13 +5,14 @@ public enum Tag {
     AddWMConditioner(1002),
     AddWMColor(1003),
     AddWMTemperature(1004),
+
     LoadWMLinen(1101),
-    UnloadWMLinen(1102),
-    RunWM(1103),
+    UnloadWMLinenAndShow(1102),
+    RunWM(1104),
+    StatusWM(1105),
 
     AddDirtyLinen(2001),
-
-    Action(0);
+    ShowDirtyLinen(2002);
 
     private final int code;
 
@@ -19,5 +20,9 @@ public enum Tag {
         this.code = code;
     }
 
+    /**
+     * get int code of enum's elements
+     * @return int-code of element
+     */
     public int getCode(){ return code;}
 }
