@@ -24,7 +24,6 @@ public class Controller {
         }
         catch (Exception e){
             com.company.View.Console.Err.PrintErr(e.toString());
-            com.company.View.Console.Out.ShowActionsMenu();
         }
         return -1;
     }
