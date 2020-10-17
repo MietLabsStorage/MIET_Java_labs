@@ -73,9 +73,9 @@ public class WashingMachine {
      * @throws Exception throw if temperature <= 0
      */
     public void setTemperature(int temperature) throws Exception {
-        if(temperature > 0)
+        if(temperature > 0 && temperature < 100)
             this.temperature = temperature;
-        else throw new Exception("temperature must be positive");
+        else throw new Exception("temperature must be in (0;100)");
     }
 
     /**

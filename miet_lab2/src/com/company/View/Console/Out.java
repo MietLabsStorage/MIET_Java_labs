@@ -64,6 +64,7 @@ public class Out {
         else {
             for (LinenColor linen : linens) {
                 System.out.println(linen);
+                System.out.println();
             }
         }
     }

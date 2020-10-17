@@ -16,7 +16,7 @@ abstract class Linen {
      */
     protected Linen(int _temperatureWashing, int _temperatureIroning) {
         this.temperatureWashing = Math.max(_temperatureWashing, 0);
-        this.temperatureIroning = Math.max(_temperatureWashing, 0);
+        this.temperatureIroning = Math.max(_temperatureIroning, 0);
     }
 
     /**
