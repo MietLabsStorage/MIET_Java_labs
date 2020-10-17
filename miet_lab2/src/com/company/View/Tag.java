@@ -12,7 +12,11 @@ public enum Tag {
     StatusWM(1105),
 
     AddDirtyLinen(2001),
-    ShowDirtyLinen(2002);
+    ShowDirtyLinen(2002),
+
+    SignIn(7001),
+    SignUp(7002),
+    ShowUsers(7003);
 
     private final int code;
 

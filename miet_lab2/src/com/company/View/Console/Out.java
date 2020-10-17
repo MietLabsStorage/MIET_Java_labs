@@ -36,6 +36,10 @@ public class Out {
         Actions.runAction(Controller.getInt());
     }
 
+    public static void showLoginMenu(){
+
+    }
+
     /**
      * message of addin something in WM
      * @param addedSmth 'something'

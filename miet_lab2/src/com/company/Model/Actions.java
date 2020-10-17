@@ -10,8 +10,8 @@ import java.util.ArrayList;
  * Model class
  */
 public class Actions {
-    private  static final WashingMachine wm = new WashingMachine();
-    private  static final ArrayList<LinenColor> dirtyHeap = new ArrayList<>();
+    private static final WashingMachine wm = new WashingMachine();
+    private static final ArrayList<LinenColor> dirtyHeap = new ArrayList<>();
 
     /**
      * do any action against tag's int code
