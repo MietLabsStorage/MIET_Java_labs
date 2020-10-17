@@ -62,7 +62,7 @@ public class db {
     public static boolean write() throws IOException {
         try(FileWriter writer = new FileWriter(name, false))
         {
-            writer.write(users.size());
+            writer.write(users.size() + "\n");
             for (Map.Entry entry: users.entrySet()){
                 writer.write(entry.getKey().toString() + "\n");
                 writer.write(((UserInfo)entry.getValue()).getPassword() + "\n");
