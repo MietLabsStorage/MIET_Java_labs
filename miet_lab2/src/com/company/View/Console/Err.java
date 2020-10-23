@@ -6,6 +6,7 @@ public class Err {
      * @param err
      */
     public static void PrintErr(String err){
+        com.company.View.Log.tryWrite(err);
         System.err.println(err);
     }
 }

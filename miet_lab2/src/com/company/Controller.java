@@ -1,7 +1,6 @@
 package com.company;
 
-import com.company.Model.clothes.Color;
-import com.company.View.*;
+import com.company.model.clothes.Color;
 
 import java.util.Scanner;
 

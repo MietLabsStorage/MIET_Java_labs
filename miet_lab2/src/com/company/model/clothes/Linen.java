@@ -1,4 +1,4 @@
-package com.company.Model.clothes;
+package com.company.model.clothes;
 
 /**
  * linen for washing in Washing Machine

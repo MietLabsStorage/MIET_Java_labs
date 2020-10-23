@@ -1,4 +1,4 @@
-package com.company.Model.database;
+package com.company.model.database;
 
 /**
  * Enum that consist of:
@@ -24,13 +24,19 @@ public enum AccesRights {
         return code;
     }
 
-    public static AccesRights tryConvert(String name){
+    /**
+     * try convert string in AccesRights
+     * @param name string name
+     * @return AccesRights name
+     * @throws Exception if cant convert
+     */
+    public static AccesRights tryConvert(String name) throws Exception {
         for(AccesRights rights : AccesRights.values()){
             if(name.equals(rights.toString())){
                 return rights;
             }
         }
-        return null;
+        throw new Exception("Unsucces convertation");
     }
 }
 

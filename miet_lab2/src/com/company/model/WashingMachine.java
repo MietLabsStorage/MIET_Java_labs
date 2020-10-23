@@ -1,6 +1,6 @@
-package com.company.Model;
+package com.company.model;
 
-import com.company.Model.clothes.*;
+import com.company.model.clothes.*;
 
 import java.util.ArrayList;
 
@@ -109,7 +109,7 @@ public class WashingMachine {
      * @return linens that was not load
      * @throws Exception throw if already loaded or there is not colors or temperature
      */
-    public ArrayList<LinenColor> Load(ArrayList<LinenColor> linens) throws Exception {
+    public ArrayList<LinenColor> load(ArrayList<LinenColor> linens) throws Exception {
         ArrayList<LinenColor> outputLinen = new ArrayList<LinenColor>();
         if(color != (new WashingMachine()).color && temperature != (new WashingMachine()).temperature) {
             for (LinenColor linen : linens) {
@@ -122,6 +122,7 @@ public class WashingMachine {
             }
         }
         else{
+            com.company.View.Log.tryWrite("there is not colors or temperature");
             throw new Exception("there is not colors or temperature");
         }
         return outputLinen;
@@ -131,7 +132,7 @@ public class WashingMachine {
      * unload WM (do empty)
      * @return linens that were in WM
      */
-    public ArrayList<LinenColor> Unload(){
+    public ArrayList<LinenColor> unload(){
         ArrayList<LinenColor> outputLinen = new ArrayList<LinenColor>();
         outputLinen.addAll(inputLinens);
         inputLinens.clear();

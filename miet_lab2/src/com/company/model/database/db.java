@@ -1,36 +1,58 @@
-package com.company.Model.database;
+package com.company.model.database;
+
+import com.company.View.Log;
 
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class db {
+
+    public static HashMap<String, UserInfo> getUsers() {
+        return users;
+    }
+
     private static final String name = "database.txt";
     private static HashMap<String, UserInfo> users = new HashMap<String, UserInfo>();
 
+    /**
+     * add user in db
+     * @param data users data
+     * @param nickname users nickname
+     * @return true if success else false
+     */
     public static boolean add(UserInfo data, String nickname){
         try{
             users.putIfAbsent(nickname, data);
+            write();
             return true;
         }
         catch (Exception e){
+            Log.tryWrite(e.toString());
             return false;
         }
     }
 
+    /**
+     * delete user from db
+     * @param nickname users nickname
+     * @return true if success else false
+     */
     public static boolean delete(String nickname){
         try{
             users.remove(nickname);
+            write();
             return true;
         }
         catch (Exception e){
+            Log.tryWrite(e.toString());
             return false;
         }
     }
 
+    //read str from file and return it
     private static String readStr(FileReader reader) throws IOException {
         int sym;
         String str = "";
@@ -39,8 +61,12 @@ public class db {
         }
         return str;
     }
-    public static boolean read(){
 
+    /**
+     * read db from file
+     * @return true if success else false
+     */
+    public static boolean read(){
         try(FileReader reader = new FileReader(name))
         {
             int count = Integer.parseInt(readStr(reader));
@@ -55,11 +81,13 @@ public class db {
             return true;
         }
         catch(Exception e){
+            Log.tryWrite(e.toString());
             return false;
         }
     }
 
-    public static boolean write() throws IOException {
+    //write db in file
+    private static boolean write() throws IOException {
         try(FileWriter writer = new FileWriter(name, false))
         {
             writer.write(users.size() + "\n");
@@ -71,17 +99,23 @@ public class db {
                 writer.write(Boolean.toString(((UserInfo)entry.getValue()).isAutotest()) + "\n");
             }
             writer.flush();
+            Log.tryWrite("Update bd");
             return true;
         }
         catch (Exception e){
+            Log.tryWrite(e.toString());
             return false;
         }
     }
 
-    public static String showUsers(){
-        String str = "";
+    /**
+     * create string of users nicknames and acces rights
+     * @return string of users
+     */
+    public static String getUsersAsString(){
+        String str = "Users: \n";
         for (Map.Entry entry: users.entrySet()){
-            str += entry.getKey().toString() + " " + ((UserInfo)entry.getValue()).getAcces().toString();
+            str += entry.getKey().toString() + " " + ((UserInfo)entry.getValue()).getAcces().toString() + "\n";
         }
         return str;
     }

@@ -1,4 +1,4 @@
-package com.company.Model.clothes;
+package com.company.model.clothes;
 
 /**
  * Enum that consist of:

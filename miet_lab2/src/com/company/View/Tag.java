@@ -1,6 +1,8 @@
 package com.company.View;
 
 public enum Tag {
+    SignOut(0),
+
     AddWMPowder(1001),
     AddWMConditioner(1002),
     AddWMColor(1003),
@@ -14,9 +16,11 @@ public enum Tag {
     AddDirtyLinen(2001),
     ShowDirtyLinen(2002),
 
+    Exit(7000),
     SignIn(7001),
     SignUp(7002),
-    ShowUsers(7003);
+    ShowUsers(7003),
+    DeleteUser(7004);
 
     private final int code;
 

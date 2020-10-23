@@ -1,10 +1,10 @@
 package com.company.View.Console;
 
 import com.company.Controller;
-import com.company.Model.Actions;
-import com.company.Model.WashingMachine;
-import com.company.Model.clothes.Color;
-import com.company.Model.clothes.LinenColor;
+import com.company.model.Actions;
+import com.company.model.WashingMachine;
+import com.company.model.clothes.Color;
+import com.company.model.clothes.LinenColor;
 import com.company.View.Tag;
 
 import java.util.ArrayList;
@@ -19,25 +19,26 @@ public class Out {
      * @throws Exception
      */
     public static void ShowActionsMenu() throws Exception {
-        System.out.println("\n--------------------------------");
-        System.out.print(
-                showByTag(Tag.AddWMPowder) +
-                        showByTag(Tag.AddWMConditioner) +
-                        showByTag(Tag.AddWMColor) +
-                        showByTag(Tag.AddWMTemperature) +
-                        showByTag(Tag.LoadWMLinen) +
-                        showByTag(Tag.UnloadWMLinenAndShow) +
-                        showByTag(Tag.RunWM) +
-                        showByTag(Tag.StatusWM) +
-                        showByTag(Tag.AddDirtyLinen) +
-                        showByTag(Tag.ShowDirtyLinen) +
-                        "\nWrite a number for choice act:\n"
-        );
-        Actions.runAction(Controller.getInt());
-    }
-
-    public static void showLoginMenu(){
-
+        while(true){
+            System.out.println("\nWhat_would_you_do_my_main_?____");
+            System.out.print(
+                    showByTag(Tag.AddWMPowder) +
+                            showByTag(Tag.AddWMConditioner) +
+                            showByTag(Tag.AddWMColor) +
+                            showByTag(Tag.AddWMTemperature) +
+                            showByTag(Tag.LoadWMLinen) +
+                            showByTag(Tag.UnloadWMLinenAndShow) +
+                            showByTag(Tag.RunWM) +
+                            showByTag(Tag.StatusWM) +
+                            showByTag(Tag.AddDirtyLinen) +
+                            showByTag(Tag.ShowDirtyLinen) +
+                            showByTag(Tag.SignOut) +
+                            "Write a number for choice act:\n"
+            );
+            if(Actions.runAction(Controller.getInt()) == -1){
+                break;
+            }
+        }
     }
 
     /**
@@ -115,5 +116,25 @@ public class Out {
             com.company.View.Console.Err.PrintErr(e.toString());
         }
         return "";
+    }
+
+    public static void SignInMenu() throws Exception {
+        while(true){
+            System.out.print(
+                    showByTag(Tag.SignIn) +
+                            showByTag(Tag.SignUp) +
+                            showByTag(Tag.ShowUsers) +
+                            showByTag(Tag.DeleteUser) +
+                            showByTag(Tag.Exit) +
+                            "Write a number for choice act:\n"
+            );
+            if(Actions.runSign(Controller.getInt()) == -1){
+                return;
+            }
+        }
+    }
+
+    public static void ShowMessage(String msg) {
+        System.out.println(msg);
     }
 }

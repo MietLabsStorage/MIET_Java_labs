@@ -1,12 +1,6 @@
 package com.company;
 
-import com.company.Model.clothes.Color;
-import com.company.Model.database.AccesRights;
-import com.company.Model.database.UserInfo;
-import com.company.Model.database.db;
-import com.company.View.Tag;
-
-import javax.swing.text.View;
+import com.company.model.database.db;
 
 /**
  * @author Max Myasikov PIN-34
@@ -16,11 +10,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        db.read();
-        db.add(new UserInfo("88888888", AccesRights.root, true, true), "simka");
-        db.write();
-        while (true) {
-            com.company.View.Console.Out.ShowActionsMenu();
-        }
+        com.company.View.Log.alwaysWrite("Запуск программы");
+        com.company.View.Log.alwaysWrite("Загрузка из базы данных: " + db.read());
+        com.company.View.Console.Out.SignInMenu();
+        com.company.View.Log.alwaysWrite("Конец программы");
     }
 }
