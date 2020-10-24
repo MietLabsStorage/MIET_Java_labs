@@ -24,7 +24,7 @@ public class LinenColor extends Linen {
     /**
      * null-object constructor
      */
-    public  LinenColor(){
+    public LinenColor(){
         super();
         color = null;
     }

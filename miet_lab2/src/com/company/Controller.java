@@ -48,8 +48,8 @@ public class Controller {
         if(value.equals(Color.dark.toString())){
             return  Color.dark;
         }
-        if(value.equals(Color.multycolor.toString())){
-            return  Color.multycolor;
+        if(value.equals(Color.multicolor.toString())){
+            return  Color.multicolor;
         }
         com.company.View.Console.Err.PrintErr("No this color");
         return getColor();

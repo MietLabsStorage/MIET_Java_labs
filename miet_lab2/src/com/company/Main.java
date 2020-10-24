@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         com.company.View.Log.alwaysWrite("Запуск программы");
-        com.company.View.Log.alwaysWrite("Загрузка из базы данных: " + db.read());
+        com.company.View.Log.alwaysWrite("Загрузка из базы данных: " + db.readUsers());
         com.company.View.Console.Out.SignInMenu();
         com.company.View.Log.alwaysWrite("Конец программы");
     }

@@ -12,7 +12,11 @@ public enum AccesRights {
     //int-code of element
     private final int code;
 
-   AccesRights(int code) {
+    /**
+     * constructor
+     * @param code int-code of element
+     */
+    AccesRights(int code) {
         this.code = code;
     }
 
@@ -36,7 +40,7 @@ public enum AccesRights {
                 return rights;
             }
         }
-        throw new Exception("Unsucces convertation");
+        throw new Exception("Unsuccess convertation");
     }
 }
 

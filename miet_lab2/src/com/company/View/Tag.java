@@ -16,6 +16,8 @@ public enum Tag {
     AddDirtyLinen(2001),
     ShowDirtyLinen(2002),
 
+    SaveChanges(6000),
+
     Exit(7000),
     SignIn(7001),
     SignUp(7002),

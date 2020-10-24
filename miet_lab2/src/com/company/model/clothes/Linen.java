@@ -5,6 +5,7 @@ package com.company.model.clothes;
  * consist of washing and ironing temperatures
  */
 abstract class Linen {
+
     protected int temperatureWashing;
     protected int temperatureIroning;
 

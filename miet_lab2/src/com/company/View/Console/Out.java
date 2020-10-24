@@ -20,7 +20,7 @@ public class Out {
      */
     public static void ShowActionsMenu() throws Exception {
         while(true){
-            System.out.println("\nWhat_would_you_do_my_main_?____");
+            System.out.println("\nWhat_would_you_do?");
             System.out.print(
                     showByTag(Tag.AddWMPowder) +
                             showByTag(Tag.AddWMConditioner) +
@@ -32,6 +32,7 @@ public class Out {
                             showByTag(Tag.StatusWM) +
                             showByTag(Tag.AddDirtyLinen) +
                             showByTag(Tag.ShowDirtyLinen) +
+                            showByTag(Tag.SaveChanges) +
                             showByTag(Tag.SignOut) +
                             "Write a number for choice act:\n"
             );
@@ -103,7 +104,7 @@ public class Out {
         System.out.println(
                 "(" + Color.light.toString() + ", "
                         + Color.dark.toString() + ", "
-                        + Color.multycolor.toString() + ")"
+                        + Color.multicolor.toString() + ")"
         );
     }
 

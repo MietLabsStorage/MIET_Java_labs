@@ -86,6 +86,10 @@ public class WashingMachine {
         return !(inputLinens.isEmpty());
     }
 
+    public ArrayList<LinenColor> getInputLinens() {
+        return inputLinens;
+    }
+
     private String powder;
     private String conditioner;
     private Color color;
@@ -96,9 +100,9 @@ public class WashingMachine {
      * null-object constructor
      */
     public WashingMachine(){
-        powder = "";
-        conditioner = "";
-        color = null;
+        powder = " ";
+        conditioner = " ";
+        color = Color.nonColor;
         temperature = 0;
         inputLinens = new ArrayList<LinenColor>();
     }
@@ -122,7 +126,6 @@ public class WashingMachine {
             }
         }
         else{
-            com.company.View.Log.tryWrite("there is not colors or temperature");
             throw new Exception("there is not colors or temperature");
         }
         return outputLinen;
@@ -133,8 +136,7 @@ public class WashingMachine {
      * @return linens that were in WM
      */
     public ArrayList<LinenColor> unload(){
-        ArrayList<LinenColor> outputLinen = new ArrayList<LinenColor>();
-        outputLinen.addAll(inputLinens);
+        ArrayList<LinenColor> outputLinen = new ArrayList<LinenColor>(inputLinens);
         inputLinens.clear();
         return outputLinen;
     }
@@ -154,6 +156,5 @@ public class WashingMachine {
         }
         return false;
     }
-
 
 }
