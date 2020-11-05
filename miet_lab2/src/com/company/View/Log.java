@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Log {
     private static final String name = "log.txt";
+    public static final String autotestName = "autotestLog";
     public static boolean isRun = false;
 
     public static boolean tryWrite(String msg){
@@ -17,8 +18,19 @@ public class Log {
     }
 
     public static boolean alwaysWrite(String msg){
-        try(FileWriter writer = new FileWriter(name, true))
-        {
+        try(FileWriter writer = new FileWriter(name, true)){
+            writer.write(LocalDate.now() + " " +
+                    LocalTime.now().format(DateTimeFormatter.ofPattern("H:mm:ss")) + "|\t" + msg + "\n");
+            writer.flush();
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+    }
+
+    public static boolean WriteOtherLog(String msg, String nameOfLog){
+        try(FileWriter writer = new FileWriter(nameOfLog, true)){
             writer.write(LocalDate.now() + " " +
                     LocalTime.now().format(DateTimeFormatter.ofPattern("H:mm:ss")) + "|\t" + msg + "\n");
             writer.flush();

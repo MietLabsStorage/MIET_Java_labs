@@ -45,4 +45,19 @@ public enum Color {
         }
         throw new Exception("Unsuccess convertation");
     }
+
+    /**
+     * try convert string in Color
+     * @param code int-code
+     * @return Color name
+     * @throws Exception if cant convert
+     */
+    public static Color tryConvert(int code) throws Exception {
+        for(Color colors : Color.values()){
+            if(code == colors.code){
+                return colors;
+            }
+        }
+        throw new Exception("Unsuccess convertation");
+    }
 }

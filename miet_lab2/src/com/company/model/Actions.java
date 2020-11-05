@@ -9,6 +9,7 @@ import com.company.View.Log;
 import com.company.View.Tag;
 
 import java.io.File;
+import java.util.ArrayList;
 
 /**
  * Model class
@@ -70,10 +71,14 @@ public class Actions {
         if(actNum == Tag.LoadWMLinen.getCode()){
             try {
                 //load in wm from derty heap and reload in derty heap that was not loaded in wm
-                db.getUsers().get(currentNickname).getDirtyHeap().addAll(
+                ArrayList<LinenColor> tempHeap = db.getUsers().get(currentNickname).getWm().load(
+                        db.getUsers().get(currentNickname).getDirtyHeap());
+                db.getUsers().get(currentNickname).getDirtyHeap().clear();
+                db.getUsers().get(currentNickname).getDirtyHeap().addAll(tempHeap);
+                /*db.getUsers().get(currentNickname).getDirtyHeap().addAll(
                         db.getUsers().get(currentNickname).getWm().load(
                                 db.getUsers().get(currentNickname).getDirtyHeap()
-                        ));
+                        ));*/
             }
             catch (Exception e){
                 com.company.View.Console.Err.PrintErr(e.toString());
