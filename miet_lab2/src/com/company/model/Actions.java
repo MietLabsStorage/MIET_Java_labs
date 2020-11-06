@@ -1,14 +1,13 @@
 package com.company.model;
 
 import com.company.Controller;
+import com.company.View.Log;
 import com.company.model.clothes.LinenColor;
 import com.company.model.database.AccesRights;
 import com.company.model.database.UserInfo;
 import com.company.model.database.db;
-import com.company.View.Log;
 import com.company.View.Tag;
 
-import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -119,14 +118,14 @@ public class Actions {
 
         if(actNum == Tag.SaveChanges.getCode()){
             db.writeWMandLinens();
-            com.company.View.Log.alwaysWrite("Safe changes of " + currentNickname);
+            Log.alwaysWrite("Safe changes of " + currentNickname);
             return 0;
         }
 
         //sign out
         if(actNum == Tag.SignOut.getCode()){
             db.writeWMandLinens();
-            com.company.View.Log.alwaysWrite("Sign out" + currentNickname);
+            Log.alwaysWrite("Sign out" + currentNickname);
             return -1;
         }
 
@@ -160,7 +159,7 @@ public class Actions {
                         Autotest.run();
                     }
                     System.out.println("\n|___Hello_" + nickname + "___|");
-                    com.company.View.Log.alwaysWrite("Sign in: " + nickname);
+                    Log.alwaysWrite("Sign in: " + nickname);
                     com.company.View.Console.Out.ShowActionsMenu();
                 }
             }
@@ -210,7 +209,7 @@ public class Actions {
                 Autotest.run();
             }
             System.out.println("\n|___Hello_" + nickname + "___|");
-            com.company.View.Log.alwaysWrite("Sign in: " + nickname);
+            Log.alwaysWrite("Sign in: " + nickname);
             com.company.View.Console.Out.ShowActionsMenu();
             return 0;
         }
@@ -230,13 +229,13 @@ public class Actions {
             if(db.getUsers().get(nickname).getPassword().equals(password)){
                 db.delete(nickname);
             }
-            com.company.View.Log.alwaysWrite("Delete user: " + nickname);
+            Log.alwaysWrite("Delete user: " + nickname);
             return 0;
         }
 
         //end of program
         if(actNum == Tag.Exit.getCode()){
-            com.company.View.Log.alwaysWrite("Exit");
+            Log.alwaysWrite("Exit");
             return -1;
         }
 

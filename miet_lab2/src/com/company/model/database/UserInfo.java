@@ -1,6 +1,5 @@
 package com.company.model.database;
 
-import com.company.View.Log;
 import com.company.model.WashingMachine;
 import com.company.model.clothes.LinenColor;
 

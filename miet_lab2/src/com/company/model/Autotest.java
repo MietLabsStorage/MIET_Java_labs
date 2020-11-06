@@ -2,24 +2,41 @@ package com.company.model;
 
 import com.company.View.Log;
 import com.company.model.clothes.Color;
-import com.company.model.clothes.LinenColor;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Watchable;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
 
+/**
+ * autotest class
+ */
 public class Autotest {
+
+    public static ArrayList<Integer> ArrayList_ADD_TOTAL = new ArrayList<>();
+    public static ArrayList<Integer> ArrayList_ADD_TOTAL_MEDIAN = new ArrayList<>();
+    public static ArrayList<Integer> ArrayList_ADD_MEDIAN = new ArrayList<>();
+    public static ArrayList<Integer> LinkedList_ADD_TOTAL = new ArrayList<>();
+    public static ArrayList<Integer> LinkedList_ADD_TOTAL_MEDIAN = new ArrayList<>();
+    public static ArrayList<Integer> LinkedList_ADD_MEDIAN = new ArrayList<>();
+
+    public static ArrayList<Integer> ArrayList_DELETE_TOTAL = new ArrayList<>();
+    public static ArrayList<Integer> ArrayList_DELETE_TOTAL_MEDIAN = new ArrayList<>();
+    public static ArrayList<Integer> ArrayList_DELETE_MEDIAN = new ArrayList<>();
+    public static ArrayList<Integer> LinkedList_DELETE_TOTAL = new ArrayList<>();
+    public static ArrayList<Integer> LinkedList_DELETE_TOTAL_MEDIAN = new ArrayList<>();
+    public static ArrayList<Integer> LinkedList_DELETE_MEDIAN = new ArrayList<>();
 
     private static ArrayList<WashingMachine> wm1;
     private static LinkedList<WashingMachine> wm2;
-    private static final int[] sizes = {10, 100};
+    public static final int[] sizes = {10,100, 500, 1000, 5000, 10000};
 
+    /**
+     * initialisation
+     * @return
+     * @throws IOException
+     */
     private static boolean init() throws IOException {
         wm1 = new ArrayList<>();
         wm2 = new LinkedList<>();
@@ -47,11 +64,13 @@ public class Autotest {
         return true;
     }
 
+    /**
+     * run autotests
+     * @return
+     * @throws Exception
+     */
     public static boolean run() throws Exception {
         init();
-        wm1.add(new WashingMachine()); wm1.clear();
-        wm2.add(new WashingMachine()); wm1.clear();
-
         //ArrayList
         long currentTime1 = 0;
         long currentTime2 = 0;
@@ -69,17 +88,21 @@ public class Autotest {
                 currentTime1 = System.nanoTime();
                 wm1.add(randomWM());
                 currentTime2 = System.nanoTime();
-                com.company.View.Log.WriteOtherLog("ADD: ID, TIME = " + j + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"ArrayList"+sizes[i]+".txt");
+                Log.WriteOtherLog("ADD: ID, TIME = " + j + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"ArrayList"+sizes[i]+".txt");
                 totalTime += (currentTime2 - currentTime1)/1000;
             }
             allTime2 = System.nanoTime();
-            com.company.View.Log.WriteOtherLog("ADD TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"ArrayList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("ADD TOTAL_MEDIAN TIME: " + totalTime, Log.autotestName+"ArrayList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("ADD MEDIAN TIME: " + totalTime/sizes[i], Log.autotestName+"ArrayList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("----------------------------------\nArrayList::", Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL TIME: " + sizes[i] + ", " + (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, TOTAL_MEDIAN TIME: "+ sizes[i] + ", " + totalTime,Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, ADD MEDIAN TIME: " + sizes[i] + ", " + totalTime/sizes[i],Log.autotestName+"final.txt");
+            Log.WriteOtherLog("ADD TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"ArrayList"+sizes[i]+".txt");
+            Log.WriteOtherLog("ADD TOTAL_MEDIAN TIME: " + totalTime, Log.autotestName+"ArrayList"+sizes[i]+".txt");
+            Log.WriteOtherLog("ADD MEDIAN TIME: " + totalTime/sizes[i], Log.autotestName+"ArrayList"+sizes[i]+".txt");
+            Log.WriteOtherLog("----------------------------------\nArrayList::", Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL TIME: " + sizes[i] + ", " + (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL_MEDIAN TIME: "+ sizes[i] + ", " + totalTime,Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, ADD MEDIAN TIME: " + sizes[i] + ", " + totalTime/sizes[i],Log.autotestName+"final.txt");
+
+            ArrayList_ADD_TOTAL.add((int)((allTime2-allTime1)/1000));
+            ArrayList_ADD_TOTAL_MEDIAN.add((int)(totalTime));
+            ArrayList_ADD_MEDIAN.add((int)(totalTime/(sizes[i]*0.1)));
 
             totalTime = 0;
             allTime1 = System.nanoTime();
@@ -88,17 +111,21 @@ public class Autotest {
                 currentTime1 = System.nanoTime();
                 wm1.remove(k);
                 currentTime2 = System.nanoTime();
-                com.company.View.Log.WriteOtherLog("DELETE: ID, TIME = " + k + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"ArrayList"+sizes[i]+".txt");
+                Log.WriteOtherLog("DELETE: ID, TIME = " + k + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"ArrayList"+sizes[i]+".txt");
                 totalTime += (currentTime2 - currentTime1)/1000;
             }
             allTime2 = System.nanoTime();
-            com.company.View.Log.WriteOtherLog("DELETE TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"ArrayList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("DELETE TOTAL_MEDIAN TIME: " + totalTime, Log.autotestName+"ArrayList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("DELETE MEDIAN TIME: " + totalTime/(sizes[i]*0.1), Log.autotestName+"ArrayList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("----------------------------------\nArrayList::", Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL TIME: " + sizes[i] + ", "+ (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL_MEDIAN TIME: "+ sizes[i] + ", " + totalTime,Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, DELETE MEDIAN TIME: " + sizes[i] + ", "+ totalTime/(sizes[i]*0.1),Log.autotestName+"final.txt");
+            Log.WriteOtherLog("DELETE TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"ArrayList"+sizes[i]+".txt");
+            Log.WriteOtherLog("DELETE TOTAL_MEDIAN TIME: " + totalTime, Log.autotestName+"ArrayList"+sizes[i]+".txt");
+            Log.WriteOtherLog("DELETE MEDIAN TIME: " + totalTime/(sizes[i]*0.1), Log.autotestName+"ArrayList"+sizes[i]+".txt");
+            Log.WriteOtherLog("----------------------------------\nArrayList::", Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL TIME: " + sizes[i] + ", "+ (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL_MEDIAN TIME: "+ sizes[i] + ", " + totalTime,Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, DELETE MEDIAN TIME: " + sizes[i] + ", "+ totalTime/(sizes[i]*0.1),Log.autotestName+"final.txt");
+
+            ArrayList_DELETE_TOTAL.add((int)((allTime2-allTime1)/1000));
+            ArrayList_DELETE_TOTAL_MEDIAN.add((int)(totalTime));
+            ArrayList_DELETE_MEDIAN.add((int)(totalTime/(sizes[i]*0.1)));
             //com.company.View.Log.tryWrite("-------------------------------------");
         }
 
@@ -118,17 +145,21 @@ public class Autotest {
                 currentTime1 = System.nanoTime();
                 wm2.add(randomWM());
                 currentTime2 = System.nanoTime();
-                com.company.View.Log.WriteOtherLog("ADD: ID, TIME = " + j + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"LinkedList"+sizes[i]+".txt");
+                Log.WriteOtherLog("ADD: ID, TIME = " + j + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"LinkedList"+sizes[i]+".txt");
                 totalTime += (currentTime2 - currentTime1)/1000;
             }
             allTime2 = System.nanoTime();
-            com.company.View.Log.WriteOtherLog("ADD TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"LinkedList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("ADD MEDIAN TIME: " + totalTime, Log.autotestName+"LinkedList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("ADD MEDIAN TIME: " + totalTime/sizes[i], Log.autotestName+"LinkedList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("----------------------------------\nLinkedList::", Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL TIME: "+ sizes[i] + ", " + (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL_MEDIAN TIME: "+ sizes[i] + ", " + totalTime,Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, ADD MEDIAN TIME: " + sizes[i] + ", "+ totalTime/sizes[i]*0.1,Log.autotestName+"final.txt");
+            Log.WriteOtherLog("ADD TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"LinkedList"+sizes[i]+".txt");
+            Log.WriteOtherLog("ADD MEDIAN TIME: " + totalTime, Log.autotestName+"LinkedList"+sizes[i]+".txt");
+            Log.WriteOtherLog("ADD MEDIAN TIME: " + totalTime/sizes[i], Log.autotestName+"LinkedList"+sizes[i]+".txt");
+            Log.WriteOtherLog("----------------------------------\nLinkedList::", Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL TIME: "+ sizes[i] + ", " + (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, ADD TOTAL_MEDIAN TIME: "+ sizes[i] + ", " + totalTime,Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, ADD MEDIAN TIME: " + sizes[i] + ", "+ totalTime/sizes[i]*0.1,Log.autotestName+"final.txt");
+
+            LinkedList_ADD_TOTAL.add((int)((allTime2-allTime1)/1000));
+            LinkedList_ADD_TOTAL_MEDIAN.add((int)(totalTime));
+            LinkedList_ADD_MEDIAN.add((int)(totalTime/(sizes[i]*0.1)));
 
             totalTime = 0;
             allTime1 = System.nanoTime();
@@ -137,20 +168,27 @@ public class Autotest {
                 currentTime1 = System.nanoTime();
                 wm2.remove(k);
                 currentTime2 = System.nanoTime();
-                com.company.View.Log.WriteOtherLog("DELETE: ID, TIME = " + k + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"LinkedList"+sizes[i]+".txt");
+                Log.WriteOtherLog("DELETE: ID, TIME = " + k + ", "+ (currentTime2 - currentTime1)/1000,Log.autotestName+"LinkedList"+sizes[i]+".txt");
                 totalTime += (currentTime2 - currentTime1)/1000;
             }
             allTime2 = System.nanoTime();
-            com.company.View.Log.WriteOtherLog("DELETE TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"LinkedList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("DELETE TOTAL_MEDIAN TIME: " + totalTime, Log.autotestName+"LinkedList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("DELETE MEDIAN TIME: " + totalTime/(sizes[i]*0.1), Log.autotestName+"LinkedList"+sizes[i]+".txt");
-            com.company.View.Log.WriteOtherLog("----------------------------------\nLinkedList::", Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL TIME: "+ sizes[i] + ", " + (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL_MEDIAN TIME: " + sizes[i] + ", "+ totalTime,Log.autotestName+"final.txt");
-            com.company.View.Log.WriteOtherLog("NUM OF ELEMENTS, DELETE MEDIAN TIME: " + sizes[i] + ", "+ totalTime/(sizes[i]*0.1),Log.autotestName+"final.txt");
+            Log.WriteOtherLog("DELETE TOTAL TIME: " + (allTime2-allTime1)/1000, Log.autotestName+"LinkedList"+sizes[i]+".txt");
+            Log.WriteOtherLog("DELETE TOTAL_MEDIAN TIME: " + totalTime, Log.autotestName+"LinkedList"+sizes[i]+".txt");
+            Log.WriteOtherLog("DELETE MEDIAN TIME: " + totalTime/(sizes[i]*0.1), Log.autotestName+"LinkedList"+sizes[i]+".txt");
+            Log.WriteOtherLog("----------------------------------\nLinkedList::", Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL TIME: "+ sizes[i] + ", " + (allTime2-allTime1)/1000, Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, DELETE TOTAL_MEDIAN TIME: " + sizes[i] + ", "+ totalTime,Log.autotestName+"final.txt");
+            Log.WriteOtherLog("NUM OF ELEMENTS, DELETE MEDIAN TIME: " + sizes[i] + ", "+ totalTime/(sizes[i]*0.1),Log.autotestName+"final.txt");
 
+            LinkedList_DELETE_TOTAL.add((int)((allTime2-allTime1)/1000));
+            LinkedList_DELETE_TOTAL_MEDIAN.add((int)(totalTime));
+            LinkedList_DELETE_MEDIAN.add((int)(totalTime/(sizes[i]*0.1)));
             //com.company.View.Log.tryWrite("-------------------------------------");
         }
+
+        BonusTest();
+
+        Log.tryWrite("autotests done");
 
         return true;
     }
@@ -162,5 +200,30 @@ public class Autotest {
         wm.setColor(Color.tryConvert((new Random()).nextInt(3)+1));
         wm.setTemperature((new Random()).nextInt(99)  + 1);
         return wm;
+    }
+
+    private static void BonusTest() throws Exception {
+
+        try(FileWriter writer = new FileWriter("BonusAutotestLog.txt", false)) {
+        }
+        catch (Exception e){        }
+        long currentTime1, currentTime2;
+        int capacity = 1;
+        for(int i = 0; i < 10; i++){
+            long time = 0;
+            ArrayList<WashingMachine> wm = new ArrayList<>();
+            Log.WriteOtherLog("Capasity: "+capacity+"::", "BonusAutotestLog.txt");
+            for(int j = 0; j < capacity; j++){
+                WashingMachine temp = new WashingMachine();
+                currentTime1 = System.nanoTime();
+                wm.add(temp);
+                currentTime2 = System.nanoTime();
+                Log.WriteOtherLog("Index, time: "+j+", "+(currentTime2-currentTime1)/100, "BonusAutotestLog.txt");
+                time += (currentTime2-currentTime1)/100;
+            }
+            Log.WriteOtherLog("MEDIUM:"+time/capacity, "BonusAutotestLog.txt");
+            Log.WriteOtherLog("-----------------------", "BonusAutotestLog.txt");
+            capacity = (capacity*3)/2 + 1;
+        }
     }
 }

@@ -6,7 +6,6 @@ import com.company.model.WashingMachine;
 import com.company.model.clothes.Color;
 import com.company.model.clothes.LinenColor;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;

@@ -1,5 +1,7 @@
 package com.company.View.Console;
 
+import com.company.View.Log;
+
 /**
  * print out message in console
  * and try wtite in log
@@ -16,7 +18,7 @@ public class Err {
      * @param err
      */
     public static void PrintErr(String err){
-        com.company.View.Log.tryWrite("Err: " + err);
+        Log.tryWrite("Err: " + err);
         System.err.println(err);
         count++;
     }
