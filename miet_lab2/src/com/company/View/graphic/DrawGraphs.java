@@ -82,7 +82,7 @@ class anyGraphics{
         g2.fill(lineOY2);
         Font FTitleY = new Font("Arial", Font.PLAIN, 15);
         g2.setFont(FTitleX);
-        g2.drawString("Time, mycrosec", oY.x1+15, oY.y1);
+        g2.drawString("Time, nsec", oY.x1+15, oY.y1);
 
         //legend
         g2.setColor(Color.BLUE);
@@ -109,15 +109,15 @@ class anyGraphics{
         //oX nums
         for(int i = 0; i < Autotest.sizes.length; i++){
             g2.setColor(Color.BLACK);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
                     550-5,
-                    50+Autotest.sizes[i]/10,
+                    50+Autotest.sizes[i]/20,
                     550+5);
             g2.draw(tempLine);
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/10, 550+10);
+            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/20, 550+10);
         }
         //oY nums
         for(int i = 0; i < 5; i++){
@@ -130,25 +130,25 @@ class anyGraphics{
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(i*5000*100+"", 50-30, 550-100*i);
+            g2.drawString(i*Autotest.ArrayList_ADD_TOTAL.get(Autotest.ArrayList_ADD_TOTAL.size()-3)*5+"", 50-30, 550-100*i);
         }
         //ArrayList
         for(int i = 0; i < Autotest.ArrayList_ADD_TOTAL.size()-1; i++){
             g2.setColor(Color.BLUE);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.ArrayList_ADD_TOTAL.get(i)/5000,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.ArrayList_ADD_TOTAL.get(i+1)/5000);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.ArrayList_ADD_TOTAL.get(i)/Autotest.ArrayList_ADD_TOTAL.get(Autotest.ArrayList_ADD_TOTAL.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.ArrayList_ADD_TOTAL.get(i+1)/Autotest.ArrayList_ADD_TOTAL.get(Autotest.ArrayList_ADD_TOTAL.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
         //LinkedList
         for(int i = 0; i < Autotest.LinkedList_ADD_TOTAL.size()-1; i++){
             g2.setColor(Color.RED);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.LinkedList_ADD_TOTAL.get(i)/5000,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.LinkedList_ADD_TOTAL.get(i+1)/5000);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.LinkedList_ADD_TOTAL.get(i)/Autotest.ArrayList_ADD_TOTAL.get(Autotest.ArrayList_ADD_TOTAL.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.LinkedList_ADD_TOTAL.get(i+1)/Autotest.ArrayList_ADD_TOTAL.get(Autotest.ArrayList_ADD_TOTAL.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
@@ -158,15 +158,15 @@ class anyGraphics{
         //oX nums
         for(int i = 0; i < Autotest.sizes.length; i++){
             g2.setColor(Color.BLACK);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
                     550-5,
-                    50+Autotest.sizes[i]/10,
+                    50+Autotest.sizes[i]/20,
                     550+5);
             g2.draw(tempLine);
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/10, 550+10);
+            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/20, 550+10);
         }
 
         //oY nums
@@ -180,25 +180,25 @@ class anyGraphics{
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(i*50*100+"", 50-30, 550-100*i);
+            g2.drawString(i*Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(Autotest.ArrayList_ADD_TOTAL_MEDIAN.size()-3)*50+"", 50-30, 550-100*i);
         }
         //ArrayList
         for(int i = 0; i < Autotest.ArrayList_ADD_TOTAL.size()-1; i++){
             g2.setColor(Color.BLUE);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(i)/50,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(i+1)/50);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(i)*50/Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(Autotest.ArrayList_ADD_TOTAL_MEDIAN.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(i+1)*50/Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(Autotest.ArrayList_ADD_TOTAL_MEDIAN.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
         //LinkedList
         for(int i = 0; i < Autotest.LinkedList_ADD_TOTAL.size()-1; i++){
             g2.setColor(Color.RED);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.LinkedList_ADD_TOTAL_MEDIAN.get(i)/50,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.LinkedList_ADD_TOTAL_MEDIAN.get(i+1)/50);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.LinkedList_ADD_TOTAL_MEDIAN.get(i)/Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(Autotest.ArrayList_ADD_TOTAL_MEDIAN.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.LinkedList_ADD_TOTAL_MEDIAN.get(i+1)/Autotest.ArrayList_ADD_TOTAL_MEDIAN.get(Autotest.ArrayList_ADD_TOTAL_MEDIAN.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
@@ -208,15 +208,15 @@ class anyGraphics{
         //oX nums
         for(int i = 0; i < Autotest.sizes.length; i++){
             g2.setColor(Color.BLACK);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
                     550-5,
-                    50+Autotest.sizes[i]/10,
+                    50+Autotest.sizes[i]/20,
                     550+5);
             g2.draw(tempLine);
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/10, 550+10);
+            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/20, 550+10);
         }
 
         //oY nums
@@ -230,25 +230,25 @@ class anyGraphics{
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(i*100+"", 50-30, 550-100*i);
+            g2.drawString(i*Autotest.ArrayList_ADD_MEDIAN.get(2)*5+"", 50-30, 550-100*i);
         }
         //ArrayList
         for(int i = 0; i < Autotest.ArrayList_ADD_TOTAL.size()-1; i++){
             g2.setColor(Color.BLUE);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.ArrayList_ADD_MEDIAN.get(i),
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.ArrayList_ADD_MEDIAN.get(i+1));
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.ArrayList_ADD_MEDIAN.get(i)*50/Autotest.ArrayList_ADD_MEDIAN.get(2),
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.ArrayList_ADD_MEDIAN.get(i+1)*50/Autotest.ArrayList_ADD_MEDIAN.get(2));
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
         //LinkedList
         for(int i = 0; i < Autotest.LinkedList_ADD_TOTAL.size()-1; i++){
             g2.setColor(Color.RED);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.LinkedList_ADD_MEDIAN.get(i),
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.LinkedList_ADD_MEDIAN.get(i+1));
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.LinkedList_ADD_MEDIAN.get(i)*50/Autotest.ArrayList_ADD_MEDIAN.get(2),
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.LinkedList_ADD_MEDIAN.get(i+1)*50/Autotest.ArrayList_ADD_MEDIAN.get(2));
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
@@ -258,15 +258,15 @@ class anyGraphics{
         //oX nums
         for(int i = 0; i < Autotest.sizes.length; i++){
             g2.setColor(Color.BLACK);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
                     550-5,
-                    50+Autotest.sizes[i]/10,
+                    50+Autotest.sizes[i]/20,
                     550+5);
             g2.draw(tempLine);
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/10, 550+10);
+            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/20, 550+10);
         }
         //oY nums
         for(int i = 0; i < 5; i++){
@@ -279,25 +279,25 @@ class anyGraphics{
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(i*500*100+"", 50-30, 550-100*i);
+            g2.drawString(i*Autotest.ArrayList_DELETE_TOTAL.get(Autotest.ArrayList_DELETE_TOTAL.size()-3)*5+"", 50-30, 550-100*i);
         }
         //ArrayList
         for(int i = 0; i < Autotest.ArrayList_DELETE_TOTAL.size()-1; i++){
             g2.setColor(Color.BLUE);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.ArrayList_DELETE_TOTAL.get(i)/500,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.ArrayList_DELETE_TOTAL.get(i+1)/500);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.ArrayList_DELETE_TOTAL.get(i)/Autotest.ArrayList_DELETE_TOTAL.get(Autotest.ArrayList_DELETE_TOTAL.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.ArrayList_DELETE_TOTAL.get(i+1)/Autotest.ArrayList_DELETE_TOTAL.get(Autotest.ArrayList_DELETE_TOTAL.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
         //LinkedList
         for(int i = 0; i < Autotest.LinkedList_DELETE_TOTAL.size()-1; i++){
             g2.setColor(Color.RED);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.LinkedList_DELETE_TOTAL.get(i)/500,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.LinkedList_DELETE_TOTAL.get(i+1)/500);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.LinkedList_DELETE_TOTAL.get(i)/Autotest.ArrayList_DELETE_TOTAL.get(Autotest.ArrayList_DELETE_TOTAL.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.LinkedList_DELETE_TOTAL.get(i+1)/Autotest.ArrayList_DELETE_TOTAL.get(Autotest.ArrayList_DELETE_TOTAL.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
@@ -307,15 +307,15 @@ class anyGraphics{
         //oX nums
         for(int i = 0; i < Autotest.sizes.length; i++){
             g2.setColor(Color.BLACK);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
                     550-5,
-                    50+Autotest.sizes[i]/10,
+                    50+Autotest.sizes[i]/20,
                     550+5);
             g2.draw(tempLine);
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/10, 550+10);
+            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/20, 550+10);
         }
 
         //oY nums
@@ -329,25 +329,25 @@ class anyGraphics{
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(i*20*100+"", 50-30, 550-100*i);
+            g2.drawString(i*Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(Autotest.ArrayList_DELETE_TOTAL_MEDIAN.size()-3)*5+"", 50-30, 550-100*i);
         }
         //ArrayList
         for(int i = 0; i < Autotest.ArrayList_DELETE_TOTAL.size()-1; i++){
             g2.setColor(Color.BLUE);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(i)/20,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(i+1)/20);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(i)/Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(Autotest.ArrayList_DELETE_TOTAL_MEDIAN.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(i+1)/Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(Autotest.ArrayList_DELETE_TOTAL_MEDIAN.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
         //LinkedList
         for(int i = 0; i < Autotest.LinkedList_DELETE_TOTAL.size()-1; i++){
             g2.setColor(Color.RED);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.LinkedList_DELETE_TOTAL_MEDIAN.get(i)/20,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.LinkedList_DELETE_TOTAL_MEDIAN.get(i+1)/20);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.LinkedList_DELETE_TOTAL_MEDIAN.get(i)/Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(Autotest.ArrayList_DELETE_TOTAL_MEDIAN.size()-3)*50,
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.LinkedList_DELETE_TOTAL_MEDIAN.get(i+1)/Autotest.ArrayList_DELETE_TOTAL_MEDIAN.get(Autotest.ArrayList_DELETE_TOTAL_MEDIAN.size()-3)*50);
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
@@ -357,15 +357,15 @@ class anyGraphics{
         //oX nums
         for(int i = 0; i < Autotest.sizes.length; i++){
             g2.setColor(Color.BLACK);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
                     550-5,
-                    50+Autotest.sizes[i]/10,
+                    50+Autotest.sizes[i]/20,
                     550+5);
             g2.draw(tempLine);
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/10, 550+10);
+            g2.drawString(Autotest.sizes[i]+"", 50+Autotest.sizes[i]/20, 550+10);
         }
 
         //oY nums
@@ -379,25 +379,25 @@ class anyGraphics{
             g2.fill(tempLine);
             Font FTitle = new Font("Arial", Font.PLAIN, 10);
             g2.setFont(FTitle);
-            g2.drawString(i*100/10+"", 50-30, 550-100*i);
+            g2.drawString(i*5/Autotest.ArrayList_DELETE_MEDIAN.get(Autotest.ArrayList_DELETE_MEDIAN.size()-3)+"", 50-30, 550-100*i);
         }
         //ArrayList
         for(int i = 0; i < Autotest.ArrayList_DELETE_TOTAL.size()-1; i++){
             g2.setColor(Color.BLUE);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.ArrayList_DELETE_MEDIAN.get(i)*10,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.ArrayList_DELETE_MEDIAN.get(i+1)*10);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.ArrayList_DELETE_MEDIAN.get(i)*50/Autotest.ArrayList_DELETE_MEDIAN.get(Autotest.ArrayList_DELETE_MEDIAN.size()-3),
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.ArrayList_DELETE_MEDIAN.get(i+1)*50/Autotest.ArrayList_DELETE_MEDIAN.get(Autotest.ArrayList_DELETE_MEDIAN.size()-3));
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
         //LinkedList
         for(int i = 0; i < Autotest.LinkedList_DELETE_TOTAL.size()-1; i++){
             g2.setColor(Color.RED);
-            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/10,
-                    550-Autotest.LinkedList_DELETE_MEDIAN.get(i)*10,
-                    50+Autotest.sizes[i+1]/10,
-                    550-Autotest.LinkedList_DELETE_MEDIAN.get(i+1)*10);
+            Line2D tempLine = new Line2D.Double(50+ Autotest.sizes[i]/20,
+                    550-Autotest.LinkedList_DELETE_MEDIAN.get(i)*50/Autotest.ArrayList_DELETE_MEDIAN.get(Autotest.ArrayList_DELETE_MEDIAN.size()-3),
+                    50+Autotest.sizes[i+1]/20,
+                    550-Autotest.LinkedList_DELETE_MEDIAN.get(i+1)*50/Autotest.ArrayList_DELETE_MEDIAN.get(Autotest.ArrayList_DELETE_MEDIAN.size()-3));
             g2.draw(tempLine);
             g2.fill(tempLine);
         }
