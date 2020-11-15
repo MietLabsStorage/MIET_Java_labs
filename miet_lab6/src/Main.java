@@ -1,27 +1,21 @@
-
 import javax.swing.*;
-
-import static java.lang.Thread.sleep;
 
 /**
  * @author Max Myasikov PIN-34
- * @version lab2
+ * @version lab6
  */
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         JFrame.setDefaultLookAndFeelDecorated(true);
-        /*javax.swing.SwingUtilities.invokeLater(new Runnable() {
+        Grapher.init();
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                Grapher.initAndRun();
+                Grapher.run();
             }
-        });*/
-        Grapher.init();
-        while(true){
-            Grapher.run();
-        }
+        });
 
     }
 }

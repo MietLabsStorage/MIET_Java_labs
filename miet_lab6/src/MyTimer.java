@@ -2,9 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.time.LocalDateTime;
 
-public class Timer {
+public class MyTimer {
     public static RunStatus getStatus() {
         return status;
     }
@@ -18,46 +17,57 @@ public class Timer {
     private static int interval;
     private static String pauseTime;
 
+    /**
+     * show time depending on run status (run, pause, reset)
+     * @return current rest time as str
+     */
     public static String showTime() {
         switch (status) {
-            case Run:
+            case Run -> {
                 if (beginTime == 0) beginTime = System.currentTimeMillis();
                 pauseTime = (interval - (System.currentTimeMillis() - beginTime) / 1000) + "";
-                if(pauseTime.equals("0")){
+                if (pauseTime.equals("0")) {
                     status = RunStatus.Reset;
                     alarm();
                 }
                 return pauseTime;
-
-            case Pause:
+            }
+            case Pause -> {
                 interval = Integer.parseInt(pauseTime);
                 beginTime = 0;
                 return pauseTime;
-
-            case Reset:
+            }
+            case Reset -> {
                 beginTime = 0;
-                interval = 60;
+                interval = 10;
                 status = RunStatus.Wait;
                 return interval + "";
+            }
         }
         return "click reset";
     }
 
+    /**
+     * set interval from textarea or set as 60 if run status is wait
+     */
     public static void getTime(){
         if(status.equals(RunStatus.Wait))
         try {
             interval = Integer.parseInt(Grapher.getTextClock().getText());
         }
         catch (Exception e){
-            interval = 60;
+            interval = 10;
         }
     }
 
+    /**
+     * create alarm-frame when time is 0
+     */
     private static void alarm(){
         Grapher.getMainFrame().setVisible(false);
         JFrame alarmFrame = new JFrame("Alarm");
         alarmFrame.setSize(200,200);
-        alarmFrame.setLocation(200,200);
+        alarmFrame.setLocation(Grapher.getMainFrame().getLocation().x, Grapher.getMainFrame().getLocation().y);
         JButton alarmButton = new JButton("OK");
         JPanel alarmPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         alarmPanel.setBackground(Color.red);
@@ -66,6 +76,9 @@ public class Timer {
             public void actionPerformed(ActionEvent e) {
                 alarmFrame.setVisible(false);
                 Grapher.getMainFrame().setVisible(true);
+                Grapher.getButtonRun().setText(RunButton.Start.name());
+                Grapher.getMainFrame().setLocation(alarmFrame.getLocation().x,alarmFrame.getLocation().y);
+                Grapher.getTextClock().setEditable(true);
             }
         });
         alarmPanel.add(alarmButton);

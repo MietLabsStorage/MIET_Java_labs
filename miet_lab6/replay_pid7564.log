@@ -3,7 +3,7 @@ JvmtiExport can_hotswap_or_post_breakpoint 0
 JvmtiExport can_post_on_exceptions 0
 # 300 ciObject found
 ciInstanceKlass java/util/Iterator 1 1 53 100 1 8 1 10 12 1 1 10 7 12 1 1 1 11 7 12 1 1 1 11 12 1 1 11 7 12 1 1 1 100 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-instanceKlass Timer$1
+instanceKlass MyTimer$1
 instanceKlass java/awt/LightweightDispatcher$2
 instanceKlass java/awt/Adjustable
 instanceKlass java/security/DomainCombiner
@@ -21,7 +21,7 @@ instanceKlass java/util/Vector$1
 instanceKlass javax/swing/JComponent$IntVector
 instanceKlass javax/swing/JComponent$KeyboardState
 instanceKlass sun/awt/DebugSettings
-instanceKlass javax/swing/Timer$1
+instanceKlass javax/swing/MyTimer$1
 instanceKlass javax/swing/text/DefaultHighlighter$HighlightInfo
 instanceKlass javax/swing/Autoscroller
 instanceKlass java/time/Duration
@@ -415,9 +415,9 @@ instanceKlass java/awt/event/KeyAdapter
 instanceKlass java/awt/event/MouseMotionAdapter
 instanceKlass javax/swing/ToolTipManager$stillInsideTimerAction
 instanceKlass javax/swing/ToolTipManager$outsideTimerAction
-instanceKlass javax/swing/Timer$DoPostEvent
+instanceKlass javax/swing/MyTimer$DoPostEvent
 instanceKlass javax/swing/ToolTipManager$insideTimerAction
-instanceKlass javax/swing/Timer
+instanceKlass javax/swing/MyTimer
 instanceKlass java/awt/event/MouseAdapter
 instanceKlass javax/swing/plaf/metal/MetalIconFactory$MenuItemArrowIcon
 instanceKlass javax/swing/plaf/basic/BasicMenuItemUI$Handler
@@ -806,8 +806,8 @@ instanceKlass sun/awt/AWTAccessor$CursorAccessor
 instanceKlass java/awt/geom/Point2D
 instanceKlass java/awt/Cursor
 instanceKlass java/awt/ComponentOrientation
-instanceKlass Timer$2
-instanceKlass Timer
+instanceKlass MyTimer$2
+instanceKlass MyTimer
 instanceKlass java/awt/ItemSelectable
 instanceKlass javax/swing/Scrollable
 instanceKlass java/awt/event/ActionListener

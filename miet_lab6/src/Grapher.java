@@ -3,8 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static java.lang.Thread.sleep;
-
 enum RunButton{
     Start,
     Pause,
@@ -13,32 +11,38 @@ enum RunButton{
 
 public class Grapher {
 
+
     public static JFrame getMainFrame() {
         return mainFrame;
+    }
+    public static JButton getButtonRun() {
+        return buttonRun;
+    }
+    public static TimeArea getTextClock() {
+        return textClock;
     }
 
     private static JFrame mainFrame;
     private static JButton buttonRun;
     private static JButton buttonReset;
+    private static TimeArea textClock;
 
-    public static JTextArea getTextClock() {
-        return textClock;
-    }
-
-    private static JTextArea textClock;
-    private static JTextArea[] textTemp;
-
+    /**
+     * init grapher
+     */
     public static void init(){
-        Timer.setStatus(RunStatus.Reset);
-        Timer.showTime();
+        MyTimer.setStatus(RunStatus.Reset);
+        MyTimer.showTime();
 
         mainFrame = new JFrame("Timer");
         buttonRun = new JButton(RunButton.Start.name());
         buttonReset = new JButton("Reset");
-        textClock = new JTextArea(Timer.showTime(),1,3);
-        textTemp = new JTextArea[2];
+        textClock = new TimeArea(MyTimer.showTime(),1,3);
+        JTextArea[] textTemp = new JTextArea[2];
 
-        for(int i = 0; i < textTemp.length ;i++){
+        textClock.start();
+
+        for(int i = 0; i < textTemp.length ; i++){
             textTemp[i] = new JTextArea("==========",1,3);
             textTemp[i].setFont(new Font("Courier", Font.PLAIN, 30));
             textTemp[i].setEditable(false);
@@ -65,20 +69,22 @@ public class Grapher {
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    /**
+     * run duttons listener
+     */
     public static void run(){
-        if(!Timer.getStatus().equals(RunStatus.Wait)) textClock.setText(Timer.showTime());
-        else Timer.getTime();
+
         buttonRun.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(buttonRun.getText().equals(RunButton.Start.name()) || buttonRun.getText().equals(RunButton.Continue.name())){
                     buttonRun.setText(RunButton.Pause.name());
-                    Timer.setStatus(RunStatus.Run);
+                    MyTimer.setStatus(RunStatus.Run);
                     textClock.setEditable(false);
                 }
                 else if(buttonRun.getText().equals(RunButton.Pause.name())){
                     buttonRun.setText(RunButton.Continue.name());
-                    Timer.setStatus(RunStatus.Pause);
+                    MyTimer.setStatus(RunStatus.Pause);
                 }
             }
         });
@@ -87,7 +93,7 @@ public class Grapher {
             @Override
             public void actionPerformed(ActionEvent e) {
                 buttonRun.setText(RunButton.Start.name());
-                Timer.setStatus(RunStatus.Reset);
+                MyTimer.setStatus(RunStatus.Reset);
                 textClock.setEditable(true);
             }
         });
