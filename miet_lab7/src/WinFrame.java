@@ -9,6 +9,7 @@ public class WinFrame extends JFrame {
         msg = new JTextField(winner.getButton().getText() + " занял " + winPlace + "место");
         winPlace++;
         setContentPane(msg);
+
         pack();
         setVisible(true);
     }

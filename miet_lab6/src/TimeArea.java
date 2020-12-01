@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -5,12 +6,13 @@ import javax.swing.*;
 /**
  * unlike JTextArea updates the Text value according to MyTimer
  */
-public class TimeArea extends JTextArea implements ActionListener {
+public class TimeArea extends JTextField implements ActionListener {
 
     private final Timer timer;
 
-    public TimeArea(String text, int row, int column){
-        super(text,row,column);
+    public TimeArea(String text){
+        super(text,5);
+        setBackground(Color.white);
         timer = new Timer(100, this);
     }
 

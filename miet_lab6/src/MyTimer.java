@@ -69,8 +69,9 @@ public class MyTimer {
         alarmFrame.setSize(200,200);
         alarmFrame.setLocation(Grapher.getMainFrame().getLocation().x, Grapher.getMainFrame().getLocation().y);
         JButton alarmButton = new JButton("OK");
-        JPanel alarmPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        JPanel alarmPanel = new JPanel();
         alarmPanel.setBackground(Color.red);
+        alarmPanel.setLayout(null);
         alarmButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -81,9 +82,11 @@ public class MyTimer {
                 Grapher.getTextClock().setEditable(true);
             }
         });
+        alarmButton.setBounds(65,70,70,30);
         alarmPanel.add(alarmButton);
         alarmFrame.add(alarmPanel);
         alarmFrame.setVisible(true);
+        alarmFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }

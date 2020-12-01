@@ -37,7 +37,8 @@ public class Grapher {
         mainFrame = new JFrame("Timer");
         buttonRun = new JButton(RunButton.Start.name());
         buttonReset = new JButton("Reset");
-        textClock = new TimeArea(MyTimer.showTime(),1,3);
+        textClock = new TimeArea(MyTimer.showTime());
+        textClock.setBorder(null);
         JTextArea[] textTemp = new JTextArea[2];
 
         textClock.start();
@@ -60,10 +61,12 @@ public class Grapher {
         buttonsPanel.add(buttonReset);
         componentsPanel.add(buttonsPanel);
         mainPanel.add(componentsPanel);
-
+        mainPanel.setBackground(Color.BLACK);
         mainFrame.add(mainPanel);
 
         //mainFrame.setSize(200,300);
+        mainFrame.setLocation(600,200);
+        mainFrame.setResizable(false);
         mainFrame.pack();
         mainFrame.setVisible(true);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

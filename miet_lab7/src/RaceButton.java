@@ -34,8 +34,12 @@ public class RaceButton extends Thread{
     public void run() {
         try {
             for (;;) {
+                /*if(RaceFrame.isWait){
+                    wait();
+                }*/
                 step();
                 sleep(100);
+
             }
         } catch (InterruptedException e) {
             return;

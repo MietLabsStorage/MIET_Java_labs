@@ -1,14 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.geom.Line2D;
 
 public class RaceFrame {
+    public static boolean isWait = true;
+
     public static JFrame getRaceFrame() {
         return raceFrame;
     }
 
     private static JFrame raceFrame;
     private static RaceButton[] races;
+    private static JButton RunButton;
     private static JPanel panel;
 
     private static int raceWidth = 100;
@@ -30,13 +35,27 @@ public class RaceFrame {
             panel.add(races[i].getButton());
             races[i].start();
         }
+        RunButton = new JButton("Run");
+        RunButton.setBounds(870,50,100,50);
+        RunButton.setVisible(true);
         panel.add(new Finish());
+        panel.add(RunButton);
         raceFrame.setContentPane(panel);
         raceFrame.setVisible(true);
-        //raceFrame.setResizable(false);
+        raceFrame.setResizable(false);
         raceFrame.setLocation(200,200);
         raceFrame.setDefaultCloseOperation(raceFrame.EXIT_ON_CLOSE);
     }
+
+    /*public static void run(){
+        RunButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isWait = false;
+                notifyAll();
+            }
+        });
+    }*/
 }
 
 class Finish extends JComponent{
