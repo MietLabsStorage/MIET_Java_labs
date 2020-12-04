@@ -46,29 +46,26 @@ public class RaceButton extends Thread implements BackRedrawer{
      */
     public void invertRun(){ isRun = !isRun;}
 
+    public static void setHardReset() {hardReset = true;}
+    public static void dropHardReset() {hardReset = false;}
 
+    public static boolean hardReset = false;
     private static boolean wait = true;
     private static double speedCoef = 0.1;
     private int finish;
     private BackRedrawer redrawer;
 
     private int speed;
-    private boolean isRun;
+    public boolean isRun;
     private JButton button;
 
-    /**
-     * constructor
-     * @param msg
-     * @param x
-     * @param y
-     * @param width
-     * @param height
-     * @param color color of button
-     */
-    public RaceButton(String msg, int x, int y, int width, int height, Color color){
-        button = new JButton(msg);
+
+    public RaceButton(/*String msg, int x, int y, int width, int height, Color color*/JButton button){
+        super();
+        /*button = new JButton(msg);
         button.setBounds(x,y,width,height);
-        button.setBackground(color);
+        button.setBackground(color);*/
+        this.button = button;
         speed = (new Random()).nextInt(3)+3;
         isRun = true;
     }
@@ -84,16 +81,18 @@ public class RaceButton extends Thread implements BackRedrawer{
      */
     public void run() {
         try {
-            while(button.getBounds().x + button.getWidth() < finish){
+            while(button.getBounds().x + button.getWidth() < finish && !hardReset){
                 if(!wait && isRun){
                     step();
                 }
                 sleep(50);
             }
-            button.setVisible(false);
-            new WinFrame(this);
-            redrawBack(button.getBackground());
-            wait = true;
+            if(!hardReset) {
+                button.setVisible(false);
+                new WinFrame(this);
+                redrawBack(button.getBackground());
+
+            }wait = true;
         } catch (InterruptedException e) {
             return;
         }

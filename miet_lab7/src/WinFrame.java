@@ -5,7 +5,7 @@ import java.awt.*;
  * frame of winner
  */
 public class WinFrame extends JFrame {
-    private static int winPlace = 1;
+    public static int winPlace = 1;
 
     public WinFrame(RaceButton winner){
         super(winPlace+"");

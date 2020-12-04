@@ -13,14 +13,7 @@ public class Main {
 
         JFrame.setDefaultLookAndFeelDecorated(true);
 
-        MainFrame.initMainFrame();
-
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                MainFrame.runAndListen();
-            }
-        });
+        MainFrame.crutch();
 
     }
 }

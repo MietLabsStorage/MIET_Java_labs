@@ -6,6 +6,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 
+import static java.lang.Thread.sleep;
+
 public class MainFrame {
     //frame
     private static JFrame frame;
@@ -20,8 +22,10 @@ public class MainFrame {
     private static JPanel contentsPanel;
 
     //race frame content
-    private static ArrayList<RaceButton> races;
+    private static ArrayList<RaceButton> racesThreads;
+    private static ArrayList<JButton> racesButtons;
     private static JButton RunButton = new JButton();
+    private static JButton ResetButton = new JButton();
     private static JPanel panel;
     public static JPanel getPanel() {
         return panel;
@@ -37,14 +41,15 @@ public class MainFrame {
     private static String[] colorsName = new String[]{"red","blue","green","yellow","magenta"};
     public static final int frameWidth = 1000;
     public static final int indent = 150;
+    private static int racesAmount;
 
 
     /**
      * initialization
      */
     public static void initMainFrame(){
-        Thread mainThread = new Thread();
-        mainThread.start();
+        /*Thread mainThread = new Thread();
+        mainThread.start();*/
         frame = new JFrame("Гонка");
 
         raceAmount = new JTextField("Сколько кнопок в гонке?");
@@ -58,13 +63,17 @@ public class MainFrame {
             buttonsPanel.add(raceStart[i]);
         }
 
-        races = new ArrayList<>();
+        racesThreads = new ArrayList<>();
+        racesButtons = new ArrayList<>();
         RunButton = new JButton("Run");
+        ResetButton = new JButton("Reset");
         for(int i = 0; i < 5; i++){
-            RaceButton tempRace = new RaceButton(colorsName[i],10,(raceHeight+5)*(i+1),raceWidth,raceHeight,colors[i]);
-            tempRace.setFinish(frameWidth - indent);
-            tempRace.setRedrawer(new Redrawer());
-            races.add(tempRace);
+            JButton tempRace = new JButton(colorsName[i]);
+            tempRace.setBounds(10,(raceHeight+5)*(i+1),raceWidth,raceHeight);
+            tempRace.setBackground(colors[i]);
+            //tempRace.setFinish(frameWidth - indent);
+            //tempRace.setRedrawer(new Redrawer());
+            racesButtons.add(tempRace);
         }
 
         contentsPanel = new JPanel(new GridLayout(2,1));
@@ -80,25 +89,40 @@ public class MainFrame {
     }
 
     //second frame that call when in init frame click raceStart-button
-    private static void initRaceFrame(int raceAmount){
+    public static void initRaceFrame(int raceAmount){
+        racesAmount = raceAmount;
         frame.setSize(frameWidth,raceAmount*raceHeight + 5*(raceAmount-1) + 3*(raceHeight+5));
 
         panel = new JPanel();
         panel.setLayout(null);
 
         for(int i = 0; i < raceAmount; i++){
-            panel.add(races.get(i).getButton());
-            races.get(i).start();
+            panel.add(racesButtons.get(i));
+            //races.get(i).start();
         }
 
         RunButton.setBounds(870,frame.getHeight()/3,100,frame.getHeight()/5);
         RunButton.setVisible(true);
         panel.add(RunButton);
+        ResetButton.setBounds(870,frame.getHeight()/3*2,100,frame.getHeight()/5);
+        ResetButton.setVisible(true);
+        panel.add(ResetButton);
 
         panel.add(new Finish());
 
         frame.setContentPane(panel);
         frame.setLocation(200,200);
+    }
+
+    public static void QQQ(){
+        for(int i = 0; i < racesAmount; i++){
+            //panel.add(racesButtons.get(i));
+            RaceButton tmp = new RaceButton(racesButtons.get(i));
+            tmp.setFinish(frameWidth - indent);
+            tmp.setRedrawer(new Redrawer());
+            racesThreads.add(tmp);
+            racesThreads.get(i).start();
+        }
     }
 
     /**
@@ -125,18 +149,53 @@ public class MainFrame {
                 else{
                     RunButton.setText("Stop");
                 }
+                RaceButton.dropHardReset();
+                QQQ();
+                /*System.out.println("wait: "+RaceButton.isWait());
+                System.out.println("hr: "+RaceButton.hardReset);
+                System.out.println("isRun: "+races.get(0).isRun);
+                System.out.println("x: "+races.get(0).getButton().getBounds().x);*/
             }
         });
 
-        for(RaceButton race : races){
-            race.getButton().addActionListener(new ActionListener() {
+        ResetButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //new WinFrame(races.get(1));
+                RaceButton.setHardReset();
+                for(RaceButton race : racesThreads){
+                    race.getButton().getBounds().x = frameWidth;
+                }
+                frame.setVisible(false);
+                WinFrame.winPlace = 1;
+                //QQQ();
+                //initMainFrame();
+                //initRaceFrame(racesAmount);
+                crutch();
+            }
+        });
+
+        for(/*JButton race : racesButtons*/int i = 0; i < racesButtons.size(); i++){
+            int finalI = i;
+            racesButtons.get(i).addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    race.invertRun();
-                    race.incSpeed();
+                    racesThreads.get(finalI).invertRun();
+                    racesThreads.get(finalI).incSpeed();
                 }
             });
         }
+    }
+
+    public static void crutch(){
+        MainFrame.initMainFrame();
+
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                MainFrame.runAndListen();
+            }
+        });
     }
 }
 
