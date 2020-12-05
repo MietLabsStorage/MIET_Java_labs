@@ -13,7 +13,7 @@ public class Main {
 
         JFrame.setDefaultLookAndFeelDecorated(true);
 
-        MainFrame.crutch();
+        MainFrame.launch();
 
     }
 }

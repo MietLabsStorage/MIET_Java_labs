@@ -44,12 +44,11 @@ public class MainFrame {
     private static int racesAmount;
 
 
-    /**
-     * initialization
-     */
-    public static void initMainFrame(){
+    //  initialization
+    private static void initMainFrame(){
         /*Thread mainThread = new Thread();
         mainThread.start();*/
+        WinFrame.newRace();
         frame = new JFrame("Гонка");
 
         raceAmount = new JTextField("Сколько кнопок в гонке?");
@@ -71,8 +70,6 @@ public class MainFrame {
             JButton tempRace = new JButton(colorsName[i]);
             tempRace.setBounds(10,(raceHeight+5)*(i+1),raceWidth,raceHeight);
             tempRace.setBackground(colors[i]);
-            //tempRace.setFinish(frameWidth - indent);
-            //tempRace.setRedrawer(new Redrawer());
             racesButtons.add(tempRace);
         }
 
@@ -98,13 +95,12 @@ public class MainFrame {
 
         for(int i = 0; i < raceAmount; i++){
             panel.add(racesButtons.get(i));
-            //races.get(i).start();
         }
 
-        RunButton.setBounds(870,frame.getHeight()/3,100,frame.getHeight()/5);
+        RunButton.setBounds(870,frame.getHeight()/4,100,frame.getHeight()/5);
         RunButton.setVisible(true);
         panel.add(RunButton);
-        ResetButton.setBounds(870,frame.getHeight()/3*2,100,frame.getHeight()/5);
+        ResetButton.setBounds(870,frame.getHeight()/2,100,frame.getHeight()/5);
         ResetButton.setVisible(true);
         panel.add(ResetButton);
 
@@ -114,15 +110,17 @@ public class MainFrame {
         frame.setLocation(200,200);
     }
 
-    public static void QQQ(){
-        for(int i = 0; i < racesAmount; i++){
-            //panel.add(racesButtons.get(i));
-            RaceButton tmp = new RaceButton(racesButtons.get(i));
-            tmp.setFinish(frameWidth - indent);
-            tmp.setRedrawer(new Redrawer());
-            racesThreads.add(tmp);
-            racesThreads.get(i).start();
+    private static void initThreads(){
+        try{
+            for(int i = 0; i < racesAmount; i++){
+                RaceButton tmp = new RaceButton(racesButtons.get(i));
+                tmp.setFinish(frameWidth - indent);
+                tmp.setRedrawer(new Redrawer());
+                racesThreads.add(tmp);
+                racesThreads.get(i).start();
+            }
         }
+        catch (Exception e){        }
     }
 
     /**
@@ -150,11 +148,7 @@ public class MainFrame {
                     RunButton.setText("Stop");
                 }
                 RaceButton.dropHardReset();
-                QQQ();
-                /*System.out.println("wait: "+RaceButton.isWait());
-                System.out.println("hr: "+RaceButton.hardReset);
-                System.out.println("isRun: "+races.get(0).isRun);
-                System.out.println("x: "+races.get(0).getButton().getBounds().x);*/
+                initThreads();
             }
         });
 
@@ -167,15 +161,12 @@ public class MainFrame {
                     race.getButton().getBounds().x = frameWidth;
                 }
                 frame.setVisible(false);
-                WinFrame.winPlace = 1;
-                //QQQ();
-                //initMainFrame();
-                //initRaceFrame(racesAmount);
-                crutch();
+                WinFrame.resetWinPlace();
+                launch();
             }
         });
 
-        for(/*JButton race : racesButtons*/int i = 0; i < racesButtons.size(); i++){
+        for(int i = 0; i < racesButtons.size(); i++){
             int finalI = i;
             racesButtons.get(i).addActionListener(new ActionListener() {
                 @Override
@@ -187,7 +178,10 @@ public class MainFrame {
         }
     }
 
-    public static void crutch(){
+    /**
+     * start of all program
+     */
+    public static void launch(){
         MainFrame.initMainFrame();
 
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
@@ -221,6 +215,6 @@ class Redrawer implements BackRedrawer{
     @Override
     public void redrawBack(Color color) {
         MainFrame.getPanel().setBackground(color);
-        MainFrame.getRunButton().setText("reset");
+        MainFrame.getRunButton().setText("Continue");
     }
 }

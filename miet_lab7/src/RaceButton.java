@@ -60,11 +60,8 @@ public class RaceButton extends Thread implements BackRedrawer{
     private JButton button;
 
 
-    public RaceButton(/*String msg, int x, int y, int width, int height, Color color*/JButton button){
+    public RaceButton(JButton button){
         super();
-        /*button = new JButton(msg);
-        button.setBounds(x,y,width,height);
-        button.setBackground(color);*/
         this.button = button;
         speed = (new Random()).nextInt(3)+3;
         isRun = true;
