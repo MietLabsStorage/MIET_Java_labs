@@ -110,6 +110,7 @@ public class MainFrame {
         frame.setLocation(200,200);
     }
 
+    //threads initialization
     private static void initThreads(){
         try{
             for(int i = 0; i < racesAmount; i++){

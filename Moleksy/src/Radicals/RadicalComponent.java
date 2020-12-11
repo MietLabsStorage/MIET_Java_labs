@@ -11,15 +11,15 @@ public class RadicalComponent extends JComponent {
 
     public Color color;
     public String name;
-    public boolean isAtomic;
+    public Stat atomicStat;
     public int valence;
     public int[] links;
-    public RadicalComponent(Rectangle bounds, Color color, String name, boolean isAtomic, int valence){
+    public RadicalComponent(Rectangle bounds, Color color, String name, Stat atomicStat, int valence){
         super();
         setBounds(bounds);
         this.color = color;
         this.name = name;
-        this.isAtomic = isAtomic;
+        this.atomicStat = atomicStat;
         this.valence = valence;
         links = new int[valence];
     }
@@ -29,7 +29,7 @@ public class RadicalComponent extends JComponent {
         setBounds(component.getBounds());
         this.color = component.color;
         this.name = component.name;
-        this.isAtomic = component.isAtomic;
+        this.atomicStat = component.atomicStat;
         this.valence = component.valence;
         links = new int[component.valence];
     }
@@ -38,22 +38,33 @@ public class RadicalComponent extends JComponent {
     public void paintComponent(Graphics g) {
         //super.paint(g);
         Graphics2D g2 = (Graphics2D)g;
-        if(isAtomic){
+
+        if(atomicStat == Stat.Atom){
             g2.setColor(color);
-            Ellipse2D circle = new Ellipse2D.Double(0,0,getBounds().width,getBounds().height);
+            Ellipse2D circle = new Ellipse2D.Double(0,0,getBounds().width-1,getBounds().height-1);
             g2.draw(circle);
             g2.fill(circle);
-
+            return;
         }
-        else{
-            g2.setBackground(Color.red);
+        if(atomicStat == Stat.Radical){
+            g2.setColor(Color.RED);
+            Rectangle2D rect1 = new Rectangle2D.Double(0,0,getBounds().width-0,getBounds().height-0);
+            g2.draw(rect1);
+            g2.fill(rect1);
             g2.setColor(Color.WHITE);
-            Rectangle2D rect = new Rectangle2D.Double(4,4,getBounds().width-4,getBounds().height-4);
-            g2.draw(rect);
+            Rectangle2D rect2 = new Rectangle2D.Double(3,3,getBounds().width-7,getBounds().height-7);
+            g2.draw(rect2);
+            g2.fill(rect2);
             g2.setColor(Color.black);
-            Font R = new Font("Arial", Font.PLAIN, getBounds().height);
+            Font R = new Font("Arial", Font.PLAIN, getBounds().height/2);
             g2.setFont(R);
-            g.drawString("R", 4,4);
+            g.drawString("R", getBounds().width/3,getBounds().height/3*2);
+            return;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + " | Coords: (" + getX() + "; " + getY() + ") | Sizes: (" + getWidth() + "; " + getHeight() + ")";
     }
 }

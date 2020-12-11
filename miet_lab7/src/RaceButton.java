@@ -76,6 +76,7 @@ public class RaceButton extends Thread implements BackRedrawer{
     /**
      * run of thread; call method redrawBack from BackRedrawer redrawer
      */
+    @Override
     public void run() {
         try {
             while(button.getBounds().x + button.getWidth() < finish && !hardReset){
