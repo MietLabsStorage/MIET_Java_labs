@@ -1,12 +1,15 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.*;
 import java.net.Socket;
 
 public class Main {
     static JFrame frame;
     static JTextField textFieldAddress;
+    static JTextField textFieldFilename;
     static JButton buttonConnect;
     static JButton buttonDownload;
 
@@ -37,23 +40,41 @@ public class Main {
 
     public static void downloadFile() {
         try {
-            /*BufferedReader dis = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            String msg = dis.readLine();
-            System.out.println(msg);*/
+            BufferedReader inputMessage = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            BufferedWriter outputMessage = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
-            BufferedOutputStream bis = new BufferedOutputStream(new Output("somefile.dat"));
-            BufferedOutputStream bos = new BufferedOutputStream(socket.getOutputStream());
-            byte[] byteArray = new byte[8192];
-            int in;
-            while ((in = bis.read(byteArray)) != -1){
-                bos.write(byteArray,0,in);
+            outputMessage.write(textFieldFilename.getText() + "\n");
+            outputMessage.flush();
+            String returnMessage = inputMessage.readLine();
+            System.out.println(returnMessage);
+            if (!returnMessage.equals("NOT_EXIST")) {
+
+                //block for if directory is not exist
+                String[] paths = textFieldFilename.getText().split("/");
+                String path = "";
+                for(int i = 0; i < paths.length-1; i++){
+                    path += paths[i] + "/";
+                }
+                File file = new File(path);
+                if(!file.exists()){
+                    //new File(textFieldFilename.getText()).createNewFile();
+                    file.mkdirs();
+                }
+
+                FileOutputStream fileStream = new FileOutputStream(textFieldFilename.getText());
+                DataInputStream inputFile = new DataInputStream(socket.getInputStream());
+                long length = inputFile.readLong();
+                byte[] bytes = new byte[(int) length];
+                int count, total = 0;
+                while ((count = inputFile.read(bytes)) > -1) {
+                    total += count;
+                    fileStream.write(bytes, 0, count);
+                    if (total == length) break;
+                }
+                fileStream.close();
             }
-            bis.close();
-            bos.close();
-
             connect();
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println("ошибка: " + e);
         }
     }
@@ -72,9 +93,47 @@ public class Main {
         buttonDownload.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(textFieldAddress.getText().equals("127.0.0.1:20") || textFieldAddress.getText().equals("localhost:20")){
+                if (textFieldAddress.getText().equals("127.0.0.1:20") || textFieldAddress.getText().equals("localhost:20")) {
                     downloadFile();
                 }
+            }
+        });
+        frame.addWindowListener(new WindowListener() {
+            @Override
+            public void windowOpened(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                if (buttonConnect.getText().equals("disconnect")) {
+                    disconnect();
+                }
+            }
+
+            @Override
+            public void windowClosed(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowDeiconified(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowActivated(WindowEvent e) {
+
+            }
+
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+
             }
         });
     }
@@ -92,14 +151,19 @@ public class Main {
         buttonConnect.setBounds(textFieldAddress.getX(), textFieldAddress.getY() + textFieldAddress.getHeight() + 10, 150, 30);
         buttonConnect.setVisible(true);
 
+        textFieldFilename = new JTextField("file");
+        textFieldFilename.setBounds(textFieldAddress.getX(), buttonConnect.getY() + buttonConnect.getHeight() + 10, 150, 20);
+        textFieldFilename.setVisible(true);
+
         buttonDownload = new JButton("download file");
-        buttonDownload.setBounds(textFieldAddress.getX(), textFieldAddress.getY() + textFieldAddress.getHeight() + 70, 150, 30);
+        buttonDownload.setBounds(textFieldAddress.getX(), textFieldFilename.getY() + textFieldFilename.getHeight() + 10, 150, 30);
         buttonDownload.setVisible(false);
 
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.add(textFieldAddress);
         panel.add(buttonConnect);
+        panel.add(textFieldFilename);
         panel.add(buttonDownload);
 
         frame.setContentPane(panel);
