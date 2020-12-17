@@ -40,28 +40,34 @@ public class Main {
 
     public static void downloadFile() {
         try {
+            //send filename for loading
             BufferedReader inputMessage = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            //read message about loading-status
             BufferedWriter outputMessage = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
+            //send
             outputMessage.write(textFieldFilename.getText() + "\n");
             outputMessage.flush();
+
+            //read
             String returnMessage = inputMessage.readLine();
             System.out.println(returnMessage);
-            if (!returnMessage.equals("NOT_EXIST")) {
 
+            String filename = "Downloads/" + textFieldFilename.getText();
+            if (!returnMessage.equals("NOT_EXIST")) {
                 //block for if directory is not exist
-                String[] paths = textFieldFilename.getText().split("/");
+                String[] paths = filename.split("/");
                 String path = "";
                 for(int i = 0; i < paths.length-1; i++){
                     path += paths[i] + "/";
                 }
                 File file = new File(path);
                 if(!file.exists()){
-                    //new File(textFieldFilename.getText()).createNewFile();
                     file.mkdirs();
                 }
 
-                FileOutputStream fileStream = new FileOutputStream(textFieldFilename.getText());
+                //loading file
+                FileOutputStream fileStream = new FileOutputStream("Downloads/"+textFieldFilename.getText());
                 DataInputStream inputFile = new DataInputStream(socket.getInputStream());
                 long length = inputFile.readLong();
                 byte[] bytes = new byte[(int) length];
@@ -100,9 +106,7 @@ public class Main {
         });
         frame.addWindowListener(new WindowListener() {
             @Override
-            public void windowOpened(WindowEvent e) {
-
-            }
+            public void windowOpened(WindowEvent e) {            }
 
             @Override
             public void windowClosing(WindowEvent e) {
@@ -112,29 +116,19 @@ public class Main {
             }
 
             @Override
-            public void windowClosed(WindowEvent e) {
-
-            }
+            public void windowClosed(WindowEvent e) {            }
 
             @Override
-            public void windowIconified(WindowEvent e) {
-
-            }
+            public void windowIconified(WindowEvent e) {            }
 
             @Override
-            public void windowDeiconified(WindowEvent e) {
-
-            }
+            public void windowDeiconified(WindowEvent e) {            }
 
             @Override
-            public void windowActivated(WindowEvent e) {
-
-            }
+            public void windowActivated(WindowEvent e) {            }
 
             @Override
-            public void windowDeactivated(WindowEvent e) {
-
-            }
+            public void windowDeactivated(WindowEvent e) {            }
         });
     }
 
