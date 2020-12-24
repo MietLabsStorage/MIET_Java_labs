@@ -14,7 +14,10 @@ public class RadicalComponent extends JComponent {
     public Stat atomicStat;
     public int valence;
     public int[] links;
-    public RadicalComponent(Rectangle bounds, Color color, String name, Stat atomicStat, int valence){
+    public int linkPointer;
+    public boolean choice;
+
+    public RadicalComponent(Rectangle bounds, Color color, String name, Stat atomicStat, int valence, boolean isChosen){
         super();
         setBounds(bounds);
         this.color = color;
@@ -22,6 +25,11 @@ public class RadicalComponent extends JComponent {
         this.atomicStat = atomicStat;
         this.valence = valence;
         links = new int[valence];
+        for(int i = 0; i < valence; i++){
+            links[i] = -1;
+        }
+        linkPointer = 0;
+        choice = isChosen;
     }
 
     public RadicalComponent(RadicalComponent component){
@@ -32,6 +40,27 @@ public class RadicalComponent extends JComponent {
         this.atomicStat = component.atomicStat;
         this.valence = component.valence;
         links = new int[component.valence];
+        for(int i = 0; i < valence; i++){
+            links[i] = component.links[i];
+        }
+        linkPointer = component.linkPointer;
+        choice = component.choice;
+    }
+
+    public RadicalComponent(String dubleDotsString){
+        String params[] = dubleDotsString.split("::");
+        color = new Color(Integer.parseInt(params[0]), Integer.parseInt(params[1]), Integer.parseInt(params[2]));
+        name = params[3];
+        atomicStat = Stat.parseStat(params[4]);
+        valence = Integer.parseInt(params[5]);
+        setBounds(Integer.parseInt(params[6]),Integer.parseInt(params[7]),Integer.parseInt(params[8]),Integer.parseInt(params[9]));
+        links = new int[valence];
+        linkPointer = Integer.parseInt(params[10]);
+        for(int i = 11; i<params.length;i++){
+            links[i-11] = Integer.parseInt(params[i]);
+        }
+        choice = false;
+        //linkPointer = 0;
     }
 
     @Override
@@ -44,6 +73,12 @@ public class RadicalComponent extends JComponent {
             Ellipse2D circle = new Ellipse2D.Double(0,0,getBounds().width-1,getBounds().height-1);
             g2.draw(circle);
             g2.fill(circle);
+            if(choice){
+                g2.setColor(Color.BLACK);
+                Ellipse2D circleIN = new Ellipse2D.Double((getBounds().width-1)/2,(getBounds().height-1)/2,4,4);
+                g2.draw(circleIN);
+                g2.fill(circleIN);
+            }
             return;
         }
         if(atomicStat == Stat.Radical){
@@ -59,6 +94,12 @@ public class RadicalComponent extends JComponent {
             Font R = new Font("Arial", Font.PLAIN, getBounds().height/2);
             g2.setFont(R);
             g.drawString("R", getBounds().width/3,getBounds().height/3*2);
+            if(choice){
+                g2.setColor(Color.BLACK);
+                Ellipse2D circleIN = new Ellipse2D.Double((getBounds().width-1)/2,(getBounds().height-1)/2,4,4);
+                g2.draw(circleIN);
+                g2.fill(circleIN);
+            }
             return;
         }
     }
@@ -66,5 +107,16 @@ public class RadicalComponent extends JComponent {
     @Override
     public String toString() {
         return "Name: " + name + " | Coords: (" + getX() + "; " + getY() + ") | Sizes: (" + getWidth() + "; " + getHeight() + ")";
+    }
+
+    public String toDubleDotsString(){
+        String str = color.getRed()+"::"+color.getGreen()+"::"+color.getBlue()+
+                "::"+name+"::"+atomicStat.name()+"::"+valence+
+                "::"+getX()+"::"+getY()+"::"+getWidth()+"::"+getHeight();
+        str += "::"+linkPointer;
+        for(int link : links){
+            str+="::"+link;
+        }
+        return str;
     }
 }

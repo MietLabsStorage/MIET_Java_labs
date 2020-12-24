@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         String outputFile = "index.html";
 
-        String strURL = "https://habr.com/ru/";
+        String strURL = "https://habr.com/ruuuuuuuu/";
         //String strURL = "https://ru.wikipedia.org/wiki/Заглавная_страница";
         //String strURL = "https://old.miet.ru/structure/s/248";
         //String strURL = "https://javarush.ru";

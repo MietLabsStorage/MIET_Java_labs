@@ -11,7 +11,6 @@ class AreaButton extends RectangleArea{
     public AreaButton(Rectangle bounds, Color color, RadicalComponent component) {
         super(bounds, color);
         this.component = component;
-
     }
 
     @Override

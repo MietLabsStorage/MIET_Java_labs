@@ -1,0 +1,11 @@
+2020-12-24 19:29:10|	Start init-ing Frame
+2020-12-24 19:29:11|	Finish init-ing Frame
+2020-12-24 19:29:12|	Click load
+2020-12-24 19:29:12|	Repaint all
+2020-12-24 19:29:13|	Click button --
+2020-12-24 19:29:14|	Click in work area. Current component: null
+2020-12-24 19:29:14|	Choose 20th component: 0::0::255::O::Atom::2::300::235::16::16::1::21::-1
+2020-12-24 19:29:14|	Repaint all
+2020-12-24 19:29:15|	Click in work area. Current component: null
+2020-12-24 19:29:15|	Choose 19th component: 0::0::255::O::Atom::2::288::175::16::16::1::21::-1
+2020-12-24 19:29:15|	Repaint all
