@@ -1,0 +1,35 @@
+!%mainFrame
+name: Moleksy by mJaJksJ 
+width: 460
+height: 380
+$
+!%mainPanel
+clrR: 255
+clrG: 255
+clrB: 255
+$
+!%fileArea
+height: 32
+clrR: 204
+clrG: 255
+clrB: 153
+$
+!%workArea
+x: 0
+y: 0
+width: 350
+clrR: 255
+clrG: 255
+clrB: 155
+clrA: 1
+$
+!%saveButton
+width: 100
+height: 20
+name: Save
+$
+!%loadButton
+width: 100
+height: 20
+name: Load
+$
