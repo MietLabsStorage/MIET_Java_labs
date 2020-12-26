@@ -1,4 +1,4 @@
-package Areas;
+package Paintings;
 
 import javax.swing.*;
 import java.awt.*;

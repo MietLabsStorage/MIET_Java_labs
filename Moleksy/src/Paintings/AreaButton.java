@@ -1,4 +1,4 @@
-package Areas;
+package Paintings;
 
 import Radicals.RadicalComponent;
 import Radicals.Stat;

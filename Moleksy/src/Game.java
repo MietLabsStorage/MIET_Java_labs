@@ -83,6 +83,7 @@ public class Game {
      * @throws Exception
      */
     public static void init() throws Exception {
+        Logs.init();
         FileReader fileReader = new FileReader("params.txt");
         BufferedReader reader = new BufferedReader(fileReader);
         String line = reader.readLine();
@@ -102,6 +103,7 @@ public class Game {
             }
             catch(Exception e) {
                 Logs.writeMessage("cant read line from params.txt");
+                new Exceptions.JException(e.getMessage());
             }
             line = reader.readLine();
         }

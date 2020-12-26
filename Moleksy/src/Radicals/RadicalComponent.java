@@ -167,7 +167,7 @@ public class RadicalComponent extends JComponent {
             }
             choice = false;
         } catch (Exception e) {
-            e.printStackTrace();
+            new Exceptions.JException(e.getMessage());
         }
     }
 
