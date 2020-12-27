@@ -97,6 +97,39 @@ public class RadicalComponent extends JComponent {
         linkPointer++;
     }
 
+    /**
+     * set link[index] = -1
+     * @param index index
+     */
+    public void resetLink(int index){
+        links[index] = -1;
+    }
+
+    /**
+     * decrement link[index]
+     * @param index index
+     */
+    public void decLink(int index){
+        links[index] -= 1;
+    }
+
+    /**
+     * set newVal in links[index]
+     * @param index index
+     * @param newVal new value
+     */
+    public void setLink(int index, int newVal){
+        links[index] = newVal;
+    }
+
+    /**
+     * set link pointer
+     * @param value value
+     */
+    public void setLinkPointer(int value){
+        linkPointer = value;
+    }
+
     private Color color;
     private String name;
     private Stat atomicStat;

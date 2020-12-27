@@ -22,8 +22,9 @@ public class MainFrame {
     private static AreaButton[] componentsAreas;
     private static JButton buttonSave;
     private static JButton buttonLoad;
-    private static JTextArea filenameTextArea;
     private static JButton buttonClear;
+    private static JButton buttonDel;
+    private static JFileChooser fileChooser;
 
     /**
      * init frame and all components
@@ -39,6 +40,9 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("mainFrame").get("width")),
                 Integer.parseInt(Game.getParams().get("mainFrame").get("height"))
         );
+
+        //init-ing file chooser
+        fileChooser = new JFileChooser(System.getProperty("user.dir")+"/Molecules");
 
         //init-ing Panel
         mainPanel = new JPanel();
@@ -84,12 +88,13 @@ public class MainFrame {
 
         //init-ing buttons of choosing elements
         componentsAreas = new AreaButton[6];
-        componentsAreas[0] = new AreaButton(new Rectangle(350, 32 + 53 * 0, 100, 53), new Color(207, 231, 245), new Hydrogen());
-        componentsAreas[1] = new AreaButton(new Rectangle(350, 32 + 53 * 1, 100, 53), new Color(207, 231, 245), new Nitrogen());
+        componentsAreas[0] = new AreaButton(new Rectangle(350, 32, 100, 53), new Color(207, 231, 245), new Hydrogen());
+        componentsAreas[1] = new AreaButton(new Rectangle(350, 32 + 53, 100, 53), new Color(207, 231, 245), new Nitrogen());
         componentsAreas[2] = new AreaButton(new Rectangle(350, 32 + 53 * 2, 100, 53), new Color(207, 231, 245), new Carboneum());
         componentsAreas[3] = new AreaButton(new Rectangle(350, 32 + 53 * 3, 100, 53), new Color(207, 231, 245), new Oxygen());
         componentsAreas[4] = new AreaButton(new Rectangle(350, 32 + 53 * 4, 100, 53), new Color(207, 231, 245), new FreeRadical());
         componentsAreas[5] = new AreaButton(new Rectangle(350, 32 + 53 * 5, 100, 53), new Color(207, 231, 245), new Binding());
+        componentsAreas[5].pressed(true);
 
         //init-ing save button
         buttonSave = new JButton(Game.getParams().get("saveButton").get("name"));
@@ -110,26 +115,21 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("loadButton").get("height")));
         buttonLoad.setVisible(true);
 
-        //init-ing text field for naming file for save/load
-        filenameTextArea = new JTextArea("filename");
-        filenameTextArea.setBounds(
-                5,
-                5,
-                buttonLoad.getX() - 5 - 5,
-                20
-        );
-        filenameTextArea.setVisible(true);
-
         //init-ing clear button
         buttonClear = new JButton("Clear");
-        buttonClear.setBounds(5, mainFrame.getHeight()-35-20, 100, 20);
+        buttonClear.setBounds(5, 5, 100, 20);
         buttonClear.setVisible(true);
+
+        //init-ing delete button
+        buttonDel = new JButton("Delete");
+        buttonDel.setBounds(buttonClear.getX() + buttonClear.getWidth() + 5, 5, 100, 20);
+        buttonDel.setVisible(true);
 
         //add components in panel
         mainPanel.add(buttonSave);
         mainPanel.add(buttonLoad);
         mainPanel.add(buttonClear);
-        mainPanel.add(filenameTextArea);
+        mainPanel.add(buttonDel);
         mainPanel.add(fileArea);
         mainPanel.add(workArea);
         for (AreaButton componentsArea : componentsAreas) {
@@ -147,9 +147,10 @@ public class MainFrame {
 
     /**
      * set which radical will chosen to painting or do binding
+     *
      * @param component area button
      */
-    private static void choiceAction(AreaButton component){
+    private static void choiceAction(AreaButton component) {
         Logs.writeMessage("Click button " + component.getComponent().getName());
         //if not binding
         if (!component.getComponent().getName().equals(new Binding().getName())) {
@@ -175,9 +176,10 @@ public class MainFrame {
 
     /**
      * paint new component on work area
+     *
      * @param e mouse event
      */
-    private static void paintComponent(MouseEvent e){
+    private static void paintComponent(MouseEvent e) {
         Logs.writeMessage("Click in work area. Current component: " + Game.getPaintingComponent().getName());
         //set location of component
         Game.getPaintingComponent().setLocation(
@@ -192,31 +194,39 @@ public class MainFrame {
 
     /**
      * cjoise component or if already bind with
+     *
      * @param e mouse event
      */
-    private static void choiceOrBindComponent(MouseEvent e){
+    private static void choiceOrBindComponent(MouseEvent e) {
         Logs.writeMessage("Click in work area. Current component: " + null);
+        //try choice component
         for (int i = 0; i < Game.getAtomics().size(); i++) {
             if (Game.getAtomics().get(i).getX() < e.getX()
                     && e.getX() < Game.getAtomics().get(i).getX() + Game.getAtomics().get(i).getWidth()
                     && Game.getAtomics().get(i).getY() - workArea.getY() < e.getY()
                     && e.getY() < Game.getAtomics().get(i).getY() + Game.getAtomics().get(i).getHeight() - workArea.getY()) {
                 Logs.writeMessage("Choose " + i + "th component: " + Game.getAtomics().get(i).toDoubleDotsString());
-                System.out.println("Choose " + i + "th component: " + Game.getAtomics().get(i).toDoubleDotsString());
+                //if not chosen
                 if (Game.getChosenComponent() == null) {
+                    //set chosen in Game
                     Game.setChosenComponent(new RadicalComponent(Game.getAtomics().get(i)));
                     Game.setChosenComponentIndex(i);
+                    //set chosen into component
                     Game.getAtomics().get(Game.getChosenComponentIndex()).setChoice(true);
-                } else {
+                }
+                //if chosen (binding)
+                else {
+                    //if exist free valence-binds to bind
                     if (Game.getAtomics().get(i).getLinkPointer() < Game.getAtomics().get(i).getValence() &&
                             Game.getChosenComponent().getLinkPointer() < Game.getChosenComponent().getValence() &&
                             i != Game.getChosenComponentIndex()) {
+                        //bind components
                         Game.getAtomics().get(i).getLinks()[Game.getAtomics().get(i).getLinkPointer()] = Game.getChosenComponentIndex();
                         Game.getAtomics().get(i).incLinkPointer();
                         Game.getAtomics().get(Game.getChosenComponentIndex()).getLinks()[Game.getChosenComponent().getLinkPointer()] = i;
                         Game.getAtomics().get(Game.getChosenComponentIndex()).incLinkPointer();
+                        //reset chosen component
                         Game.setChosenComponent(null);
-                        System.out.println("Link atom " + i + " with " + Game.getChosenComponentIndex());
                         Game.getAtomics().get(Game.getChosenComponentIndex()).setChoice(false);
                     }
                 }
@@ -224,6 +234,7 @@ public class MainFrame {
                 return;
             }
         }
+        //if click on non-component - reset chosen component
         Game.setChosenComponent(null);
         if (Game.getChosenComponentIndex() != -1) {
             Game.getAtomics().get(Game.getChosenComponentIndex()).setChoice(false);
@@ -233,13 +244,54 @@ public class MainFrame {
 
     /**
      * action when click mouse on work area
+     *
      * @param e mouse event
      */
-    private static void clickToWorkArea(MouseEvent e){
+    private static void clickToWorkArea(MouseEvent e) {
         if (Game.getPaintingComponent() != null) {
             paintComponent(e);
         } else {
             choiceOrBindComponent(e);
+        }
+    }
+
+    /**
+     * delete component
+     */
+    private static void deleteComponent() {
+        if (Game.getChosenComponent() != null) {
+            Game.getAtomics().remove(Game.getChosenComponentIndex());
+            for (int i = 0; i < Game.getAtomics().size(); i++) {
+                //change in binds
+                for (int j = 0; j < Game.getAtomics().get(i).getValence(); j++) {
+                    if (Game.getAtomics().get(i).getLinks()[j] == Game.getChosenComponentIndex()) {
+                        Game.getAtomics().get(i).resetLink(j);
+                    }
+                    if (Game.getAtomics().get(i).getLinks()[j] > Game.getChosenComponentIndex()) {
+                        Game.getAtomics().get(i).decLink(j);
+                    }
+                }
+                //replace -1 links in end
+                for (int j = 0; j < Game.getAtomics().get(i).getValence(); j++) {
+                    for (int k = j; k < Game.getAtomics().get(i).getValence(); k++) {
+                        if (Game.getAtomics().get(i).getLinks()[j] == -1) {
+                            int temp = Game.getAtomics().get(i).getLinks()[j];
+                            Game.getAtomics().get(i).setLink(j, Game.getAtomics().get(i).getLinks()[k]);
+                            Game.getAtomics().get(i).setLink(k, temp);
+                        }
+                    }
+                }
+                //set link pointer
+                for (int j = 0; j < Game.getAtomics().get(i).getValence(); j++) {
+                    if (Game.getAtomics().get(i).getLinks()[j] == -1) {
+                        Game.getAtomics().get(i).setLinkPointer(j);
+                        break;
+                    }
+                }
+            }
+            Game.setChosenComponent(null);
+            Game.setChosenComponentIndex(-1);
+            repaintMolecule();
         }
     }
 
@@ -252,7 +304,7 @@ public class MainFrame {
             component.addMouseListener(new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                   choiceAction(component);
+                    choiceAction(component);
                 }
 
                 @Override
@@ -303,7 +355,14 @@ public class MainFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     Logs.writeMessage("Click save");
-                    Game.Save(filenameTextArea.getText());
+                    fileChooser.setDialogTitle("Сохранение файла");
+                    fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+                    int result = fileChooser.showSaveDialog(mainFrame);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        Game.Save(fileChooser.getSelectedFile().getAbsolutePath());
+                        JOptionPane.showMessageDialog(mainFrame,
+                                "Файл '" + fileChooser.getSelectedFile() + "' сохранен");
+                    }
                 } catch (Exception exception) {
                     Logs.writeMessage(exception.toString());
                     new Exceptions.JException(exception.getMessage());
@@ -316,8 +375,15 @@ public class MainFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    Game.Load(filenameTextArea.getText());
                     Logs.writeMessage("Click load");
+                    fileChooser.setDialogTitle("Загрузка файла");
+                    fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+                    int result = fileChooser.showOpenDialog(mainFrame);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        Game.Load(fileChooser.getSelectedFile().getAbsolutePath());
+                        JOptionPane.showMessageDialog(mainFrame,
+                                "Файл '" + fileChooser.getSelectedFile() + "' загружен");
+                    }
                     //repaint all
                     repaintMolecule();
                 } catch (Exception exception) {
@@ -335,6 +401,14 @@ public class MainFrame {
                 repaintMolecule();
             }
         });
+
+        //listener for clicking on button delete
+        buttonDel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                deleteComponent();
+            }
+        });
     }
 
     /**
@@ -345,7 +419,7 @@ public class MainFrame {
         mainPanel.add(buttonSave);
         mainPanel.add(buttonLoad);
         mainPanel.add(buttonClear);
-        mainPanel.add(filenameTextArea);
+        mainPanel.add(buttonDel);
         mainPanel.add(fileArea);
         mainPanel.add(workArea);
         for (AreaButton componentsArea : componentsAreas) {
@@ -355,7 +429,7 @@ public class MainFrame {
             mainPanel.add(component);
         }
         //add lines-bindings on frame
-        JLines line = new JLines(new Rectangle(0, 0, mainFrame.getWidth(), mainFrame.getHeight()), Game.getAtomics());
+        JLines line = new JLines(new Rectangle(0, 0, mainFrame.getWidth(), mainFrame.getHeight()), Game.getAtomics(), new Binding().getColor());
         line.setVisible(true);
         mainPanel.add(line);
         mainFrame.setContentPane(mainPanel);

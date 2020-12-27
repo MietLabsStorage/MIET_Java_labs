@@ -6,10 +6,12 @@
 *не соединять атом сам с собой +
 *почему вылетает ошибка если рисовать картинку до нажатия кнопки load? +
 *очистка фрейма +
-*добавить удаление
+*добавить удаление +-                                                               надо тестить
 *изменить отрисовку линий в помощь словарем +
 *доработать многосвязность рисование +
-*repaint в Binding
-*add exception messages
-*refactor choiceOrBindComponent in mainpanel
+*repaint в Binding +
+*add exception messages +-                                                          надо починить норм форму
+*refactor choiceOrBindComponent in mainpanel +
 *добавить 4-связность +
+*save/load через меню +
+*const-s in mainFrame.init()

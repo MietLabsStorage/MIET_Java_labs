@@ -27,17 +27,20 @@ public class JLines extends JComponent {
 
     //list of points
     private final ArrayList<RadicalComponent> atomics;
+    private final Color color;
 
     /**
      * constructor
      * @param bounds bounds
      * @param atomics atomics list of points
+     * @param color color
      */
-    public JLines(Rectangle bounds, ArrayList<RadicalComponent> atomics) {
+    public JLines(Rectangle bounds, ArrayList<RadicalComponent> atomics, Color color) {
         super();
         this.setBounds(bounds);
         this.atomics = new ArrayList<>();
         this.atomics.addAll(atomics);
+        this.color = color;
     }
 
     /**
@@ -47,10 +50,10 @@ public class JLines extends JComponent {
      */
     private void oneLinePaint(Graphics2D g2, AllBinds bind){
         g2.setColor(Color.BLACK);
-        Line2D line1 = new Line2D.Double(atomics.get(bind.node1).getX() + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line1 = new Line2D.Double(atomics.get(bind.node1).getX() + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2 + ""),
+                atomics.get(bind.node1).getY() + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2 + ""),
+                atomics.get(bind.node2).getX() + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2 +""),
+                atomics.get(bind.node2).getY() + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2 + ""));
         g2.draw(line1);
     }
 
@@ -70,16 +73,16 @@ public class JLines extends JComponent {
             qY2 = 2;
         }
         //first line
-        Line2D line21 = new Line2D.Double(atomics.get(bind.node1).getX() + qX2 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() + qY2 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() + qX2 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() + qY2 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line21 = new Line2D.Double(atomics.get(bind.node1).getX() + qX2 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2 +""),
+                atomics.get(bind.node1).getY() + qY2 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() + qX2 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() + qY2 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line21);
         //second line
-        Line2D line22 = new Line2D.Double(atomics.get(bind.node1).getX() - qX2 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() - qY2 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() - qX2 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() - qY2 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line22 = new Line2D.Double(atomics.get(bind.node1).getX() - qX2 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() - qY2 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() - qX2 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() - qY2 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line22);
     }
 
@@ -99,22 +102,22 @@ public class JLines extends JComponent {
             qY3 = 3;
         }
         //first line
-        Line2D line31 = new Line2D.Double(atomics.get(bind.node1).getX() + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line31 = new Line2D.Double(atomics.get(bind.node1).getX() + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line31);
         //second line
-        Line2D line32 = new Line2D.Double(atomics.get(bind.node1).getX() + qX3 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() + qY3 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() + qX3 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() + qY3 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line32 = new Line2D.Double(atomics.get(bind.node1).getX() + qX3 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() + qY3 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() + qX3 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() + qY3 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line32);
         //third line
-        Line2D line33 = new Line2D.Double(atomics.get(bind.node1).getX() - qX3 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() - qY3 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() - qX3 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() - qY3 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line33 = new Line2D.Double(atomics.get(bind.node1).getX() - qX3 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() - qY3 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() - qX3 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() - qY3 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line33);
     }
 
@@ -134,31 +137,31 @@ public class JLines extends JComponent {
             qY4 = 2;
         }
         //first line
-        Line2D line41 = new Line2D.Double(atomics.get(bind.node1).getX() + qX4 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() + qY4 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() + qX4 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() + qY4 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line41 = new Line2D.Double(atomics.get(bind.node1).getX() + qX4 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2 + ""),
+                atomics.get(bind.node1).getY() + qY4 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2 +""),
+                atomics.get(bind.node2).getX() + qX4 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() + qY4 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line41);
         //second line
-        Line2D line42= new Line2D.Double(atomics.get(bind.node1).getX() - qX4 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() - qY4 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() - qX4 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() - qY4 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line42= new Line2D.Double(atomics.get(bind.node1).getX() - qX4 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() - qY4 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() - qX4 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() - qY4 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line42);
         //editing coordinates of lines
         qX4 *= 3;
         qY4 *= 3;
         //third line
-        Line2D line43 = new Line2D.Double(atomics.get(bind.node1).getX() + qX4 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() + qY4 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() + qX4 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() + qY4 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line43 = new Line2D.Double(atomics.get(bind.node1).getX() + qX4 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() + qY4 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() + qX4 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() + qY4 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line43);
         //fourth line
-        Line2D line44= new Line2D.Double(atomics.get(bind.node1).getX() - qX4 + atomics.get(bind.node1).getWidth() / 2,
-                atomics.get(bind.node1).getY() - qY4 + atomics.get(bind.node1).getHeight() / 2,
-                atomics.get(bind.node2).getX() - qX4 + atomics.get(bind.node2).getWidth() / 2,
-                atomics.get(bind.node2).getY() - qY4 + atomics.get(bind.node2).getHeight() / 2);
+        Line2D line44= new Line2D.Double(atomics.get(bind.node1).getX() - qX4 + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2+""),
+                atomics.get(bind.node1).getY() - qY4 + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2+""),
+                atomics.get(bind.node2).getX() - qX4 + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2+""),
+                atomics.get(bind.node2).getY() - qY4 + Double.parseDouble(atomics.get(bind.node2).getHeight() / 2+""));
         g2.draw(line44);
     }
 
@@ -167,7 +170,7 @@ public class JLines extends JComponent {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.BLACK);
+        g2.setColor(color);
         //creating dict-struct of binds
         ArrayList<AllBinds> binds = new ArrayList<>();
         binds.add(new AllBinds(-1, -1, -1));
@@ -196,18 +199,10 @@ public class JLines extends JComponent {
         //painting binds
         for (AllBinds bind : binds) {
             switch (bind.count) {
-                case 1:
-                    oneLinePaint(g2, bind);
-                    break;
-                case 2:
-                    twoLinePaint(g2, bind);
-                    break;
-                case 3:
-                    threeLinePaint(g2, bind);
-                    break;
-                case 4:
-                    fourLinePaint(g2, bind);
-                    break;
+                case 1 -> oneLinePaint(g2, bind);
+                case 2 -> twoLinePaint(g2, bind);
+                case 3 -> threeLinePaint(g2, bind);
+                case 4 -> fourLinePaint(g2, bind);
             }
         }
 

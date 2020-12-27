@@ -80,7 +80,7 @@ public class Game {
 
     /**
      * load constants for sizes in frame from file
-     * @throws Exception
+     * @throws Exception exception
      */
     public static void init() throws Exception {
         Logs.init();
@@ -112,10 +112,10 @@ public class Game {
     /**
      * save molecule
      * @param filename filename for saving (without .txt)
-     * @throws Exception
+     * @throws Exception exception
      */
     public static void Save(String filename) throws Exception {
-        FileWriter fileWriter = new FileWriter(filename+".txt");
+        FileWriter fileWriter = new FileWriter(filename);
         for(RadicalComponent components : atomics){
             fileWriter.write(components.toDoubleDotsString()+"\n");
         }
@@ -125,10 +125,10 @@ public class Game {
     /**
      * load molecule
      * @param filename filename for loading (without .txt)
-     * @throws Exception
+     * @throws Exception exception
      */
     public static void Load(String filename) throws Exception {
-        FileReader fileReader = new FileReader(filename+".txt");
+        FileReader fileReader = new FileReader(filename);
         BufferedReader reader = new BufferedReader(fileReader);
         atomics.clear();
         String line = reader.readLine();
