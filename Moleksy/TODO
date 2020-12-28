@@ -10,8 +10,8 @@
 *изменить отрисовку линий в помощь словарем +
 *доработать многосвязность рисование +
 *repaint в Binding +
-*add exception messages +-                                                          надо починить норм форму
+*add exception messages +
 *refactor choiceOrBindComponent in mainpanel +
 *добавить 4-связность +
 *save/load через меню +
-*const-s in mainFrame.init()
+*const-s in mainFrame.init() +

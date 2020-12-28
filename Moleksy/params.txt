@@ -9,27 +9,54 @@ clrG: 255
 clrB: 255
 $
 !%fileArea
+x-indent: 0
+y-indent: 0
+width-indent: 10
 height: 32
 clrR: 204
 clrG: 255
 clrB: 153
 $
 !%workArea
-x: 0
-y: 0
+x-indent: 0
+y-indent: 0
 width: 350
+height-indent: 30
 clrR: 255
 clrG: 255
 clrB: 155
 clrA: 1
 $
 !%saveButton
+x-indent: 15
+y-indent: 5
 width: 100
 height: 20
 name: Save
 $
 !%loadButton
+x-indent: 5
+y-indent: 5
 width: 100
 height: 20
 name: Load
+$
+!%areaButton
+clrR: 207
+clrG: 231
+clrB: 245
+$
+!%clearButton
+x-indent: 5
+y-indent: 5
+width: 100
+height: 20
+name: Clear
+$
+!%deleteButton
+x-indent: 5
+y-indent: 5
+width: 100
+height: 20
+name: Delete
 $

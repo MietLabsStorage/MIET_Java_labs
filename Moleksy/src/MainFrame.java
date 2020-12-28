@@ -5,10 +5,7 @@ import Radicals.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
 /**
  * main class for all program with init() and run()
@@ -26,6 +23,8 @@ public class MainFrame {
     private static JButton buttonDel;
     private static JFileChooser fileChooser;
 
+    private static int keyPressedCode = 0;
+
     /**
      * init frame and all components
      */
@@ -35,14 +34,14 @@ public class MainFrame {
 
         //first part of init-ing Frame
         mainFrame = new JFrame(Game.getParams().get("mainFrame").get("name"));
-        //mainFrame.setSize(450 + 10, 350 + 30);
         mainFrame.setSize(
                 Integer.parseInt(Game.getParams().get("mainFrame").get("width")),
                 Integer.parseInt(Game.getParams().get("mainFrame").get("height"))
         );
+        mainFrame.setFocusable(true);
 
         //init-ing file chooser
-        fileChooser = new JFileChooser(System.getProperty("user.dir")+"/Molecules");
+        fileChooser = new JFileChooser(System.getProperty("user.dir") + "/Molecules");
 
         //init-ing Panel
         mainPanel = new JPanel();
@@ -58,9 +57,9 @@ public class MainFrame {
         //init-ing background of save-load files
         fileArea = new RectangleArea(
                 new Rectangle(
-                        0,
-                        0,
-                        mainFrame.getWidth() - 10,
+                        Integer.parseInt(Game.getParams().get("fileArea").get("x-indent")),
+                        Integer.parseInt(Game.getParams().get("fileArea").get("y-indent")),
+                        mainFrame.getWidth() - Integer.parseInt(Game.getParams().get("fileArea").get("width-indent")),
                         Integer.parseInt(Game.getParams().get("fileArea").get("height"))
                 ),
                 new Color(
@@ -73,10 +72,10 @@ public class MainFrame {
         //init-ing background of molecule painting area
         workArea = new RectangleArea(
                 new Rectangle(
-                        0,
-                        fileArea.getHeight(),
+                        Integer.parseInt(Game.getParams().get("workArea").get("x-indent")),
+                        fileArea.getHeight() + Integer.parseInt(Game.getParams().get("workArea").get("y-indent")),
                         Integer.parseInt(Game.getParams().get("workArea").get("width")),
-                        mainFrame.getHeight() - 30 - fileArea.getX()
+                        mainFrame.getHeight() - Integer.parseInt(Game.getParams().get("workArea").get("height-indent")) - fileArea.getHeight()
                 ),
                 new Color(
                         Integer.parseInt(Game.getParams().get("workArea").get("clrR")),
@@ -88,19 +87,27 @@ public class MainFrame {
 
         //init-ing buttons of choosing elements
         componentsAreas = new AreaButton[6];
-        componentsAreas[0] = new AreaButton(new Rectangle(350, 32, 100, 53), new Color(207, 231, 245), new Hydrogen());
-        componentsAreas[1] = new AreaButton(new Rectangle(350, 32 + 53, 100, 53), new Color(207, 231, 245), new Nitrogen());
-        componentsAreas[2] = new AreaButton(new Rectangle(350, 32 + 53 * 2, 100, 53), new Color(207, 231, 245), new Carboneum());
-        componentsAreas[3] = new AreaButton(new Rectangle(350, 32 + 53 * 3, 100, 53), new Color(207, 231, 245), new Oxygen());
-        componentsAreas[4] = new AreaButton(new Rectangle(350, 32 + 53 * 4, 100, 53), new Color(207, 231, 245), new FreeRadical());
-        componentsAreas[5] = new AreaButton(new Rectangle(350, 32 + 53 * 5, 100, 53), new Color(207, 231, 245), new Binding());
+        Color colorAreaButton = new Color(
+                Integer.parseInt(Game.getParams().get("areaButton").get("clrR")),
+                Integer.parseInt(Game.getParams().get("areaButton").get("clrG")),
+                Integer.parseInt(Game.getParams().get("areaButton").get("clrB"))
+        );
+        int xAreaButton = workArea.getX() + workArea.getWidth();
+        int yAreaButtonStep = workArea.getHeight() / componentsAreas.length;
+        int widthAreaButton = mainFrame.getWidth() - workArea.getWidth() - Integer.parseInt(Game.getParams().get("fileArea").get("width-indent"));
+        componentsAreas[0] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight(), widthAreaButton, yAreaButtonStep), colorAreaButton, new Hydrogen());
+        componentsAreas[1] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep, widthAreaButton, yAreaButtonStep), colorAreaButton, new Nitrogen());
+        componentsAreas[2] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep * 2, widthAreaButton, yAreaButtonStep), colorAreaButton, new Carboneum());
+        componentsAreas[3] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep * 3, widthAreaButton, yAreaButtonStep), colorAreaButton, new Oxygen());
+        componentsAreas[4] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep * 4, widthAreaButton, yAreaButtonStep), colorAreaButton, new FreeRadical());
+        componentsAreas[5] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep * 5, widthAreaButton, yAreaButtonStep), colorAreaButton, new Binding());
         componentsAreas[5].pressed(true);
 
         //init-ing save button
         buttonSave = new JButton(Game.getParams().get("saveButton").get("name"));
         buttonSave.setBounds(
-                mainFrame.getWidth() - Integer.parseInt(Game.getParams().get("saveButton").get("width")) - 15,
-                5,
+                mainFrame.getWidth() - Integer.parseInt(Game.getParams().get("saveButton").get("width")) - Integer.parseInt(Game.getParams().get("saveButton").get("x-indent")),
+                Integer.parseInt(Game.getParams().get("saveButton").get("y-indent")),
                 Integer.parseInt(Game.getParams().get("saveButton").get("width")),
                 Integer.parseInt(Game.getParams().get("saveButton").get("height"))
         );
@@ -109,20 +116,30 @@ public class MainFrame {
         //init-ing load button
         buttonLoad = new JButton(Game.getParams().get("loadButton").get("name"));
         buttonLoad.setBounds(
-                buttonSave.getX() - Integer.parseInt(Game.getParams().get("loadButton").get("width")) - 5,
-                5,
+                buttonSave.getX() - Integer.parseInt(Game.getParams().get("loadButton").get("width")) - Integer.parseInt(Game.getParams().get("loadButton").get("x-indent")),
+                Integer.parseInt(Game.getParams().get("loadButton").get("y-indent")),
                 Integer.parseInt(Game.getParams().get("loadButton").get("width")),
                 Integer.parseInt(Game.getParams().get("loadButton").get("height")));
         buttonLoad.setVisible(true);
 
         //init-ing clear button
-        buttonClear = new JButton("Clear");
-        buttonClear.setBounds(5, 5, 100, 20);
+        buttonClear = new JButton(Game.getParams().get("clearButton").get("name"));
+        buttonClear.setBounds(
+                Integer.parseInt(Game.getParams().get("clearButton").get("x-indent")),
+                Integer.parseInt(Game.getParams().get("clearButton").get("y-indent")),
+                Integer.parseInt(Game.getParams().get("clearButton").get("width")),
+                Integer.parseInt(Game.getParams().get("clearButton").get("height"))
+        );
         buttonClear.setVisible(true);
 
         //init-ing delete button
-        buttonDel = new JButton("Delete");
-        buttonDel.setBounds(buttonClear.getX() + buttonClear.getWidth() + 5, 5, 100, 20);
+        buttonDel = new JButton(Game.getParams().get("deleteButton").get("name"));
+        buttonDel.setBounds(
+                buttonClear.getX() + buttonClear.getWidth() + Integer.parseInt(Game.getParams().get("deleteButton").get("x-indent")),
+                Integer.parseInt(Game.getParams().get("deleteButton").get("y-indent")),
+                Integer.parseInt(Game.getParams().get("deleteButton").get("width")),
+                Integer.parseInt(Game.getParams().get("deleteButton").get("height"))
+        );
         buttonDel.setVisible(true);
 
         //add components in panel
@@ -296,6 +313,48 @@ public class MainFrame {
     }
 
     /**
+     * save molecule
+     */
+    private static void save() {
+        try {
+            Logs.writeMessage("Click save");
+            fileChooser.setDialogTitle("Сохранение файла");
+            fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+            int result = fileChooser.showSaveDialog(mainFrame);
+            if (result == JFileChooser.APPROVE_OPTION) {
+                Game.Save(fileChooser.getSelectedFile().getAbsolutePath());
+                JOptionPane.showMessageDialog(mainFrame,
+                        "Файл '" + fileChooser.getSelectedFile() + "' сохранен");
+            }
+        } catch (Exception exception) {
+            Logs.writeMessage(exception.toString());
+            new Exceptions.JException(exception.getMessage());
+        }
+    }
+
+    /**
+     * load molecule
+     */
+    private static void load() {
+        try {
+            Logs.writeMessage("Click load");
+            fileChooser.setDialogTitle("Загрузка файла");
+            fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+            int result = fileChooser.showOpenDialog(mainFrame);
+            if (result == JFileChooser.APPROVE_OPTION) {
+                Game.Load(fileChooser.getSelectedFile().getAbsolutePath());
+                JOptionPane.showMessageDialog(mainFrame,
+                        "Файл '" + fileChooser.getSelectedFile() + "' загружен");
+            }
+            //repaint all
+            repaintMolecule();
+        } catch (Exception exception) {
+            Logs.writeMessage(exception.toString());
+            new Exceptions.JException(exception.getMessage());
+        }
+    }
+
+    /**
      * listen all listeners in Frame
      */
     public static void run() {
@@ -353,20 +412,7 @@ public class MainFrame {
         buttonSave.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
-                    Logs.writeMessage("Click save");
-                    fileChooser.setDialogTitle("Сохранение файла");
-                    fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-                    int result = fileChooser.showSaveDialog(mainFrame);
-                    if (result == JFileChooser.APPROVE_OPTION) {
-                        Game.Save(fileChooser.getSelectedFile().getAbsolutePath());
-                        JOptionPane.showMessageDialog(mainFrame,
-                                "Файл '" + fileChooser.getSelectedFile() + "' сохранен");
-                    }
-                } catch (Exception exception) {
-                    Logs.writeMessage(exception.toString());
-                    new Exceptions.JException(exception.getMessage());
-                }
+                save();
             }
         });
 
@@ -374,22 +420,7 @@ public class MainFrame {
         buttonLoad.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
-                    Logs.writeMessage("Click load");
-                    fileChooser.setDialogTitle("Загрузка файла");
-                    fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-                    int result = fileChooser.showOpenDialog(mainFrame);
-                    if (result == JFileChooser.APPROVE_OPTION) {
-                        Game.Load(fileChooser.getSelectedFile().getAbsolutePath());
-                        JOptionPane.showMessageDialog(mainFrame,
-                                "Файл '" + fileChooser.getSelectedFile() + "' загружен");
-                    }
-                    //repaint all
-                    repaintMolecule();
-                } catch (Exception exception) {
-                    Logs.writeMessage(exception.toString());
-                    new Exceptions.JException(exception.getMessage());
-                }
+                load();
             }
         });
 
@@ -399,6 +430,38 @@ public class MainFrame {
             public void actionPerformed(ActionEvent e) {
                 Game.getAtomics().clear();
                 repaintMolecule();
+            }
+        });
+
+        //listener for keyboard clicking
+        mainFrame.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_CONTROL){
+                    keyPressedCode = KeyEvent.VK_CONTROL;
+                }
+                if(e.getKeyCode() == KeyEvent.VK_S && keyPressedCode == KeyEvent.VK_CONTROL){
+                    System.out.println("S");
+                    save();
+                    keyPressedCode = 0;
+                    return;
+                }
+                if(e.getKeyCode() == KeyEvent.VK_O && keyPressedCode == KeyEvent.VK_CONTROL){
+                    System.out.println("O");
+                    load();
+                    keyPressedCode = 0;
+                    return;
+                }
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                keyPressedCode = 0;
             }
         });
 
@@ -435,4 +498,6 @@ public class MainFrame {
         mainFrame.setContentPane(mainPanel);
         Logs.writeMessage("Repaint all");
     }
+
 }
+

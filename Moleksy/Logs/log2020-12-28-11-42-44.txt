@@ -1,0 +1,15 @@
+2020-12-28 11:42:44|	Start init-ing Frame
+2020-12-28 11:42:46|	Finish init-ing Frame
+2020-12-28 11:43:06|	Click button R
+2020-12-28 11:43:07|	Click in work area. Current component: R
+2020-12-28 11:43:08|	Click button H
+2020-12-28 11:43:09|	Click in work area. Current component: H
+2020-12-28 11:43:10|	Click button choice/bind
+2020-12-28 11:43:12|	Click in work area. Current component: null
+2020-12-28 11:43:12|	Choose 0th component: 0::0::0::R::Radical::1::82::176::20::20::0::-1
+2020-12-28 11:43:12|	Repaint all
+2020-12-28 11:43:13|	Click in work area. Current component: null
+2020-12-28 11:43:13|	Choose 1th component: 0::255::255::H::Atom::1::126::180::10::10::0::-1
+2020-12-28 11:43:13|	Repaint all
+2020-12-28 11:43:13|	Click in work area. Current component: null
+2020-12-28 11:43:13|	Repaint all

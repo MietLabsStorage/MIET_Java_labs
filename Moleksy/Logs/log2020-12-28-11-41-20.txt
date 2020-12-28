@@ -1,0 +1,5 @@
+2020-12-28 11:41:20|	Start init-ing Frame
+2020-12-28 11:41:21|	Finish init-ing Frame
+2020-12-28 11:41:29|	Click button O
+2020-12-28 11:41:30|	Click in work area. Current component: O
+2020-12-28 11:41:31|	Click in work area. Current component: O
