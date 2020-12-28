@@ -1,0 +1,7 @@
+2020-12-28 18:30:45|	Start init-ing Frame
+2020-12-28 18:30:47|	Finish init-ing Frame
+2020-12-28 18:30:48|	Click button O
+2020-12-28 18:30:50|	Click load
+2020-12-28 18:30:52|	Repaint all
+2020-12-28 18:30:53|	Click load
+2020-12-28 18:30:54|	Repaint all

@@ -1,2 +1,0 @@
-2020-12-27 19:51:27|	Start init-ing Frame
-2020-12-27 19:51:57|	Finish init-ing Frame

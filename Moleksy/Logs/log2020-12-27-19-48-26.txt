@@ -1,8 +1,0 @@
-2020-12-27 19:48:26|	Start init-ing Frame
-2020-12-27 19:48:28|	Finish init-ing Frame
-2020-12-27 19:48:28|	Click load
-2020-12-27 19:48:30|	Repaint all
-2020-12-27 19:48:31|	Click load
-2020-12-27 19:48:32|	Repaint all
-2020-12-27 19:48:38|	Click save
-2020-12-27 19:48:40|	Click save

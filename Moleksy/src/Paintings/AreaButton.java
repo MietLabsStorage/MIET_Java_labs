@@ -28,6 +28,7 @@ public class AreaButton extends RectangleArea {
      */
     public AreaButton(Rectangle bounds, Color color, RadicalComponent component) {
         super(bounds, color);
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
         this.component = component;
     }
 

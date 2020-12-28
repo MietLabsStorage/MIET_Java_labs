@@ -259,6 +259,21 @@ public class MainFrame {
         repaintMolecule();
     }
 
+    private static void carryComponent(MouseEvent e) {
+        for (int i = 0; i < Game.getAtomics().size(); i++) {
+            if (Game.getAtomics().get(i).getX() < e.getX()
+                    && e.getX() < Game.getAtomics().get(i).getX() + Game.getAtomics().get(i).getWidth()
+                    && Game.getAtomics().get(i).getY() - workArea.getY() < e.getY()
+                    && e.getY() < Game.getAtomics().get(i).getY() + Game.getAtomics().get(i).getHeight() - workArea.getY()){
+
+                Game.getAtomics().get(i).setLocation(e.getX() - Game.getAtomics().get(i).getWidth() / 2,
+                        e.getY() + fileArea.getHeight() - Game.getAtomics().get(i).getHeight() / 2);
+                repaintMolecule();
+                break;
+            }
+        }
+    }
+
     /**
      * action when click mouse on work area
      *
@@ -355,6 +370,34 @@ public class MainFrame {
     }
 
     /**
+     * key on keyboard pressed
+     * @param e
+     */
+    private static void keyboardPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_CONTROL) {
+            keyPressedCode = KeyEvent.VK_CONTROL;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_S && keyPressedCode == KeyEvent.VK_CONTROL) {
+            save();
+            keyPressedCode = 0;
+            return;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_O && keyPressedCode == KeyEvent.VK_CONTROL) {
+            load();
+            keyPressedCode = 0;
+            return;
+        }
+    }
+
+    /**
+     * clear work area
+     */
+    private static void clearAllComponents() {
+        Game.getAtomics().clear();
+        repaintMolecule();
+    }
+
+    /**
      * listen all listeners in Frame
      */
     public static void run() {
@@ -392,8 +435,7 @@ public class MainFrame {
             }
 
             @Override
-            public void mousePressed(MouseEvent e) {
-            }
+            public void mousePressed(MouseEvent e) { /*carryComponent(e); repaintMolecule();*/ }
 
             @Override
             public void mouseReleased(MouseEvent e) {
@@ -405,6 +447,18 @@ public class MainFrame {
 
             @Override
             public void mouseExited(MouseEvent e) {
+            }
+        });
+
+        workArea.addMouseMotionListener(new MouseMotionListener() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                carryComponent(e);
+            }
+
+            @Override
+            public void mouseMoved(MouseEvent e) {
+
             }
         });
 
@@ -428,8 +482,7 @@ public class MainFrame {
         buttonClear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Game.getAtomics().clear();
-                repaintMolecule();
+                clearAllComponents();
             }
         });
 
@@ -442,21 +495,7 @@ public class MainFrame {
 
             @Override
             public void keyPressed(KeyEvent e) {
-                if(e.getKeyCode() == KeyEvent.VK_CONTROL){
-                    keyPressedCode = KeyEvent.VK_CONTROL;
-                }
-                if(e.getKeyCode() == KeyEvent.VK_S && keyPressedCode == KeyEvent.VK_CONTROL){
-                    System.out.println("S");
-                    save();
-                    keyPressedCode = 0;
-                    return;
-                }
-                if(e.getKeyCode() == KeyEvent.VK_O && keyPressedCode == KeyEvent.VK_CONTROL){
-                    System.out.println("O");
-                    load();
-                    keyPressedCode = 0;
-                    return;
-                }
+                keyboardPressed(e);
             }
 
             @Override
@@ -473,6 +512,7 @@ public class MainFrame {
             }
         });
     }
+
 
     /**
      * repaint all components in Frame

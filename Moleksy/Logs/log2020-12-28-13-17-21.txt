@@ -1,4 +1,0 @@
-2020-12-28 13:17:21|	Start init-ing Frame
-2020-12-28 13:17:23|	Finish init-ing Frame
-2020-12-28 13:17:26|	Click in work area. Current component: null
-2020-12-28 13:17:26|	Repaint all

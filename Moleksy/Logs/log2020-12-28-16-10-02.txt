@@ -1,0 +1,38 @@
+2020-12-28 16:10:02|	Start init-ing Frame
+2020-12-28 16:10:04|	Finish init-ing Frame
+2020-12-28 16:10:05|	Click load
+2020-12-28 16:10:09|	Repaint all
+2020-12-28 16:10:14|	Click in work area. Current component: null
+2020-12-28 16:10:14|	Choose 3th component: 0::0::255::O::Atom::2::207::130::16::16::2::1::4
+2020-12-28 16:10:14|	Repaint all
+2020-12-28 16:10:17|	Click in work area. Current component: null
+2020-12-28 16:10:17|	Repaint all
+2020-12-28 16:10:19|	Click in work area. Current component: null
+2020-12-28 16:10:19|	Choose 3th component: 0::0::255::O::Atom::2::201::126::16::16::2::1::4
+2020-12-28 16:10:19|	Repaint all
+2020-12-28 16:10:20|	Click in work area. Current component: null
+2020-12-28 16:10:20|	Choose 3th component: 0::0::255::O::Atom::2::201::125::16::16::2::1::4
+2020-12-28 16:10:20|	Repaint all
+2020-12-28 16:10:20|	Click in work area. Current component: null
+2020-12-28 16:10:20|	Choose 3th component: 0::0::255::O::Atom::2::198::122::16::16::2::1::4
+2020-12-28 16:10:20|	Repaint all
+2020-12-28 16:10:21|	Click in work area. Current component: null
+2020-12-28 16:10:21|	Choose 3th component: 0::0::255::O::Atom::2::198::122::16::16::2::1::4
+2020-12-28 16:10:21|	Repaint all
+2020-12-28 16:10:21|	Click in work area. Current component: null
+2020-12-28 16:10:21|	Repaint all
+2020-12-28 16:10:21|	Click in work area. Current component: null
+2020-12-28 16:10:21|	Choose 3th component: 0::0::255::O::Atom::2::195::117::16::16::2::1::4
+2020-12-28 16:10:21|	Repaint all
+2020-12-28 16:10:23|	Click in work area. Current component: null
+2020-12-28 16:10:23|	Choose 3th component: 0::0::255::O::Atom::2::189::118::16::16::2::1::4
+2020-12-28 16:10:23|	Repaint all
+2020-12-28 16:10:23|	Click in work area. Current component: null
+2020-12-28 16:10:23|	Repaint all
+2020-12-28 16:10:24|	Click in work area. Current component: null
+2020-12-28 16:10:24|	Choose 3th component: 0::0::255::O::Atom::2::194::119::16::16::2::1::4
+2020-12-28 16:10:24|	Repaint all
+2020-12-28 16:10:25|	Click in work area. Current component: null
+2020-12-28 16:10:25|	Repaint all
+2020-12-28 16:10:31|	Click in work area. Current component: null
+2020-12-28 16:10:31|	Repaint all

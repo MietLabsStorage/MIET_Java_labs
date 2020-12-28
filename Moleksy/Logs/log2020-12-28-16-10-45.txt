@@ -1,0 +1,52 @@
+2020-12-28 16:10:45|	Start init-ing Frame
+2020-12-28 16:10:46|	Finish init-ing Frame
+2020-12-28 16:10:48|	Click load
+2020-12-28 16:10:52|	Repaint all
+2020-12-28 16:10:53|	Repaint all
+2020-12-28 16:10:55|	Repaint all
+2020-12-28 16:10:55|	Click in work area. Current component: null
+2020-12-28 16:10:55|	Repaint all
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:56|	Click in work area. Current component: null
+2020-12-28 16:10:56|	Choose 3th component: 0::0::255::O::Atom::2::210::134::16::16::2::1::4
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:56|	Click in work area. Current component: null
+2020-12-28 16:10:56|	Choose 3th component: 0::0::255::O::Atom::2::216::132::16::16::2::1::4
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:56|	Click in work area. Current component: null
+2020-12-28 16:10:56|	Choose 3th component: 0::0::255::O::Atom::2::216::132::16::16::2::1::4
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:56|	Repaint all
+2020-12-28 16:10:57|	Repaint all
+2020-12-28 16:10:57|	Click in work area. Current component: null
+2020-12-28 16:10:57|	Choose 3th component: 0::0::255::O::Atom::2::221::137::16::16::2::1::4
+2020-12-28 16:10:57|	Repaint all
+2020-12-28 16:10:58|	Repaint all
+2020-12-28 16:10:58|	Click in work area. Current component: null
+2020-12-28 16:10:58|	Choose 3th component: 0::0::255::O::Atom::2::223::139::16::16::2::1::4
+2020-12-28 16:10:58|	Repaint all
+2020-12-28 16:10:58|	Repaint all
+2020-12-28 16:10:59|	Repaint all
+2020-12-28 16:10:59|	Click in work area. Current component: null
+2020-12-28 16:10:59|	Choose 3th component: 0::0::255::O::Atom::2::220::140::16::16::2::1::4
+2020-12-28 16:10:59|	Repaint all
+2020-12-28 16:10:59|	Repaint all
+2020-12-28 16:10:59|	Click in work area. Current component: null
+2020-12-28 16:10:59|	Choose 3th component: 0::0::255::O::Atom::2::220::140::16::16::2::1::4
+2020-12-28 16:10:59|	Repaint all
+2020-12-28 16:10:59|	Repaint all
+2020-12-28 16:10:59|	Click in work area. Current component: null
+2020-12-28 16:10:59|	Choose 3th component: 0::0::255::O::Atom::2::226::145::16::16::2::1::4
+2020-12-28 16:11:00|	Repaint all
+2020-12-28 16:11:00|	Repaint all
+2020-12-28 16:11:00|	Repaint all
+2020-12-28 16:11:01|	Click in work area. Current component: null
+2020-12-28 16:11:01|	Choose 3th component: 0::0::255::O::Atom::2::230::148::16::16::2::1::4
+2020-12-28 16:11:01|	Repaint all
+2020-12-28 16:11:01|	Repaint all
+2020-12-28 16:11:01|	Click in work area. Current component: null
+2020-12-28 16:11:01|	Choose 3th component: 0::0::255::O::Atom::2::235::149::16::16::2::1::4
+2020-12-28 16:11:01|	Repaint all
+2020-12-28 16:11:02|	Repaint all

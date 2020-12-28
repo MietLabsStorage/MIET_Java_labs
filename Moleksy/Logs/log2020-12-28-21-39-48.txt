@@ -1,0 +1,686 @@
+2020-12-28 21:39:48|	Start init-ing Frame
+2020-12-28 21:39:52|	Finish init-ing Frame
+2020-12-28 21:39:57|	Click button C
+2020-12-28 21:39:59|	Click in work area. Current component: C
+2020-12-28 21:40:01|	Click in work area. Current component: C
+2020-12-28 21:40:04|	Click button H
+2020-12-28 21:40:05|	Click button C
+2020-12-28 21:40:06|	Click in work area. Current component: C
+2020-12-28 21:40:08|	Click in work area. Current component: C
+2020-12-28 21:40:09|	Click button choice/bind
+2020-12-28 21:40:10|	Click in work area. Current component: null
+2020-12-28 21:40:10|	Choose 0th component: 255::0::0::C::Atom::4::141::172::12::12::0::-1::-1::-1::-1
+2020-12-28 21:40:10|	Repaint all
+2020-12-28 21:40:11|	Click in work area. Current component: null
+2020-12-28 21:40:11|	Choose 1th component: 255::0::0::C::Atom::4::187::166::12::12::0::-1::-1::-1::-1
+2020-12-28 21:40:11|	Repaint all
+2020-12-28 21:40:11|	Click in work area. Current component: null
+2020-12-28 21:40:11|	Choose 1th component: 255::0::0::C::Atom::4::187::166::12::12::1::0::-1::-1::-1
+2020-12-28 21:40:11|	Repaint all
+2020-12-28 21:40:12|	Repaint all
+2020-12-28 21:40:12|	Click in work area. Current component: null
+2020-12-28 21:40:12|	Choose 0th component: 255::0::0::C::Atom::4::142::171::12::12::1::1::-1::-1::-1
+2020-12-28 21:40:12|	Repaint all
+2020-12-28 21:40:13|	Click in work area. Current component: null
+2020-12-28 21:40:13|	Choose 1th component: 255::0::0::C::Atom::4::187::166::12::12::2::0::0::-1::-1
+2020-12-28 21:40:13|	Repaint all
+2020-12-28 21:40:14|	Click in work area. Current component: null
+2020-12-28 21:40:14|	Choose 0th component: 255::0::0::C::Atom::4::142::171::12::12::2::1::1::-1::-1
+2020-12-28 21:40:14|	Repaint all
+2020-12-28 21:40:15|	Repaint all
+2020-12-28 21:40:16|	Click in work area. Current component: null
+2020-12-28 21:40:16|	Choose 1th component: 255::0::0::C::Atom::4::186::167::12::12::3::0::0::0::-1
+2020-12-28 21:40:16|	Repaint all
+2020-12-28 21:40:17|	Click in work area. Current component: null
+2020-12-28 21:40:17|	Choose 3th component: 255::0::0::C::Atom::4::221::159::12::12::0::-1::-1::-1::-1
+2020-12-28 21:40:17|	Repaint all
+2020-12-28 21:40:18|	Click in work area. Current component: null
+2020-12-28 21:40:18|	Choose 2th component: 255::0::0::C::Atom::4::90::174::12::12::0::-1::-1::-1::-1
+2020-12-28 21:40:18|	Repaint all
+2020-12-28 21:40:19|	Click in work area. Current component: null
+2020-12-28 21:40:19|	Choose 0th component: 255::0::0::C::Atom::4::142::171::12::12::3::1::1::1::-1
+2020-12-28 21:40:19|	Repaint all
+2020-12-28 21:40:20|	Click button H
+2020-12-28 21:40:21|	Click in work area. Current component: H
+2020-12-28 21:40:22|	Click in work area. Current component: H
+2020-12-28 21:40:22|	Click in work area. Current component: H
+2020-12-28 21:40:23|	Click in work area. Current component: H
+2020-12-28 21:40:24|	Click in work area. Current component: H
+2020-12-28 21:40:24|	Click in work area. Current component: H
+2020-12-28 21:40:25|	Click button choice/bind
+2020-12-28 21:40:26|	Click in work area. Current component: null
+2020-12-28 21:40:26|	Choose 9th component: 0::255::255::H::Atom::1::90::198::10::10::0::-1
+2020-12-28 21:40:26|	Repaint all
+2020-12-28 21:40:27|	Click in work area. Current component: null
+2020-12-28 21:40:27|	Choose 2th component: 255::0::0::C::Atom::4::90::174::12::12::1::0::-1::-1::-1
+2020-12-28 21:40:27|	Repaint all
+2020-12-28 21:40:28|	Click in work area. Current component: null
+2020-12-28 21:40:28|	Choose 2th component: 255::0::0::C::Atom::4::90::174::12::12::2::0::9::-1::-1
+2020-12-28 21:40:28|	Repaint all
+2020-12-28 21:40:28|	Click in work area. Current component: null
+2020-12-28 21:40:28|	Choose 8th component: 0::255::255::H::Atom::1::89::150::10::10::0::-1
+2020-12-28 21:40:28|	Repaint all
+2020-12-28 21:40:29|	Click in work area. Current component: null
+2020-12-28 21:40:29|	Choose 7th component: 0::255::255::H::Atom::1::69::168::10::10::0::-1
+2020-12-28 21:40:29|	Repaint all
+2020-12-28 21:40:30|	Click in work area. Current component: null
+2020-12-28 21:40:30|	Choose 2th component: 255::0::0::C::Atom::4::90::174::12::12::3::0::9::8::-1
+2020-12-28 21:40:30|	Repaint all
+2020-12-28 21:40:31|	Repaint all
+2020-12-28 21:40:31|	Repaint all
+2020-12-28 21:40:31|	Repaint all
+2020-12-28 21:40:32|	Click in work area. Current component: null
+2020-12-28 21:40:32|	Choose 3th component: 255::0::0::C::Atom::4::221::159::12::12::1::1::-1::-1::-1
+2020-12-28 21:40:32|	Repaint all
+2020-12-28 21:40:33|	Click in work area. Current component: null
+2020-12-28 21:40:33|	Choose 6th component: 0::255::255::H::Atom::1::230::177::10::10::0::-1
+2020-12-28 21:40:33|	Repaint all
+2020-12-28 21:40:33|	Click in work area. Current component: null
+2020-12-28 21:40:33|	Choose 3th component: 255::0::0::C::Atom::4::221::159::12::12::2::1::6::-1::-1
+2020-12-28 21:40:33|	Repaint all
+2020-12-28 21:40:34|	Click in work area. Current component: null
+2020-12-28 21:40:34|	Choose 5th component: 0::255::255::H::Atom::1::232::154::10::10::0::-1
+2020-12-28 21:40:34|	Repaint all
+2020-12-28 21:40:34|	Click in work area. Current component: null
+2020-12-28 21:40:34|	Choose 3th component: 255::0::0::C::Atom::4::221::159::12::12::3::1::6::5::-1
+2020-12-28 21:40:34|	Repaint all
+2020-12-28 21:40:35|	Click in work area. Current component: null
+2020-12-28 21:40:35|	Choose 4th component: 0::255::255::H::Atom::1::220::146::10::10::0::-1
+2020-12-28 21:40:35|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:37|	Repaint all
+2020-12-28 21:40:42|	Click in work area. Current component: null
+2020-12-28 21:40:42|	Choose 0th component: 255::0::0::C::Atom::4::142::171::12::12::4::1::1::1::2
+2020-12-28 21:40:42|	Repaint all
+2020-12-28 21:40:45|	Repaint all
+2020-12-28 21:40:46|	Click button choice/bind
+2020-12-28 21:40:48|	Click button C
+2020-12-28 21:40:49|	Click in work area. Current component: C
+2020-12-28 21:40:50|	Click button choice/bind
+2020-12-28 21:40:51|	Click in work area. Current component: null
+2020-12-28 21:40:51|	Choose 0th component: 255::0::0::C::Atom::4::186::167::12::12::1::2::-1::-1::-1
+2020-12-28 21:40:51|	Repaint all
+2020-12-28 21:40:52|	Click in work area. Current component: null
+2020-12-28 21:40:52|	Choose 9th component: 255::0::0::C::Atom::4::139::171::12::12::0::-1::-1::-1::-1
+2020-12-28 21:40:52|	Repaint all
+2020-12-28 21:40:52|	Click in work area. Current component: null
+2020-12-28 21:40:52|	Choose 9th component: 255::0::0::C::Atom::4::139::171::12::12::1::0::-1::-1::-1
+2020-12-28 21:40:52|	Repaint all
+2020-12-28 21:40:53|	Click in work area. Current component: null
+2020-12-28 21:40:53|	Choose 1th component: 255::0::0::C::Atom::4::90::174::12::12::3::8::7::6::-1
+2020-12-28 21:40:53|	Repaint all
+2020-12-28 21:40:54|	Click in work area. Current component: null
+2020-12-28 21:40:54|	Choose 9th component: 255::0::0::C::Atom::4::139::171::12::12::2::0::1::-1::-1
+2020-12-28 21:40:54|	Repaint all
+2020-12-28 21:40:55|	Repaint all
+2020-12-28 21:40:55|	Click in work area. Current component: null
+2020-12-28 21:40:55|	Choose 0th component: 255::0::0::C::Atom::4::185::165::12::12::2::2::9::-1::-1
+2020-12-28 21:40:55|	Repaint all
+2020-12-28 21:40:56|	Click in work area. Current component: null
+2020-12-28 21:40:56|	Choose 0th component: 255::0::0::C::Atom::4::185::165::12::12::3::2::9::9::-1
+2020-12-28 21:40:56|	Repaint all
+2020-12-28 21:40:56|	Click in work area. Current component: null
+2020-12-28 21:40:56|	Choose 9th component: 255::0::0::C::Atom::4::139::171::12::12::3::0::1::0::-1
+2020-12-28 21:40:56|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:40:59|	Repaint all
+2020-12-28 21:41:00|	Repaint all
+2020-12-28 21:41:00|	Repaint all
+2020-12-28 21:41:00|	Repaint all
+2020-12-28 21:41:00|	Repaint all
+2020-12-28 21:41:00|	Repaint all
+2020-12-28 21:41:01|	Repaint all
+2020-12-28 21:41:01|	Repaint all
+2020-12-28 21:41:01|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:02|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:03|	Repaint all
+2020-12-28 21:41:04|	Repaint all
+2020-12-28 21:41:04|	Repaint all
+2020-12-28 21:41:04|	Repaint all
+2020-12-28 21:41:04|	Repaint all
+2020-12-28 21:41:04|	Repaint all
+2020-12-28 21:41:04|	Repaint all
+2020-12-28 21:41:06|	Repaint all
+2020-12-28 21:41:06|	Repaint all
+2020-12-28 21:41:06|	Repaint all
+2020-12-28 21:41:06|	Repaint all
+2020-12-28 21:41:06|	Repaint all
+2020-12-28 21:41:06|	Repaint all
+2020-12-28 21:41:07|	Repaint all
+2020-12-28 21:41:08|	Repaint all
+2020-12-28 21:41:08|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:11|	Repaint all
+2020-12-28 21:41:12|	Repaint all
+2020-12-28 21:41:12|	Repaint all
+2020-12-28 21:41:12|	Repaint all
+2020-12-28 21:41:12|	Repaint all
+2020-12-28 21:41:14|	Repaint all
+2020-12-28 21:41:14|	Repaint all
+2020-12-28 21:41:14|	Repaint all
+2020-12-28 21:41:15|	Repaint all
+2020-12-28 21:41:15|	Repaint all
+2020-12-28 21:41:15|	Repaint all
+2020-12-28 21:41:22|	Repaint all
+2020-12-28 21:41:22|	Repaint all
+2020-12-28 21:41:22|	Repaint all
+2020-12-28 21:41:22|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:23|	Repaint all
+2020-12-28 21:41:24|	Repaint all
+2020-12-28 21:41:24|	Repaint all
+2020-12-28 21:41:24|	Repaint all
+2020-12-28 21:41:24|	Repaint all
+2020-12-28 21:41:24|	Repaint all
+2020-12-28 21:41:24|	Repaint all
+2020-12-28 21:41:25|	Repaint all
+2020-12-28 21:41:26|	Repaint all
+2020-12-28 21:41:26|	Repaint all
+2020-12-28 21:41:26|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:27|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:41:29|	Repaint all
+2020-12-28 21:42:23|	Click load
+2020-12-28 21:42:28|	Repaint all
+2020-12-28 21:42:29|	Repaint all
+2020-12-28 21:42:29|	Repaint all
+2020-12-28 21:42:29|	Repaint all
+2020-12-28 21:42:29|	Repaint all
+2020-12-28 21:42:29|	Repaint all
+2020-12-28 21:42:29|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:31|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:32|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:33|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:34|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:41|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:42|	Repaint all
+2020-12-28 21:42:44|	Repaint all
+2020-12-28 21:42:44|	Repaint all
+2020-12-28 21:42:44|	Repaint all
+2020-12-28 21:42:44|	Repaint all
+2020-12-28 21:42:44|	Repaint all
+2020-12-28 21:42:44|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:45|	Repaint all
+2020-12-28 21:42:46|	Repaint all
+2020-12-28 21:42:46|	Repaint all
+2020-12-28 21:42:46|	Repaint all
+2020-12-28 21:42:47|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:48|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:49|	Repaint all
+2020-12-28 21:42:50|	Repaint all
+2020-12-28 21:42:50|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:52|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:53|	Repaint all
+2020-12-28 21:42:54|	Repaint all
+2020-12-28 21:42:54|	Repaint all
+2020-12-28 21:42:54|	Repaint all
+2020-12-28 21:42:54|	Repaint all
+2020-12-28 21:42:55|	Repaint all
+2020-12-28 21:42:55|	Repaint all
+2020-12-28 21:42:56|	Repaint all
+2020-12-28 21:42:56|	Repaint all
+2020-12-28 21:42:58|	Repaint all
+2020-12-28 21:42:58|	Repaint all
+2020-12-28 21:42:58|	Repaint all
+2020-12-28 21:42:58|	Repaint all
+2020-12-28 21:42:59|	Repaint all
+2020-12-28 21:42:59|	Repaint all
+2020-12-28 21:43:00|	Repaint all
+2020-12-28 21:43:00|	Repaint all
+2020-12-28 21:43:00|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:02|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:03|	Repaint all
+2020-12-28 21:43:04|	Repaint all
+2020-12-28 21:43:04|	Repaint all
+2020-12-28 21:43:04|	Repaint all
+2020-12-28 21:43:04|	Repaint all
+2020-12-28 21:43:05|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:07|	Repaint all
+2020-12-28 21:43:08|	Repaint all
+2020-12-28 21:43:08|	Repaint all
+2020-12-28 21:43:08|	Repaint all
+2020-12-28 21:43:08|	Repaint all
+2020-12-28 21:43:08|	Repaint all
+2020-12-28 21:43:08|	Repaint all
+2020-12-28 21:43:09|	Repaint all
+2020-12-28 21:43:10|	Repaint all
+2020-12-28 21:43:10|	Repaint all
+2020-12-28 21:43:11|	Repaint all
+2020-12-28 21:43:11|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:15|	Repaint all
+2020-12-28 21:43:16|	Repaint all
+2020-12-28 21:43:16|	Repaint all
+2020-12-28 21:43:16|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:18|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:19|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:20|	Repaint all
+2020-12-28 21:43:21|	Repaint all
+2020-12-28 21:43:21|	Repaint all
+2020-12-28 21:43:21|	Repaint all
+2020-12-28 21:43:21|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:22|	Repaint all
+2020-12-28 21:43:23|	Repaint all
+2020-12-28 21:43:23|	Repaint all
+2020-12-28 21:43:23|	Repaint all
+2020-12-28 21:43:23|	Repaint all
+2020-12-28 21:43:24|	Repaint all
+2020-12-28 21:43:25|	Repaint all
+2020-12-28 21:43:25|	Repaint all
+2020-12-28 21:43:25|	Repaint all
+2020-12-28 21:43:32|	Click save

@@ -1,3 +1,0 @@
-2020-12-28 11:24:23|	Start init-ing Frame
-2020-12-28 11:24:25|	Finish init-ing Frame
-2020-12-28 11:24:28|	Click button R

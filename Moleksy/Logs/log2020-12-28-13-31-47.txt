@@ -1,4 +1,0 @@
-2020-12-28 13:31:47|	Start init-ing Frame
-2020-12-28 13:31:50|	Finish init-ing Frame
-2020-12-28 13:31:55|	Click save
-2020-12-28 13:31:58|	Click save
