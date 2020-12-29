@@ -1,0 +1,23 @@
+2020-12-29 15:32:11|	Start init-ing Frame
+2020-12-29 15:32:12|	main frame part 1 init-ed
+2020-12-29 15:32:13|	file chooser init-ed
+2020-12-29 15:32:13|	main panel init-ed
+2020-12-29 15:32:13|	file area init-ed
+2020-12-29 15:32:13|	work area init-ed
+2020-12-29 15:32:13|	components init-ed
+2020-12-29 15:32:13|	button save init-ed
+2020-12-29 15:32:13|	button load init-ed
+2020-12-29 15:32:13|	button clear init-ed
+2020-12-29 15:32:13|	button delete init-ed
+2020-12-29 15:32:13|	add all in main panel
+2020-12-29 15:32:13|	Finish init-ing Frame
+2020-12-29 15:32:13|	MainFrame.run is listening
+2020-12-29 15:32:21|	Click load
+2020-12-29 15:32:25|	Repaint all
+2020-12-29 15:32:26|	click on work area
+2020-12-29 15:32:26|	Click in work area. Current component: null
+2020-12-29 15:32:26|	Choose 1th component: 255::0::0::C::Atom::4::136::207::12::12::2::0::5::-1::-1
+2020-12-29 15:32:26|	Repaint all
+2020-12-29 15:32:28|	Clear all
+2020-12-29 15:32:28|	Repaint all
+2020-12-29 15:32:30|	Click button O

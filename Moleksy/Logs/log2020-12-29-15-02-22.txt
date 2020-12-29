@@ -1,0 +1,14 @@
+2020-12-29 15:02:22|	Start init-ing Frame
+2020-12-29 15:02:27|	main frame part 1 init-ed
+2020-12-29 15:02:31|	file chooser init-ed
+2020-12-29 15:02:31|	main panel init-ed
+2020-12-29 15:02:31|	file area init-ed
+2020-12-29 15:02:31|	work area init-ed
+2020-12-29 15:02:31|	components init-ed
+2020-12-29 15:02:31|	button save init-ed
+2020-12-29 15:02:31|	button load init-ed
+2020-12-29 15:02:31|	button clear init-ed
+2020-12-29 15:02:31|	button delete init-ed
+2020-12-29 15:02:31|	add all in main panel
+2020-12-29 15:02:33|	Finish init-ing Frame
+2020-12-29 15:02:34|	MainFrame.run is listening

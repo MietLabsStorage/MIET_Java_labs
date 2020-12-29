@@ -1,0 +1,23 @@
+2020-12-29 14:10:42|	Start init-ing Frame
+2020-12-29 14:10:44|	main frame part 1 init-ed
+2020-12-29 14:10:46|	file chooser init-ed
+2020-12-29 14:10:46|	main panel init-ed
+2020-12-29 14:10:46|	file area init-ed
+2020-12-29 14:10:46|	work area init-ed
+2020-12-29 14:10:46|	components init-ed
+2020-12-29 14:10:46|	button save init-ed
+2020-12-29 14:10:46|	button load init-ed
+2020-12-29 14:10:46|	button clear init-ed
+2020-12-29 14:10:46|	button delete init-ed
+2020-12-29 14:10:46|	add all in main panel
+2020-12-29 14:10:46|	Finish init-ing Frame
+2020-12-29 14:10:46|	MainFrame.run is listening
+2020-12-29 14:10:52|	Click button C
+2020-12-29 14:10:53|	click on work area
+2020-12-29 14:10:53|	Click in work area. Current component: C
+2020-12-29 14:10:53|	click on work area
+2020-12-29 14:10:53|	Click in work area. Current component: C
+2020-12-29 14:10:54|	click on work area
+2020-12-29 14:10:54|	Click in work area. Current component: C
+2020-12-29 14:10:54|	click on work area
+2020-12-29 14:10:54|	Click in work area. Current component: C

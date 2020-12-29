@@ -1,0 +1,450 @@
+2020-12-29 14:11:27|	Start init-ing Frame
+2020-12-29 14:11:31|	main frame part 1 init-ed
+2020-12-29 14:11:34|	file chooser init-ed
+2020-12-29 14:11:34|	main panel init-ed
+2020-12-29 14:11:34|	file area init-ed
+2020-12-29 14:11:34|	work area init-ed
+2020-12-29 14:11:34|	components init-ed
+2020-12-29 14:11:34|	button save init-ed
+2020-12-29 14:11:34|	button load init-ed
+2020-12-29 14:11:34|	button clear init-ed
+2020-12-29 14:11:34|	button delete init-ed
+2020-12-29 14:11:34|	add all in main panel
+2020-12-29 14:11:35|	Finish init-ing Frame
+2020-12-29 14:11:35|	MainFrame.run is listening
+2020-12-29 14:11:43|	Click load
+2020-12-29 14:11:47|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:58|	Try drag component
+2020-12-29 14:11:58|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:11:59|	Repaint all
+2020-12-29 14:11:59|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:00|	Try drag component
+2020-12-29 14:12:00|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:01|	Try drag component
+2020-12-29 14:12:01|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:02|	Try drag component
+2020-12-29 14:12:02|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:03|	Try drag component
+2020-12-29 14:12:03|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:04|	Repaint all
+2020-12-29 14:12:04|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:05|	Try drag component
+2020-12-29 14:12:05|	Repaint all
+2020-12-29 14:12:06|	Try drag component
+2020-12-29 14:12:06|	Repaint all
+2020-12-29 14:12:06|	Try drag component
+2020-12-29 14:12:06|	Repaint all
+2020-12-29 14:12:06|	Try drag component
+2020-12-29 14:12:06|	Repaint all
+2020-12-29 14:12:06|	Try drag component
+2020-12-29 14:12:06|	Repaint all

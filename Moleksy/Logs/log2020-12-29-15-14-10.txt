@@ -1,0 +1,981 @@
+2020-12-29 15:14:10|	Start init-ing Frame
+2020-12-29 15:14:11|	main frame part 1 init-ed
+2020-12-29 15:14:12|	file chooser init-ed
+2020-12-29 15:14:12|	main panel init-ed
+2020-12-29 15:14:12|	file area init-ed
+2020-12-29 15:14:12|	work area init-ed
+2020-12-29 15:14:12|	components init-ed
+2020-12-29 15:14:12|	button save init-ed
+2020-12-29 15:14:12|	button load init-ed
+2020-12-29 15:14:12|	button clear init-ed
+2020-12-29 15:14:12|	button delete init-ed
+2020-12-29 15:14:12|	add all in main panel
+2020-12-29 15:14:12|	Finish init-ing Frame
+2020-12-29 15:14:12|	MainFrame.run is listening
+2020-12-29 15:17:39|	Click load
+2020-12-29 15:17:42|	Repaint all
+2020-12-29 15:18:55|	Clear all
+2020-12-29 15:18:55|	Repaint all
+2020-12-29 15:18:56|	Click button C
+2020-12-29 15:18:57|	click on work area
+2020-12-29 15:18:57|	Click in work area. Current component: C
+2020-12-29 15:18:58|	click on work area
+2020-12-29 15:18:58|	Click in work area. Current component: C
+2020-12-29 15:18:58|	click on work area
+2020-12-29 15:18:58|	Click in work area. Current component: C
+2020-12-29 15:18:59|	click on work area
+2020-12-29 15:18:59|	Click in work area. Current component: C
+2020-12-29 15:19:01|	Click button choice/bind
+2020-12-29 15:19:02|	click on work area
+2020-12-29 15:19:02|	Click in work area. Current component: null
+2020-12-29 15:19:02|	Choose 3th component: 255::0::0::C::Atom::4::88::170::12::12::0::-1::-1::-1::-1
+2020-12-29 15:19:02|	Repaint all
+2020-12-29 15:19:03|	click on work area
+2020-12-29 15:19:03|	Click in work area. Current component: null
+2020-12-29 15:19:03|	Choose 0th component: 255::0::0::C::Atom::4::144::171::12::12::0::-1::-1::-1::-1
+2020-12-29 15:19:03|	Repaint all
+2020-12-29 15:19:03|	click on work area
+2020-12-29 15:19:03|	Click in work area. Current component: null
+2020-12-29 15:19:03|	Choose 0th component: 255::0::0::C::Atom::4::144::171::12::12::1::3::-1::-1::-1
+2020-12-29 15:19:03|	Repaint all
+2020-12-29 15:19:04|	click on work area
+2020-12-29 15:19:04|	Click in work area. Current component: null
+2020-12-29 15:19:04|	Choose 3th component: 255::0::0::C::Atom::4::88::170::12::12::1::0::-1::-1::-1
+2020-12-29 15:19:04|	Repaint all
+2020-12-29 15:19:06|	click on work area
+2020-12-29 15:19:06|	Click in work area. Current component: null
+2020-12-29 15:19:06|	Choose 0th component: 255::0::0::C::Atom::4::144::171::12::12::2::3::3::-1::-1
+2020-12-29 15:19:06|	Repaint all
+2020-12-29 15:19:07|	click on work area
+2020-12-29 15:19:07|	Click in work area. Current component: null
+2020-12-29 15:19:07|	Choose 1th component: 255::0::0::C::Atom::4::191::170::12::12::0::-1::-1::-1::-1
+2020-12-29 15:19:07|	Repaint all
+2020-12-29 15:19:07|	click on work area
+2020-12-29 15:19:07|	Click in work area. Current component: null
+2020-12-29 15:19:07|	Choose 1th component: 255::0::0::C::Atom::4::191::170::12::12::1::0::-1::-1::-1
+2020-12-29 15:19:07|	Repaint all
+2020-12-29 15:19:08|	click on work area
+2020-12-29 15:19:08|	Click in work area. Current component: null
+2020-12-29 15:19:08|	Choose 2th component: 255::0::0::C::Atom::4::247::169::12::12::0::-1::-1::-1::-1
+2020-12-29 15:19:08|	Repaint all
+2020-12-29 15:19:09|	click on work area
+2020-12-29 15:19:09|	Click in work area. Current component: null
+2020-12-29 15:19:09|	Choose 2th component: 255::0::0::C::Atom::4::247::169::12::12::1::1::-1::-1::-1
+2020-12-29 15:19:09|	Repaint all
+2020-12-29 15:19:10|	click on work area
+2020-12-29 15:19:10|	Click in work area. Current component: null
+2020-12-29 15:19:10|	Choose 1th component: 255::0::0::C::Atom::4::191::170::12::12::2::0::2::-1::-1
+2020-12-29 15:19:10|	Repaint all
+2020-12-29 15:19:11|	Click button H
+2020-12-29 15:19:12|	click on work area
+2020-12-29 15:19:12|	Click in work area. Current component: H
+2020-12-29 15:19:14|	click on work area
+2020-12-29 15:19:14|	Click in work area. Current component: H
+2020-12-29 15:19:15|	click on work area
+2020-12-29 15:19:15|	Click in work area. Current component: H
+2020-12-29 15:19:15|	click on work area
+2020-12-29 15:19:15|	Click in work area. Current component: H
+2020-12-29 15:19:15|	click on work area
+2020-12-29 15:19:15|	Click in work area. Current component: H
+2020-12-29 15:19:16|	Click button choice/bind
+2020-12-29 15:19:18|	click on work area
+2020-12-29 15:19:18|	Click in work area. Current component: null
+2020-12-29 15:19:18|	Choose 6th component: 0::255::255::H::Atom::1::141::184::10::10::0::-1
+2020-12-29 15:19:18|	Repaint all
+2020-12-29 15:19:18|	click on work area
+2020-12-29 15:19:18|	Click in work area. Current component: null
+2020-12-29 15:19:18|	Choose 0th component: 255::0::0::C::Atom::4::144::171::12::12::3::3::3::1::-1
+2020-12-29 15:19:18|	Repaint all
+2020-12-29 15:19:19|	click on work area
+2020-12-29 15:19:19|	Click in work area. Current component: null
+2020-12-29 15:19:19|	Choose 8th component: 0::255::255::H::Atom::1::184::184::10::10::0::-1
+2020-12-29 15:19:19|	Repaint all
+2020-12-29 15:19:20|	click on work area
+2020-12-29 15:19:20|	Click in work area. Current component: null
+2020-12-29 15:19:20|	Choose 1th component: 255::0::0::C::Atom::4::191::170::12::12::3::0::2::2::-1
+2020-12-29 15:19:20|	Repaint all
+2020-12-29 15:19:21|	click on work area
+2020-12-29 15:19:21|	Click in work area. Current component: null
+2020-12-29 15:19:21|	Repaint all
+2020-12-29 15:19:22|	click on work area
+2020-12-29 15:19:22|	Click in work area. Current component: null
+2020-12-29 15:19:22|	Choose 5th component: 0::255::255::H::Atom::1::68::168::10::10::0::-1
+2020-12-29 15:19:22|	Repaint all
+2020-12-29 15:19:23|	click on work area
+2020-12-29 15:19:23|	Click in work area. Current component: null
+2020-12-29 15:19:23|	Choose 3th component: 255::0::0::C::Atom::4::88::170::12::12::2::0::0::-1::-1
+2020-12-29 15:19:23|	Repaint all
+2020-12-29 15:19:24|	Try drag component
+2020-12-29 15:19:24|	click on work area
+2020-12-29 15:19:24|	Click in work area. Current component: null
+2020-12-29 15:19:24|	Choose 2th component: 255::0::0::C::Atom::4::247::169::12::12::2::1::1::-1::-1
+2020-12-29 15:19:24|	Repaint all
+2020-12-29 15:19:25|	click on work area
+2020-12-29 15:19:25|	Click in work area. Current component: null
+2020-12-29 15:19:25|	Choose 4th component: 0::255::255::H::Atom::1::261::170::10::10::0::-1
+2020-12-29 15:19:25|	Repaint all
+2020-12-29 15:19:26|	Click button H
+2020-12-29 15:19:27|	click on work area
+2020-12-29 15:19:27|	Click in work area. Current component: H
+2020-12-29 15:19:28|	click on work area
+2020-12-29 15:19:28|	Click in work area. Current component: H
+2020-12-29 15:19:30|	Click button choice/bind
+2020-12-29 15:19:32|	click on work area
+2020-12-29 15:19:32|	Click in work area. Current component: null
+2020-12-29 15:19:32|	Choose 9th component: 0::255::255::H::Atom::1::87::157::10::10::0::-1
+2020-12-29 15:19:32|	Repaint all
+2020-12-29 15:19:33|	click on work area
+2020-12-29 15:19:33|	Click in work area. Current component: null
+2020-12-29 15:19:33|	Repaint all
+2020-12-29 15:19:34|	click on work area
+2020-12-29 15:19:34|	Click in work area. Current component: null
+2020-12-29 15:19:34|	Choose 9th component: 0::255::255::H::Atom::1::87::157::10::10::0::-1
+2020-12-29 15:19:34|	Repaint all
+2020-12-29 15:19:34|	click on work area
+2020-12-29 15:19:34|	Click in work area. Current component: null
+2020-12-29 15:19:34|	Choose 9th component: 0::255::255::H::Atom::1::87::157::10::10::0::-1
+2020-12-29 15:19:34|	Repaint all
+2020-12-29 15:19:35|	click on work area
+2020-12-29 15:19:35|	Click in work area. Current component: null
+2020-12-29 15:19:35|	Choose 3th component: 255::0::0::C::Atom::4::88::170::12::12::3::0::0::5::-1
+2020-12-29 15:19:35|	Repaint all
+2020-12-29 15:19:36|	click on work area
+2020-12-29 15:19:36|	Click in work area. Current component: null
+2020-12-29 15:19:36|	Choose 2th component: 255::0::0::C::Atom::4::247::169::12::12::3::1::1::4::-1
+2020-12-29 15:19:36|	Repaint all
+2020-12-29 15:19:37|	click on work area
+2020-12-29 15:19:37|	Click in work area. Current component: null
+2020-12-29 15:19:37|	Choose 10th component: 0::255::255::H::Atom::1::238::148::10::10::0::-1
+2020-12-29 15:19:37|	Repaint all
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 17
+2020-12-29 15:19:47|	key pressed: 83
+2020-12-29 15:19:47|	Click save
+2020-12-29 15:20:07|	Clear all
+2020-12-29 15:20:07|	Repaint all
+2020-12-29 15:20:08|	Click load
+2020-12-29 15:20:12|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:14|	Try drag component
+2020-12-29 15:20:14|	Repaint all
+2020-12-29 15:20:15|	Try drag component
+2020-12-29 15:20:15|	Repaint all
+2020-12-29 15:20:15|	Try drag component
+2020-12-29 15:20:15|	Repaint all
+2020-12-29 15:20:15|	Try drag component
+2020-12-29 15:20:15|	Repaint all
+2020-12-29 15:20:15|	Try drag component
+2020-12-29 15:20:15|	Repaint all
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Repaint all
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Repaint all
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Repaint all
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Repaint all
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Repaint all
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:16|	Try drag component
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:17|	Try drag component
+2020-12-29 15:20:17|	Repaint all
+2020-12-29 15:20:18|	Try drag component
+2020-12-29 15:20:18|	Repaint all
+2020-12-29 15:20:18|	Try drag component
+2020-12-29 15:20:18|	Repaint all
+2020-12-29 15:20:18|	Try drag component
+2020-12-29 15:20:18|	Repaint all
+2020-12-29 15:20:18|	Try drag component
+2020-12-29 15:20:18|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:19|	Try drag component
+2020-12-29 15:20:19|	Repaint all
+2020-12-29 15:20:20|	Try drag component
+2020-12-29 15:20:20|	Repaint all
+2020-12-29 15:20:20|	Try drag component
+2020-12-29 15:20:20|	Repaint all
+2020-12-29 15:20:20|	Try drag component
+2020-12-29 15:20:20|	Repaint all
+2020-12-29 15:20:20|	Try drag component
+2020-12-29 15:20:20|	Repaint all
+2020-12-29 15:20:21|	Try drag component
+2020-12-29 15:20:21|	Repaint all
+2020-12-29 15:20:21|	Try drag component
+2020-12-29 15:20:21|	Repaint all
+2020-12-29 15:20:21|	Try drag component
+2020-12-29 15:20:21|	Repaint all
+2020-12-29 15:20:21|	Try drag component
+2020-12-29 15:20:21|	Repaint all
+2020-12-29 15:20:21|	Try drag component
+2020-12-29 15:20:21|	Repaint all
+2020-12-29 15:20:21|	Try drag component
+2020-12-29 15:20:21|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:22|	Try drag component
+2020-12-29 15:20:22|	Repaint all
+2020-12-29 15:20:24|	click on work area
+2020-12-29 15:20:24|	Click in work area. Current component: null
+2020-12-29 15:20:24|	Choose 7th component: 0::255::255::H::Atom::1::141::184::10::10::0::-1
+2020-12-29 15:20:24|	Repaint all
+2020-12-29 15:20:26|	Try delete component
+2020-12-29 15:20:26|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:28|	Try drag component
+2020-12-29 15:20:28|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:29|	Try drag component
+2020-12-29 15:20:29|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:30|	Try drag component
+2020-12-29 15:20:30|	Repaint all
+2020-12-29 15:20:31|	Try drag component
+2020-12-29 15:20:31|	Repaint all
+2020-12-29 15:20:31|	Try drag component
+2020-12-29 15:20:31|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:32|	Try drag component
+2020-12-29 15:20:32|	Repaint all
+2020-12-29 15:20:33|	Try drag component
+2020-12-29 15:20:33|	Repaint all
+2020-12-29 15:20:33|	Try drag component
+2020-12-29 15:20:33|	Repaint all
+2020-12-29 15:20:33|	Try drag component
+2020-12-29 15:20:33|	Repaint all
+2020-12-29 15:20:33|	Try drag component
+2020-12-29 15:20:33|	Repaint all
+2020-12-29 15:20:33|	Try drag component
+2020-12-29 15:20:33|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:34|	Try drag component
+2020-12-29 15:20:34|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:35|	Try drag component
+2020-12-29 15:20:35|	Repaint all
+2020-12-29 15:20:36|	Try drag component
+2020-12-29 15:20:36|	Repaint all
+2020-12-29 15:20:36|	Try drag component
+2020-12-29 15:20:36|	Repaint all
+2020-12-29 15:20:36|	Try drag component
+2020-12-29 15:20:36|	Repaint all
+2020-12-29 15:20:36|	Try drag component
+2020-12-29 15:20:36|	Repaint all
+2020-12-29 15:20:36|	Try drag component
+2020-12-29 15:20:36|	Repaint all
+2020-12-29 15:20:36|	Try drag component
+2020-12-29 15:20:36|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:37|	Try drag component
+2020-12-29 15:20:37|	Repaint all
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Repaint all
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Repaint all
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Repaint all
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:38|	Try drag component
+2020-12-29 15:20:39|	Try drag component
+2020-12-29 15:20:39|	Try drag component
+2020-12-29 15:20:39|	Try drag component
+2020-12-29 15:20:39|	Try drag component
+2020-12-29 15:20:39|	Repaint all
+2020-12-29 15:20:40|	Try drag component
+2020-12-29 15:20:40|	Repaint all
+2020-12-29 15:20:40|	Try drag component
+2020-12-29 15:20:40|	Repaint all
+2020-12-29 15:20:40|	Try drag component
+2020-12-29 15:20:40|	Repaint all
+2020-12-29 15:20:40|	Try drag component
+2020-12-29 15:20:40|	Repaint all
+2020-12-29 15:20:43|	Try drag component
+2020-12-29 15:20:43|	Repaint all
+2020-12-29 15:20:43|	Try drag component
+2020-12-29 15:20:43|	Repaint all
+2020-12-29 15:20:43|	Try drag component
+2020-12-29 15:20:43|	Repaint all
+2020-12-29 15:20:43|	Try drag component
+2020-12-29 15:20:43|	Repaint all
+2020-12-29 15:20:44|	Try drag component
+2020-12-29 15:20:44|	Repaint all
+2020-12-29 15:20:52|	Clear all
+2020-12-29 15:20:52|	Repaint all
+2020-12-29 15:24:49|	Try drag component
+2020-12-29 15:24:49|	Try drag component
+2020-12-29 15:26:51|	Click button C
+2020-12-29 15:26:52|	click on work area
+2020-12-29 15:26:52|	Click in work area. Current component: C
+2020-12-29 15:26:53|	click on work area
+2020-12-29 15:26:53|	Click in work area. Current component: C
+2020-12-29 15:26:55|	Click button H
+2020-12-29 15:26:56|	Try drag component
+2020-12-29 15:26:57|	click on work area
+2020-12-29 15:26:57|	Click in work area. Current component: H
+2020-12-29 15:26:58|	Try drag component
+2020-12-29 15:26:59|	click on work area
+2020-12-29 15:26:59|	Click in work area. Current component: H
+2020-12-29 15:26:59|	click on work area
+2020-12-29 15:26:59|	Click in work area. Current component: H
+2020-12-29 15:27:00|	click on work area
+2020-12-29 15:27:00|	Click in work area. Current component: H
+2020-12-29 15:27:01|	click on work area
+2020-12-29 15:27:01|	Click in work area. Current component: H
+2020-12-29 15:27:01|	click on work area
+2020-12-29 15:27:01|	Click in work area. Current component: H
+2020-12-29 15:27:02|	Click button choice/bind
+2020-12-29 15:27:05|	Try drag component
+2020-12-29 15:27:05|	Repaint all
+2020-12-29 15:27:06|	click on work area
+2020-12-29 15:27:06|	Click in work area. Current component: null
+2020-12-29 15:27:06|	Choose 4th component: 0::255::255::H::Atom::1::135::199::10::10::0::-1
+2020-12-29 15:27:06|	Repaint all
+2020-12-29 15:27:07|	Try delete component
+2020-12-29 15:27:07|	Repaint all
+2020-12-29 15:27:08|	click on work area
+2020-12-29 15:27:08|	Click in work area. Current component: null
+2020-12-29 15:27:08|	Choose 6th component: 0::255::255::H::Atom::1::191::194::10::10::0::-1
+2020-12-29 15:27:08|	Repaint all
+2020-12-29 15:27:09|	Try delete component
+2020-12-29 15:27:09|	Repaint all
+2020-12-29 15:27:10|	click on work area
+2020-12-29 15:27:10|	Click in work area. Current component: null
+2020-12-29 15:27:10|	Repaint all
+2020-12-29 15:27:11|	click on work area
+2020-12-29 15:27:11|	Click in work area. Current component: null
+2020-12-29 15:27:11|	Choose 0th component: 255::0::0::C::Atom::4::129::178::12::12::0::-1::-1::-1::-1
+2020-12-29 15:27:11|	Repaint all
+2020-12-29 15:27:12|	click on work area
+2020-12-29 15:27:12|	Click in work area. Current component: null
+2020-12-29 15:27:12|	Choose 1th component: 255::0::0::C::Atom::4::171::174::12::12::0::-1::-1::-1::-1
+2020-12-29 15:27:12|	Repaint all
+2020-12-29 15:27:12|	Try drag component
+2020-12-29 15:27:12|	Repaint all
+2020-12-29 15:27:13|	click on work area
+2020-12-29 15:27:13|	Click in work area. Current component: null
+2020-12-29 15:27:13|	Choose 0th component: 255::0::0::C::Atom::4::129::178::12::12::1::1::-1::-1::-1
+2020-12-29 15:27:13|	Repaint all
+2020-12-29 15:27:14|	click on work area
+2020-12-29 15:27:14|	Click in work area. Current component: null
+2020-12-29 15:27:14|	Choose 1th component: 255::0::0::C::Atom::4::171::173::12::12::1::0::-1::-1::-1
+2020-12-29 15:27:14|	Repaint all
+2020-12-29 15:27:15|	click on work area
+2020-12-29 15:27:15|	Click in work area. Current component: null
+2020-12-29 15:27:15|	Choose 3th component: 0::255::255::H::Atom::1::103::184::10::10::0::-1
+2020-12-29 15:27:15|	Repaint all
+2020-12-29 15:27:16|	click on work area
+2020-12-29 15:27:16|	Click in work area. Current component: null
+2020-12-29 15:27:16|	Choose 0th component: 255::0::0::C::Atom::4::129::178::12::12::2::1::1::-1::-1
+2020-12-29 15:27:16|	Repaint all
+2020-12-29 15:27:17|	click on work area
+2020-12-29 15:27:17|	Click in work area. Current component: null
+2020-12-29 15:27:17|	Choose 2th component: 0::255::255::H::Atom::1::117::151::10::10::0::-1
+2020-12-29 15:27:17|	Repaint all
+2020-12-29 15:27:18|	click on work area
+2020-12-29 15:27:18|	Click in work area. Current component: null
+2020-12-29 15:27:18|	Choose 0th component: 255::0::0::C::Atom::4::129::178::12::12::3::1::1::3::-1
+2020-12-29 15:27:18|	Repaint all
+2020-12-29 15:27:19|	click on work area
+2020-12-29 15:27:19|	Click in work area. Current component: null
+2020-12-29 15:27:19|	Choose 4th component: 0::255::255::H::Atom::1::191::152::10::10::0::-1
+2020-12-29 15:27:19|	Repaint all
+2020-12-29 15:27:20|	click on work area
+2020-12-29 15:27:20|	Click in work area. Current component: null
+2020-12-29 15:27:20|	Choose 1th component: 255::0::0::C::Atom::4::171::173::12::12::2::0::0::-1::-1
+2020-12-29 15:27:20|	Repaint all
+2020-12-29 15:27:21|	click on work area
+2020-12-29 15:27:21|	Click in work area. Current component: null
+2020-12-29 15:27:21|	Choose 5th component: 0::255::255::H::Atom::1::192::173::10::10::0::-1
+2020-12-29 15:27:21|	Repaint all
+2020-12-29 15:27:22|	click on work area
+2020-12-29 15:27:22|	Click in work area. Current component: null
+2020-12-29 15:27:22|	Choose 1th component: 255::0::0::C::Atom::4::171::173::12::12::3::0::0::4::-1
+2020-12-29 15:27:22|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:27|	Try drag component
+2020-12-29 15:27:27|	Repaint all
+2020-12-29 15:27:28|	Try drag component
+2020-12-29 15:27:28|	Repaint all
+2020-12-29 15:27:28|	Try drag component
+2020-12-29 15:27:28|	Repaint all
+2020-12-29 15:27:28|	Try drag component
+2020-12-29 15:27:28|	Repaint all
+2020-12-29 15:27:28|	Try drag component
+2020-12-29 15:27:28|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:29|	Try drag component
+2020-12-29 15:27:29|	Repaint all
+2020-12-29 15:27:30|	Try drag component
+2020-12-29 15:27:30|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:31|	Try drag component
+2020-12-29 15:27:31|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:32|	Try drag component
+2020-12-29 15:27:32|	Repaint all
+2020-12-29 15:27:33|	Try drag component
+2020-12-29 15:27:33|	Repaint all
+2020-12-29 15:27:33|	Try drag component
+2020-12-29 15:27:33|	Repaint all
+2020-12-29 15:27:33|	Try drag component
+2020-12-29 15:27:33|	Repaint all
+2020-12-29 15:27:33|	Try drag component
+2020-12-29 15:27:33|	Repaint all
+2020-12-29 15:27:48|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:49|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 17
+2020-12-29 15:27:50|	key pressed: 83
+2020-12-29 15:27:50|	Click save
+2020-12-29 15:28:06|	Click load
+2020-12-29 15:28:12|	Repaint all
+2020-12-29 15:28:14|	Try drag component
+2020-12-29 15:28:14|	Repaint all
+2020-12-29 15:28:14|	Try drag component
+2020-12-29 15:28:14|	Repaint all
+2020-12-29 15:28:14|	Try drag component
+2020-12-29 15:28:14|	Repaint all
+2020-12-29 15:28:14|	Try drag component
+2020-12-29 15:28:14|	Repaint all
+2020-12-29 15:28:14|	Try drag component
+2020-12-29 15:28:14|	Repaint all
+2020-12-29 15:28:14|	Try drag component
+2020-12-29 15:28:15|	Repaint all
+2020-12-29 15:28:15|	Try drag component
+2020-12-29 15:28:15|	Repaint all
+2020-12-29 15:28:15|	Try drag component
+2020-12-29 15:28:15|	Repaint all
+2020-12-29 15:28:15|	Try drag component
+2020-12-29 15:28:15|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:16|	Try drag component
+2020-12-29 15:28:16|	Repaint all
+2020-12-29 15:28:22|	Clear all
+2020-12-29 15:28:22|	Repaint all
+2020-12-29 15:28:36|	Click button C
+2020-12-29 15:28:38|	Click button C
+2020-12-29 15:28:47|	Click button C
+2020-12-29 15:28:49|	Clear all
+2020-12-29 15:28:49|	Repaint all
+2020-12-29 15:28:50|	Click button C
+2020-12-29 15:28:50|	Click button N
+2020-12-29 15:28:51|	Click button H
+2020-12-29 15:28:54|	Click button H
+2020-12-29 15:28:56|	Click button choice/bind
+2020-12-29 15:29:14|	Click load
+2020-12-29 15:29:17|	Repaint all
+2020-12-29 15:29:17|	Click button O
+2020-12-29 15:29:19|	click on work area
+2020-12-29 15:29:19|	Click in work area. Current component: O
+2020-12-29 15:29:21|	Click button H
+2020-12-29 15:29:23|	click on work area
+2020-12-29 15:29:23|	Click in work area. Current component: H
+2020-12-29 15:29:24|	Click button choice/bind
+2020-12-29 15:29:25|	click on work area
+2020-12-29 15:29:25|	Click in work area. Current component: null
+2020-12-29 15:29:25|	Choose 8th component: 0::0::255::O::Atom::2::141::267::16::16::0::-1::-1
+2020-12-29 15:29:25|	Repaint all
+2020-12-29 15:29:26|	click on work area
+2020-12-29 15:29:26|	Click in work area. Current component: null
+2020-12-29 15:29:26|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::0::-1
+2020-12-29 15:29:26|	Repaint all
+2020-12-29 15:29:26|	click on work area
+2020-12-29 15:29:26|	Click in work area. Current component: null
+2020-12-29 15:29:26|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:26|	Repaint all
+2020-12-29 15:29:26|	click on work area
+2020-12-29 15:29:26|	Click in work area. Current component: null
+2020-12-29 15:29:26|	Choose 8th component: 0::0::255::O::Atom::2::141::267::16::16::1::9::-1
+2020-12-29 15:29:27|	Repaint all
+2020-12-29 15:29:27|	click on work area
+2020-12-29 15:29:27|	Click in work area. Current component: null
+2020-12-29 15:29:27|	Choose 8th component: 0::0::255::O::Atom::2::141::267::16::16::1::9::-1
+2020-12-29 15:29:27|	Repaint all
+2020-12-29 15:29:28|	click on work area
+2020-12-29 15:29:28|	Click in work area. Current component: null
+2020-12-29 15:29:28|	Repaint all
+2020-12-29 15:29:29|	click on work area
+2020-12-29 15:29:29|	Click in work area. Current component: null
+2020-12-29 15:29:29|	Choose 8th component: 0::0::255::O::Atom::2::141::267::16::16::1::9::-1
+2020-12-29 15:29:29|	Repaint all
+2020-12-29 15:29:30|	click on work area
+2020-12-29 15:29:30|	Click in work area. Current component: null
+2020-12-29 15:29:30|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:30|	Repaint all
+2020-12-29 15:29:31|	click on work area
+2020-12-29 15:29:31|	Click in work area. Current component: null
+2020-12-29 15:29:31|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:31|	Repaint all
+2020-12-29 15:29:31|	click on work area
+2020-12-29 15:29:31|	Click in work area. Current component: null
+2020-12-29 15:29:31|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:31|	Repaint all
+2020-12-29 15:29:31|	click on work area
+2020-12-29 15:29:31|	Click in work area. Current component: null
+2020-12-29 15:29:31|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:31|	Repaint all
+2020-12-29 15:29:31|	click on work area
+2020-12-29 15:29:31|	Click in work area. Current component: null
+2020-12-29 15:29:31|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:31|	Repaint all
+2020-12-29 15:29:32|	click on work area
+2020-12-29 15:29:32|	Click in work area. Current component: null
+2020-12-29 15:29:32|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:32|	Repaint all
+2020-12-29 15:29:32|	click on work area
+2020-12-29 15:29:32|	Click in work area. Current component: null
+2020-12-29 15:29:32|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:32|	Repaint all
+2020-12-29 15:29:32|	click on work area
+2020-12-29 15:29:32|	Click in work area. Current component: null
+2020-12-29 15:29:32|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:32|	Repaint all
+2020-12-29 15:29:32|	click on work area
+2020-12-29 15:29:32|	Click in work area. Current component: null
+2020-12-29 15:29:32|	Choose 9th component: 0::255::255::H::Atom::1::161::253::10::10::1::8
+2020-12-29 15:29:32|	Repaint all
+2020-12-29 15:29:33|	Try drag component

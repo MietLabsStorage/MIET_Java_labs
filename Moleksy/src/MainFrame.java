@@ -1,3 +1,4 @@
+import Exceptions.JException;
 import Paintings.AreaButton;
 import Paintings.JLines;
 import Paintings.RectangleArea;
@@ -383,6 +384,7 @@ public class MainFrame {
     private static void clearAllComponents() {
         Logs.writeMessage("Clear all");
         Game.getAtomics().clear();
+        Game.setChosenComponentIndex(-1);
         repaintMolecule();
     }
 
@@ -395,7 +397,13 @@ public class MainFrame {
             component.addMouseListener(new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    choiceAction(component);
+                    try {
+                        choiceAction(component);
+                    }
+                    catch (Exception ex){
+                        Logs.writeMessage(ex.toString());
+                        new Exceptions.JException(ex.getMessage());
+                    }
                 }
 
                 @Override
