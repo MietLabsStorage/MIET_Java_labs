@@ -1,0 +1,71 @@
+2020-12-29 13:38:12|	Start init-ing Frame
+2020-12-29 13:38:12|	main frame part 1 init-ed
+2020-12-29 13:38:13|	file chooser init-ed
+2020-12-29 13:38:13|	main panel init-ed
+2020-12-29 13:38:13|	file area init-ed
+2020-12-29 13:38:13|	work area init-ed
+2020-12-29 13:38:13|	components init-ed
+2020-12-29 13:38:13|	button save init-ed
+2020-12-29 13:38:13|	button load init-ed
+2020-12-29 13:38:13|	button clear init-ed
+2020-12-29 13:38:13|	button delete init-ed
+2020-12-29 13:38:13|	add all in main panel
+2020-12-29 13:38:13|	Finish init-ing Frame
+2020-12-29 13:38:13|	MainFrame.run is listening
+2020-12-29 13:38:17|	Click load
+2020-12-29 13:38:20|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:21|	Try drag component
+2020-12-29 13:38:21|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:22|	Try drag component
+2020-12-29 13:38:22|	Repaint all
+2020-12-29 13:38:23|	Click button O
+2020-12-29 13:38:23|	Try drag component
+2020-12-29 13:38:24|	click on work area
+2020-12-29 13:38:24|	Click in work area. Current component: O
+2020-12-29 13:38:25|	click on work area
+2020-12-29 13:38:25|	Click in work area. Current component: O
+2020-12-29 13:38:26|	Click button choice/bind
+2020-12-29 13:38:26|	click on work area
+2020-12-29 13:38:26|	Click in work area. Current component: null
+2020-12-29 13:38:26|	Choose 19th component: 0::0::255::O::Atom::2::289::285::16::16::0::-1::-1
+2020-12-29 13:38:26|	Repaint all
+2020-12-29 13:38:27|	Try drag component
+2020-12-29 13:38:27|	Repaint all
+2020-12-29 13:38:27|	Try drag component
+2020-12-29 13:38:27|	Repaint all
+2020-12-29 13:38:29|	click on work area
+2020-12-29 13:38:29|	Click in work area. Current component: null
+2020-12-29 13:38:29|	Choose 18th component: 0::0::255::O::Atom::2::247::309::16::16::0::-1::-1
+2020-12-29 13:38:29|	Repaint all

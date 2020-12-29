@@ -1,0 +1,16 @@
+2020-12-29 13:12:58|	Start init-ing Frame
+2020-12-29 13:12:58|	main frame part 1 init-ed
+2020-12-29 13:12:59|	file chooser init-ed
+2020-12-29 13:12:59|	main panel init-ed
+2020-12-29 13:12:59|	file area init-ed
+2020-12-29 13:12:59|	work area init-ed
+2020-12-29 13:12:59|	components init-ed
+2020-12-29 13:12:59|	button save init-ed
+2020-12-29 13:12:59|	button load init-ed
+2020-12-29 13:12:59|	button clear init-ed
+2020-12-29 13:12:59|	button delete init-ed
+2020-12-29 13:12:59|	add all in main panel
+2020-12-29 13:12:59|	Finish init-ing Frame
+2020-12-29 13:12:59|	MainFrame.run is listening
+2020-12-29 13:13:04|	Click load
+2020-12-29 13:13:08|	Repaint all
