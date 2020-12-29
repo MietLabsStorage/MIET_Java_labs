@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * @author Max Myasikov PIN-34
@@ -10,14 +11,16 @@ public class Main {
         try {
             JFrame.setDefaultLookAndFeelDecorated(true);
             MainFrame.init();
-            javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            EventQueue.invokeLater(new Runnable() {
                 @Override
                 public void run() {
                     MainFrame.run();
+                    Logs.writeMessage("MainFrame.run is listening");
                 }
             });
         }
         catch (Exception e){
+            System.out.println(e.toString());
             new Exceptions.JException(e.getMessage());
         }
 

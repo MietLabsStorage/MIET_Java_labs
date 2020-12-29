@@ -1,7 +1,0 @@
-2020-12-28 16:06:01|	Start init-ing Frame
-2020-12-28 16:06:02|	Finish init-ing Frame
-2020-12-28 16:06:04|	Click load
-2020-12-28 16:06:08|	Repaint all
-2020-12-28 16:06:12|	Click in work area. Current component: null
-2020-12-28 16:06:12|	Choose 1th component: 255::0::0::C::Atom::4::189::161::12::12::4::0::3::2::2
-2020-12-28 16:06:12|	Repaint all

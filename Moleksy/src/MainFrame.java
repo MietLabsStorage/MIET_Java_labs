@@ -39,9 +39,11 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("mainFrame").get("height"))
         );
         mainFrame.setFocusable(true);
+        Logs.writeMessage("main frame part 1 init-ed");
 
         //init-ing file chooser
         fileChooser = new JFileChooser(System.getProperty("user.dir") + "/Molecules");
+        Logs.writeMessage("file chooser init-ed");
 
         //init-ing Panel
         mainPanel = new JPanel();
@@ -53,6 +55,7 @@ public class MainFrame {
                         Integer.parseInt(Game.getParams().get("mainPanel").get("clrB"))
                 )
         );
+        Logs.writeMessage("main panel init-ed");
 
         //init-ing background of save-load files
         fileArea = new RectangleArea(
@@ -68,6 +71,7 @@ public class MainFrame {
                         Integer.parseInt(Game.getParams().get("fileArea").get("clrB"))
                 )
         );
+        Logs.writeMessage("file area init-ed");
 
         //init-ing background of molecule painting area
         workArea = new RectangleArea(
@@ -84,6 +88,7 @@ public class MainFrame {
                         Integer.parseInt(Game.getParams().get("workArea").get("clrA"))
                 )
         );
+        Logs.writeMessage("work area init-ed");
 
         //init-ing buttons of choosing elements
         componentsAreas = new AreaButton[6];
@@ -102,6 +107,7 @@ public class MainFrame {
         componentsAreas[4] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep * 4, widthAreaButton, yAreaButtonStep), colorAreaButton, new FreeRadical());
         componentsAreas[5] = new AreaButton(new Rectangle(xAreaButton, fileArea.getHeight() + yAreaButtonStep * 5, widthAreaButton, yAreaButtonStep), colorAreaButton, new Binding());
         componentsAreas[5].pressed(true);
+        Logs.writeMessage("components init-ed");
 
         //init-ing save button
         buttonSave = new JButton(Game.getParams().get("saveButton").get("name"));
@@ -112,6 +118,7 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("saveButton").get("height"))
         );
         buttonSave.setVisible(true);
+        Logs.writeMessage("button save init-ed");
 
         //init-ing load button
         buttonLoad = new JButton(Game.getParams().get("loadButton").get("name"));
@@ -121,6 +128,7 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("loadButton").get("width")),
                 Integer.parseInt(Game.getParams().get("loadButton").get("height")));
         buttonLoad.setVisible(true);
+        Logs.writeMessage("button load init-ed");
 
         //init-ing clear button
         buttonClear = new JButton(Game.getParams().get("clearButton").get("name"));
@@ -131,6 +139,7 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("clearButton").get("height"))
         );
         buttonClear.setVisible(true);
+        Logs.writeMessage("button clear init-ed");
 
         //init-ing delete button
         buttonDel = new JButton(Game.getParams().get("deleteButton").get("name"));
@@ -141,6 +150,7 @@ public class MainFrame {
                 Integer.parseInt(Game.getParams().get("deleteButton").get("height"))
         );
         buttonDel.setVisible(true);
+        Logs.writeMessage("button delete init-ed");
 
         //add components in panel
         mainPanel.add(buttonSave);
@@ -152,6 +162,7 @@ public class MainFrame {
         for (AreaButton componentsArea : componentsAreas) {
             mainPanel.add(componentsArea);
         }
+        Logs.writeMessage("add all in main panel");
 
         //second part of init-ing Frame
         mainFrame.setContentPane(mainPanel);
@@ -162,11 +173,7 @@ public class MainFrame {
         Logs.writeMessage("Finish init-ing Frame");
     }
 
-    /**
-     * set which radical will chosen to painting or do binding
-     *
-     * @param component area button
-     */
+    //set which radical will chosen to painting or do binding
     private static void choiceAction(AreaButton component) {
         Logs.writeMessage("Click button " + component.getComponent().getName());
         //if not binding
@@ -191,11 +198,7 @@ public class MainFrame {
         mainPanel.repaint();
     }
 
-    /**
-     * paint new component on work area
-     *
-     * @param e mouse event
-     */
+    //paint new component on work area
     private static void paintComponent(MouseEvent e) {
         Logs.writeMessage("Click in work area. Current component: " + Game.getPaintingComponent().getName());
         //set location of component
@@ -209,11 +212,7 @@ public class MainFrame {
         mainPanel.repaint();
     }
 
-    /**
-     * cjoise component or if already bind with
-     *
-     * @param e mouse event
-     */
+    //choise component or if already bind with
     private static void choiceOrBindComponent(MouseEvent e) {
         Logs.writeMessage("Click in work area. Current component: " + null);
         //try choice component
@@ -259,13 +258,14 @@ public class MainFrame {
         repaintMolecule();
     }
 
+    //carry component while mouse dragged and on component
     private static void carryComponent(MouseEvent e) {
+        Logs.writeMessage("Try drag component");
         for (int i = 0; i < Game.getAtomics().size(); i++) {
             if (Game.getAtomics().get(i).getX() < e.getX()
                     && e.getX() < Game.getAtomics().get(i).getX() + Game.getAtomics().get(i).getWidth()
                     && Game.getAtomics().get(i).getY() - workArea.getY() < e.getY()
                     && e.getY() < Game.getAtomics().get(i).getY() + Game.getAtomics().get(i).getHeight() - workArea.getY()){
-
                 Game.getAtomics().get(i).setLocation(e.getX() - Game.getAtomics().get(i).getWidth() / 2,
                         e.getY() + fileArea.getHeight() - Game.getAtomics().get(i).getHeight() / 2);
                 repaintMolecule();
@@ -274,12 +274,9 @@ public class MainFrame {
         }
     }
 
-    /**
-     * action when click mouse on work area
-     *
-     * @param e mouse event
-     */
+    // action when click mouse on work area
     private static void clickToWorkArea(MouseEvent e) {
+        Logs.writeMessage("click on work area");
         if (Game.getPaintingComponent() != null) {
             paintComponent(e);
         } else {
@@ -287,10 +284,9 @@ public class MainFrame {
         }
     }
 
-    /**
-     * delete component
-     */
+    // delete component
     private static void deleteComponent() {
+        Logs.writeMessage("Try delete component");
         if (Game.getChosenComponent() != null) {
             Game.getAtomics().remove(Game.getChosenComponentIndex());
             for (int i = 0; i < Game.getAtomics().size(); i++) {
@@ -327,9 +323,7 @@ public class MainFrame {
         }
     }
 
-    /**
-     * save molecule
-     */
+    //save molecule
     private static void save() {
         try {
             Logs.writeMessage("Click save");
@@ -347,9 +341,7 @@ public class MainFrame {
         }
     }
 
-    /**
-     * load molecule
-     */
+    //load molecule
     private static void load() {
         try {
             Logs.writeMessage("Click load");
@@ -369,11 +361,9 @@ public class MainFrame {
         }
     }
 
-    /**
-     * key on keyboard pressed
-     * @param e
-     */
+    //key on keyboard pressed
     private static void keyboardPressed(KeyEvent e) {
+        Logs.writeMessage("key pressed: "+ e.getKeyCode());
         if (e.getKeyCode() == KeyEvent.VK_CONTROL) {
             keyPressedCode = KeyEvent.VK_CONTROL;
         }
@@ -389,10 +379,9 @@ public class MainFrame {
         }
     }
 
-    /**
-     * clear work area
-     */
+    // clear work area
     private static void clearAllComponents() {
+        Logs.writeMessage("Clear all");
         Game.getAtomics().clear();
         repaintMolecule();
     }
@@ -513,10 +502,7 @@ public class MainFrame {
         });
     }
 
-
-    /**
-     * repaint all components in Frame
-     */
+    //repaint all components in Frame
     private static void repaintMolecule() {
         mainPanel.removeAll();
         mainPanel.add(buttonSave);

@@ -7,7 +7,9 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 
-//rectangle - special for being alternative button
+/**
+ * rectangle - special for being alternative button
+ */
 public class AreaButton extends RectangleArea {
 
     /**
@@ -18,6 +20,7 @@ public class AreaButton extends RectangleArea {
         return component;
     }
 
+    //component liking this area button
     private final RadicalComponent component;
 
     /**

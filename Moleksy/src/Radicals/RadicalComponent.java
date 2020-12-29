@@ -138,15 +138,7 @@ public class RadicalComponent extends JComponent {
     private int linkPointer;
     private boolean choice;
 
-    /**
-     * upcast constructor
-     *
-     * @param bounds     bounds
-     * @param color      color
-     * @param name       name
-     * @param atomicStat stat
-     * @param valence    valence
-     */
+    // upcast constructor
     protected RadicalComponent(Rectangle bounds, Color color, String name, Stat atomicStat, int valence) {
         super();
         setBounds(bounds);

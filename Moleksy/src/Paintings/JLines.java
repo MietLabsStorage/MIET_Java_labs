@@ -27,6 +27,7 @@ public class JLines extends JComponent {
 
     //list of points
     private final ArrayList<RadicalComponent> atomics;
+    //color of line
     private final Color color;
 
     /**
@@ -43,13 +44,9 @@ public class JLines extends JComponent {
         this.color = color;
     }
 
-    /**
-     * draw one line bind
-     * @param g2 graphics2d
-     * @param bind bind
-     */
+    //draw one line bind
     private void oneLinePaint(Graphics2D g2, AllBinds bind){
-        g2.setColor(Color.BLACK);
+        g2.setColor(color);
         Line2D line1 = new Line2D.Double(atomics.get(bind.node1).getX() + Double.parseDouble(atomics.get(bind.node1).getWidth() / 2 + ""),
                 atomics.get(bind.node1).getY() + Double.parseDouble(atomics.get(bind.node1).getHeight() / 2 + ""),
                 atomics.get(bind.node2).getX() + Double.parseDouble(atomics.get(bind.node2).getWidth() / 2 +""),
@@ -57,12 +54,9 @@ public class JLines extends JComponent {
         g2.draw(line1);
     }
 
-    /**
-     * draw two line bind
-     * @param g2 graphics2d
-     * @param bind bind
-     */
+    //draw two line bind
     private void twoLinePaint(Graphics2D g2, AllBinds bind){
+        g2.setColor(color);
         //editing coordinates of lines
         int qX2 = 0;
         int qY2 = 0;
@@ -86,12 +80,9 @@ public class JLines extends JComponent {
         g2.draw(line22);
     }
 
-    /**
-     * draw three line bind
-     * @param g2 graphics2d
-     * @param bind bind
-     */
+    //draw three line bind
     private void threeLinePaint(Graphics2D g2, AllBinds bind){
+        g2.setColor(color);
         //editing coordinates of lines
         int qX3 = 0;
         int qY3 = 0;
@@ -121,12 +112,9 @@ public class JLines extends JComponent {
         g2.draw(line33);
     }
 
-    /**
-     * draw four line bind
-     * @param g2 graphics2d
-     * @param bind bind
-     */
+    //draw four line bind
     private void fourLinePaint(Graphics2D g2, AllBinds bind){
+        g2.setColor(color);
         //editing coordinates of lines
         int qX4 = 0;
         int qY4 = 0;

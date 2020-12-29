@@ -12,6 +12,9 @@ public class Logs {
     private static final String name = "Logs/log";
     private static String dt;
 
+    /**
+     * init sets in logs
+     */
     public static void init(){
         dt = LocalDate.now()+"-"+LocalTime.now().format(DateTimeFormatter.ofPattern("H-mm-ss"));
     }
